@@ -6,6 +6,7 @@ package com.bitcoin.hdwallet.crypto;
  */
 
 import java.math.BigInteger;
+import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 
 public final class Address {
@@ -108,7 +109,7 @@ public final class Address {
             java.security.MessageDigest digest = java.security.MessageDigest.getInstance("SHA-256");
             byte[] first = digest.digest(data);
             return digest.digest(first);
-        } catch (Exception e) {
+        } catch (NoSuchAlgorithmException e) {
             throw new RuntimeException(e);
         }
     }

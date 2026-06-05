@@ -1,0 +1,46 @@
+# Java
+*.class
+*.jar
+*.war
+target/
+*.iml
+out/
+
+# IDE
+.idea/
+.vscode/
+*.project
+*.classpath
+*.factorypath
+.settings/
+.metadata/
+nbproject/
+
+# Wallet data — NEVER commit private keys or wallet files
+*.db
+*.db-wal
+*.db-shm
+wallet_seed.json
+*.key
+*.pem
+
+# Logs
+logs/
+*.log
+*.txt
+
+# Config with credentials
+config.properties
+ncbitcoin.conf
+application.properties
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+release.properties
