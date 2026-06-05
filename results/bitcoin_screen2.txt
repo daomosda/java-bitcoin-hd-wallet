@@ -1,0 +1,56 @@
+conaldes@daomosda:~$ bitcoin-cli -regtest -rpcuser=olamosda -rpcpassword=cona.btc-Dao_5MoS7 getrawtransaction 3676fe4756
+35c595c89f907ca59cc8ae3b94e49b826f172ded9cbd758b3e2af5 1
+{
+  "txid": "3676fe475635c595c89f907ca59cc8ae3b94e49b826f172ded9cbd758b3e2af5",
+  "hash": "49ec513ad285255400d3e1e3001e071cbd5754a74bf72409d2e807dd055202c3",
+  "version": 2,
+  "size": 222,
+  "vsize": 141,
+  "weight": 561,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "1a5b4505ed299167113b88d800d22a7172bc62807bd928433f55195c8eb6d09c",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "304402202c75e7663ad980710a943c6bea16f44ee83fb51ad6277af9bbd80487fe65e4a302202145324ccfdd527a3450762e74ad221edce55e40010ef1573f967b01b80f301701",
+        "028f44efe3e2cc0bf1e3aff7307d47ca11497fda1880a287ed22f128a7609d4c0c"
+      ],
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 0.30000000,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "0 3f2ea7da3cb5adcebc88120ed0a917968d35e938",
+        "desc": "addr(bcrt1q8uh20k3ukkkua0ygzg8dp2ghj6xnt6fcy8sldr)#kumg9l5p",
+        "hex": "00143f2ea7da3cb5adcebc88120ed0a917968d35e938",
+        "address": "bcrt1q8uh20k3ukkkua0ygzg8dp2ghj6xnt6fcy8sldr",
+        "type": "witness_v0_keyhash"
+      }
+    },
+    {
+      "value": 49.69997180,
+      "n": 1,
+      "scriptPubKey": {
+        "asm": "0 508a9086f1d1f25ddbee7869a38c43bb0ec49405",
+        "desc": "addr(bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa)#y6njm0vk",
+        "hex": "0014508a9086f1d1f25ddbee7869a38c43bb0ec49405",
+        "address": "bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa",
+        "type": "witness_v0_keyhash"
+      }
+    }
+  ],
+  "hex": "020000000001019cd0b68e5c19553f4328d97b8062bc72712ad200d8883b11679129ed05455b1a0000000000fdffffff0280c3c901000000001600143f2ea7da3cb5adcebc88120ed0a917968d35e9387c233c2801000000160014508a9086f1d1f25ddbee7869a38c43bb0ec494050247304402202c75e7663ad980710a943c6bea16f44ee83fb51ad6277af9bbd80487fe65e4a302202145324ccfdd527a3450762e74ad221edce55e40010ef1573f967b01b80f30170121028f44efe3e2cc0bf1e3aff7307d47ca11497fda1880a287ed22f128a7609d4c0c00000000",
+  "blockhash": "0ce29c8bb80b5ba8277b6a3d5b0cc1450ca32eec9b3ceaafdedf90b94cd6087f",
+  "confirmations": 25,
+  "time": 1780515044,
+  "blocktime": 1780515044
+}
+conaldes@daomosda:~$

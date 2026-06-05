@@ -1,0 +1,427 @@
+cd C:\Users\CONALDES\Documents\NetBeansProjects\BTCHDWallet; "JAVA_HOME=C:\\Program Files\\Java\\jdk-25" cmd /c "\"C:\\Users\\CONALDES\\netbeans-30-bin\\netbeans\\java\\maven\\bin\\mvn.cmd\" -Dexec.vmArgs= \"-Dexec.args=${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}\" -Dexec.appArgs= -Dexec.mainClass=com.bitcoin.hdwallet.entrypoint.BTCHDWallet \"-Dexec.executable=C:\\Program Files\\Java\\jdk-25\\bin\\java.exe\" -Dmaven.ext.class.path=C:\\Users\\CONALDES\\netbeans-30-bin\\netbeans\\java\\maven-nblib\\netbeans-eventspy.jar --no-transfer-progress process-classes org.codehaus.mojo:exec-maven-plugin:3.5.1:exec"
+Scanning for projects...
+
+------------------< com.bitcoin.hdwallet:BTCHDWallet >------------------
+Building BTCHDWallet 1.0-SNAPSHOT
+  from pom.xml
+--------------------------------[ jar ]---------------------------------
+
+--- resources:3.4.0:resources (default-resources) @ BTCHDWallet ---
+Copying 3 resources from src\main\resources to target\classes
+
+--- compiler:3.15.0:compile (default-compile) @ BTCHDWallet ---
+Nothing to compile - all classes are up to date.
+
+--- exec:3.5.1:exec (default-cli) @ BTCHDWallet ---
+
+Node usage mode setting.
+Application includes merchant and customer functionalities.
+Select usage mode (merchant and customer) to enable on CLI menu.
+Enter 1 -> 'merchant', 2 -> 'customer', 3 -> 'not-applicable'  or 4 -> 'quit' to exit: 1
+Input: merchant
+
+????????????????????????????????????????????????????????????????????????????????
+[2026-06-03 20:51:48.587] [INFO ] [AppLogger                     ] Session started   2026-06-03 20:51:48.587
+[AppLogger] Logging to: C:\Users\CONALDES/.bitcoinlike/appmsg/hdwappmsg.txt
+[2026-06-03 20:51:48.588] [INFO ] [AppNWKConfig                  ] [AppNWKConfig] Loaded 20 entries from bitcoin.conf
+[2026-06-03 20:51:48.590] [INFO ] [AppNWKConfig                  ] [AppNWKConfig] Network resolved: REGTEST
+[2026-06-03 20:51:48.590] [INFO ] [AppNWKConfig                  ] [AppNWKConfig] wallet.name=daowallet, watchonly.wallet.name=btcnode_watchonly
+[2026-06-03 20:51:48.594] [INFO ] [[Database] Initialized with path: {}] C:\Users\CONALDES\.bitcoinlike\chaindbpath\blockchain.db
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.sqlite.SQLiteJDBCLoader in an unnamed module (file:/C:/Users/CONALDES/.m2/repository/org/xerial/sqlite-jdbc/3.49.1.0/sqlite-jdbc-3.49.1.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[2026-06-03 20:51:48.820] [INFO ] [[Database] New connection created for thread={}] main
+[2026-06-03 20:51:48.823] [INFO ] [ChainDatabase                 ] [Database] Migrations complete
+[2026-06-03 20:51:48.830] [INFO ] [BitcoinRpcClient              ] BCJSONRpchttp: http://127.0.0.1:18443
+Bitcoin Core is running in REGTEST mode.
+Master key repository found
+[WalletSeedStore] Seed loaded: C:\Users\CONALDES\.msthdwkp\wltseed\wallet_seed.json
+DB path: C:\Users\CONALDES\.bitcoinlike\hdwltk\hdwKeys.db
+Log file exists: C:\Users\CONALDES\.bitcoinlike\addrctl\addressCtl.log
+[2026-06-03 20:51:49.297] [INFO ] [HdAddressManager              ] [HdAddressManager => getNextMiningAddress()] countUsedKeys=6, LOOKAHEAD=5
+[main] addr: bcrt1qrtmh6j4zxn8vengaq87pde5kfu74kjtklj33mr
+[main] addr: bcrt1qx3t46tufcsjmg9us2wkkx0n53j83srg4gf6nq8
+[main] addr: bcrt1qv268alapdh6zgg3u4tpmrngnw6uz5vnfluap4d
+[main] addr: bcrt1q3xvy0wd4xexmwugue9mw3aax0fmrcjyred50ca
+[main] addr: bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+[main] addr: bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92
+[main] addr: bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje
+[main] addr: bcrt1qydt824ypj24mue7ftrnllk9lupwr6fcuzf8msh
+[main] addr: bcrt1q3dg42jdye80a2fdxsh8gc4fjw7xgy0zatj9kqz
+[main] addr: bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+[main] addr: bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7
+[main] addr: bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h
+[main] addr: bcrt1qea7ye876hw6en2uf6h0uyqfdpk5uwkj0p6al3n
+[main] addr: bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj
+[main] addr: bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6
+[main] addr: bcrt1qdnqs0cw05ejkwj2uuf039t3ff6dy6yet6eraf7
+[main] addr: bcrt1qkef5jqr6vquzjg747vgzl2m3f4znsut4zlnrf5
+[main] addr: bcrt1qxnrgkpnhqulu75s0c4h3pyg3q9t5tax7zm7w4z
+[main] addr: bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w
+[main] addr: bcrt1qfav7zufffqluyfkjw4etu8nzwtgz6kf2kcm8v9
+[main] addr: bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr
+[main] addr: bcrt1qrkvp59zrulh37ca35pfshaz33sqfma0ef7nmry
+[main] addr: bcrt1q95elgq5l2wqmvnm3gqmlkz0szzm39f3fgfjggp
+[main] addr: bcrt1qcmuzx3kr6awkd2fzgm9w3ryr06g304n0sheunk
+[main] addr: bcrt1q0sglqvqnx7c8x83efj56k9ayg2aga95utl2e8u
+[main] addr: bcrt1q23hyyrs98zp5n97m82txj0rgx6z6qez85ugn2q
+[main] addr: bcrt1qyr95cv49nz0cwelr9vlwky5qye6ksswgfrxw5e
+[main] addr: bcrt1qu5z5kjrsjkxcxhrcql5ezrtms5tcjf2prhjuy3
+[main] addr: bcrt1qq5z0f2sl8s5zvt8cswfzp8fzhdedz379qfhu56
+[main] addr: bcrt1qdj6j5pgxkn4qyhu4de0x3wuz7wtngesy5ddjzd
+[main] addr: bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs
+[main] addr: bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+[main] addr: bcrt1qys7qpwcetdxwt225k3kyqp093st3rmtr29xrha
+[main] addr: bcrt1qcd0z38s0kqq5a2vfzajkewe8cp0gnvs424txc8
+[main] addr: bcrt1qlq4fnjjud43wa47en9hlc6mv7nf7e97cdwcedd
+[main] addr: bcrt1q8uh20k3ukkkua0ygzg8dp2ghj6xnt6fcy8sldr
+[main] addr: bcrt1qs4uv564vfuh4enxl4guda3wl6jxz0n3w5rhn3t
+[main] addr: bcrt1qge82kw48ruvwm2qle0q34u6xkr7ms8kqkxacl0
+[main] addr: bcrt1q2smz6qx6pr5tj6f80w79ru0m0vrwcec2dtmqmw
+[main] addr: bcrt1q2jtyuchp4sh27zthpz3tgn5km2ymlcm6had06p
+[2026-06-03 20:51:49.332] [INFO ] [BTCHDWallet                   ] [Controller => main] After creating networkManager
+[2026-06-03 20:51:49.336] [INFO ] [P2PServer                     ] [P2PServer] Listening on port 8333
+[2026-06-03 20:51:49.337] [INFO ] [BTCHDWallet                   ] [Merchant] P2P server started on port 8333
+[2026-06-03 20:51:49.339] [INFO ] [BTCHDWallet                   ] [Controller => main] After call to client.connectTo
+[2026-06-03 20:51:49.540] [INFO ] [BTCHDWallet                   ] Initializing wallet with SegWit descriptors...
+[2026-06-03 20:51:49.591] [INFO ] [BTCHDWallet                   ] Connected to Bitcoin network: version=280100, connections=0
+[2026-06-03 20:51:49.591] [INFO ] [Importing account descriptors into wallet '{}'...] btcnode_watchonly
+[Descriptor info] accountXpub = tpubDCF9R7G5aX7JLteM6f2BX4GfYp3bZ1vCiPuQDWGa2wR2MxF9Fj6znQZfge9x4s2tBKh7cCKwABvgoX4gQLN7DEZWngXFd95XgN5PBVVBUkr
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykerwC87rHX6ZfNt9ZESLj61t3YevdaYoiiyr9MAJFaTxeiQ42v53Tax3kTFRAMx6yq2k5GVPurA2phwJx9LrFTfyzwQSETmWcA/0/33)#306sry6a
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykerzgdpKjKtz92CoFATt6F73BoCQGRt34KZWHTqzW2WToSbo9Q1xL8UZdX5L55dbnHcbUVod9rjDHDZqRTG5FJJNbXHKhbrybz/0/34)#r3kuwxrj
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykes2RCq7xJ7tve8tVEzfnA6kN2PSnhktDMWpzjQWjegehrBuKz96U6uYUn4FAqW2q8Ni6ieAy62aj3Dvbh8UQ51Da4UZoPvVAT/0/35)#72wtadkf
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykes6QBJJEPk6KYCykTzWDW1iwagfxKQdX3EhTpU8H21cQhof9zabGS61jQ4dNp8X4v6b4ntKKt5tUBVzLb2zjHgpfWzhaQnNVz/0/36)#26u332uy
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykes8GXuvc5TRYmucjPCF1vuaUzkapqHqsnoUacNVyTLLEtXBAufsyMXrn9Y9KpP5wgVd3uXkM7DzjyYoVhyUTmErPUqDQjhU9V/0/37)#k4vhyg7w
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykesBbHkUbpGsM6PCJNdhxLK4CCPduuZ8zjpa3Saua8h8urKP2pjLj2xESKohU2GQqeXCcAEiUesY3j41atgu5ABTtpq766at9e/0/38)#xkw7pax5
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykesE9U37QXctG1FkhpXxHekR8L1jvnXGMDoMrGdHtppPBGtvEoPVZUzddGYS38f2vzGE8wyhFyrPAAsxoahCjJAp1AMzfjpuY6/0/39)#fwe8k0yt
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykesGUJixkKrMhqwDc8hzGGavbLWsNiNw4ADLk2yEe6HmvExtTWQL3N3pNrp2551AEQ9UJpmmhfYXSiuUjgB8ixGKzmxK2w72GM/0/40)#92hzmt2z
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykesKg93m9NtPVmLrLSEvtbKq7J4qGmM68QdVAMb6UTdqE4J7RY7s8rZBLoXAqnB8kegCsTLNeM2CXjgyHyHx7wEbPUT722Cqzn/0/41)#w66xx76f
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykesLkrMGHdZyLn47T18xvL3Pj4t4PjvaZLpRakAEBnYe3miY1g5Jdar3FK9Lhy4Pf69roqwNqBtUryukTwAQiHFPZ5tBg8aoSP/0/42)#957y79ea
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYJQv7b3CEoiCmaRbyideNVAE8TPthffgrHPtWATZuKrqb9ivmUkZCEr2xNUck8xNS4JTvjo9PjtJhK9bKzBNT1wYimqVyFNpH/1/28)#m8zy2846
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYJRbZH2N4wvpvXxRsHasaNaxMhQebWoFL5NphywFAZhVkRUmNscMcMwcGTGpF2887w37updWxxXZ39V4uNzbA4QKJZxutNThc/1/29)#60zxndhp
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYJTnVTFxSRT5akyspzfsW4TVoYhA4QbwiAjoSzZsEyb7aCQWCHf1ibsp5fg2X25ACtqQ1iTsNifyHLbZywF48gX1fJ5nmdWQW/1/30)#amtttyhp
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYJWi156EiLbPaPtzMdn5azW6kRzhziGEd5z1gJEVNXcVCBubrLzJjZhjWVpnyCzhqr1b1FR7j5TVGLQfir5uwVhtdzpVvhR9y/1/31)#m7tq8j3c
+Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYJYrEU31M7nVk6iS31W8b3Bp5xFpPDNSe72oQwhuhdaUMoKXqcjTzJsyukRWmUFjAVjHTf1Rwr6dKKypV4vpsJ3eVtnhKqajF/1/32)#fpac6gnx
+Descriptor: wpkh([98667b10/84h/1h/0h]tpubDCF9R7G5aX7JLteM6f2BX4GfYp3bZ1vCiPuQDWGa2wR2MxF9Fj6znQZfge9x4s2tBKh7cCKwABvgoX4gQLN7DEZWngXFd95XgN5PBVVBUkr/0/*)#z48fgevg
+Range: 0 -> 1034
+Descriptor: wpkh([98667b10/84h/1h/0h]tpubDCF9R7G5aX7JLteM6f2BX4GfYp3bZ1vCiPuQDWGa2wR2MxF9Fj6znQZfge9x4s2tBKh7cCKwABvgoX4gQLN7DEZWngXFd95XgN5PBVVBUkr/1/*)#npzg4vus
+Range: 0 -> 1028
+[2026-06-03 20:51:49.754] [INFO ] [BTCHDWallet                   ] Descriptor already imported, skipping.
+[2026-06-03 20:51:49.801] [INFO ] [BTCHDWallet                   ] [Controller => initializeWallet()] info.blocks() = 224
+[2026-06-03 20:51:49.804] [INFO ] [UtxoSyncManager               ] [Sync] Resuming from height=211
+[2026-06-03 20:51:49.851] [INFO ] [UtxoSyncManager               ] Sync decision: lastHeight=211, tip=224, gap=13
+[2026-06-03 20:51:49.852] [INFO ] [UtxoSyncManager               ] Gap 13 > threshold 10 ? running block sync
+[2026-06-03 20:51:49.951] [INFO ] [UtxoSyncManager               ] Block sync: 211 ? 224
+[2026-06-03 20:51:50.060] [INFO ] [TxDataMapper                  ] Witness stack size = 2
+[2026-06-03 20:51:50.174] [INFO ] [BlockDataMapper               ] [prevoutValue] No prevout data for 3676fe475635c595c89f907ca59cc8ae3b94e49b826f172ded9cbd758b3e2af5:0 (both gettxout and getrawtransaction returned null)
+[2026-06-03 20:51:50.175] [WARN ] [BlockDataMapper               ] [getFee] Missing prevValue for input: 3676fe475635c595c89f907ca59cc8ae3b94e49b826f172ded9cbd758b3e2af5 (vout=0). Unable to determine fee precisely.
+[2026-06-03 20:51:50.176] [WARN ] [BlockDataMapper               ] [getFee] Negative fee detected: inputs=0 sats, outputs=29997180 sats, fee=-29997180 sats. Clamping to 0. This usually means missing/incorrect prevout values.
+[2026-06-03 20:51:50.287] [INFO ] [TxDataMapper                  ] Witness stack size = 2
+[2026-06-03 20:51:50.380] [INFO ] [BlockDataMapper               ] [prevoutValue] No prevout data for 98a70a8c449c9621791ec1d5a26b434858a2453c44fe406025bc35665dcc6d87:0 (both gettxout and getrawtransaction returned null)
+[2026-06-03 20:51:50.380] [WARN ] [BlockDataMapper               ] [getFee] Missing prevValue for input: 98a70a8c449c9621791ec1d5a26b434858a2453c44fe406025bc35665dcc6d87 (vout=0). Unable to determine fee precisely.
+[2026-06-03 20:51:50.380] [WARN ] [BlockDataMapper               ] [getFee] Negative fee detected: inputs=0 sats, outputs=9939987980 sats, fee=-9939987980 sats. Clamping to 0. This usually means missing/incorrect prevout values.
+[2026-06-03 20:51:51.542] [INFO ] [UtxoSyncManager               ] Block sync complete up to height 224
+[2026-06-03 20:51:51.567] [INFO ] [[Database] Connection released for thread={}] main
+[2026-06-03 20:51:51.568] [INFO ] [UtxoSyncManager               ] Starting UTXO sync...
+[2026-06-03 20:51:51.619] [INFO ] [UtxoSyncManager               ] First sync - expecting empty or initial UTXO set.
+[2026-06-03 20:51:51.741] [INFO ] [[Database] New connection created for thread={}] main
+
+############################### Utxo Summary ###################################
+=== UTXO Summary ===
+Total Balance      : 6199.99985160 BTC
+Spendable Balance  : 6199.99985160 BTC
+Immature Balance   : 0.00000000 BTC
+
+Total UTXOs        : 127
+Spendable UTXOs    : 127
+
+Largest UTXO       : 99.18987980 BTC
+Smallest UTXO      : 0.08997180 BTC
+Average UTXO       : 48.81889647 BTC
+
+Dust UTXOs         : 0
+
+##################################################################################
+[2026-06-03 20:51:51.793] [INFO ] [[Database] Connection released for thread={}] main
+[2026-06-03 20:51:51.794] [INFO ] [UtxoSyncManager               ] UTXO sync completed in 226 ms: 127 UTXOs, 619999985160 sat total, 0 updated
+[2026-06-03 20:51:51.794] [INFO ] [BTCHDWallet                   ] Initial sync complete: height=224, utxos=127, total_sat=619999985160
+[2026-06-03 20:51:51.794] [INFO ] [BTCHDWallet                   ] UTXO sync manager started (background loop active)
+[2026-06-03 20:51:51.794] [INFO ] [BTCHDWallet                   ] Wallet + Lightning initialized
+[validateaddress] addr=bcrt1qrtmh6j4zxn8vengaq87pde5kfu74kjtklj33mr isvalid=true raw={"scriptPubKey":"00141af77d4aa234cecccd1d01fc16e6964f3d5b4976","witness_program":"1af77d4aa234cecccd1d01fc16e6964f3d5b4976","address":"bcrt1qrtmh6j4zxn8vengaq87pde5kfu74kjtklj33mr","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qx3t46tufcsjmg9us2wkkx0n53j83srg4gf6nq8 isvalid=true raw={"scriptPubKey":"001434575d2f89c425b4179053ad633e748c8f180d15","witness_program":"34575d2f89c425b4179053ad633e748c8f180d15","address":"bcrt1qx3t46tufcsjmg9us2wkkx0n53j83srg4gf6nq8","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qv268alapdh6zgg3u4tpmrngnw6uz5vnfluap4d isvalid=true raw={"scriptPubKey":"001462b47effa16df424223caac3b1cd1376b82a3269","witness_program":"62b47effa16df424223caac3b1cd1376b82a3269","address":"bcrt1qv268alapdh6zgg3u4tpmrngnw6uz5vnfluap4d","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q3xvy0wd4xexmwugue9mw3aax0fmrcjyred50ca isvalid=true raw={"scriptPubKey":"0014899847b9b5364db7711cc976e8f7a67a763c4883","witness_program":"899847b9b5364db7711cc976e8f7a67a763c4883","address":"bcrt1q3xvy0wd4xexmwugue9mw3aax0fmrcjyred50ca","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa isvalid=true raw={"scriptPubKey":"0014508a9086f1d1f25ddbee7869a38c43bb0ec49405","witness_program":"508a9086f1d1f25ddbee7869a38c43bb0ec49405","address":"bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92 isvalid=true raw={"scriptPubKey":"00147a0cc6a90a7650ecdcec1f9607de9c0aa9796b35","witness_program":"7a0cc6a90a7650ecdcec1f9607de9c0aa9796b35","address":"bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje isvalid=true raw={"scriptPubKey":"0014e296ecdbda991c19f9466e8af28065b3bd82a1c2","witness_program":"e296ecdbda991c19f9466e8af28065b3bd82a1c2","address":"bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qydt824ypj24mue7ftrnllk9lupwr6fcuzf8msh isvalid=true raw={"scriptPubKey":"0014235675548192abbe67c958e7ffd8bfe05c3d271c","witness_program":"235675548192abbe67c958e7ffd8bfe05c3d271c","address":"bcrt1qydt824ypj24mue7ftrnllk9lupwr6fcuzf8msh","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q3dg42jdye80a2fdxsh8gc4fjw7xgy0zatj9kqz isvalid=true raw={"scriptPubKey":"00148b515549a4c9dfd525a685ce8c5532778c823c5d","witness_program":"8b515549a4c9dfd525a685ce8c5532778c823c5d","address":"bcrt1q3dg42jdye80a2fdxsh8gc4fjw7xgy0zatj9kqz","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph isvalid=true raw={"scriptPubKey":"00145f490a508fe2bc7631e91a8a2b14f640b6fbbe6c","witness_program":"5f490a508fe2bc7631e91a8a2b14f640b6fbbe6c","address":"bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7 isvalid=true raw={"scriptPubKey":"00148d31e6347c013d8b109a0f21bba0d5fd249fe20d","witness_program":"8d31e6347c013d8b109a0f21bba0d5fd249fe20d","address":"bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h isvalid=true raw={"scriptPubKey":"0014e8106b0516d6fe71db3777047f14ceff63d14efd","witness_program":"e8106b0516d6fe71db3777047f14ceff63d14efd","address":"bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qea7ye876hw6en2uf6h0uyqfdpk5uwkj0p6al3n isvalid=true raw={"scriptPubKey":"0014cf7c4c9fdabbb599ab89d5dfc2012d0da9c75a4f","witness_program":"cf7c4c9fdabbb599ab89d5dfc2012d0da9c75a4f","address":"bcrt1qea7ye876hw6en2uf6h0uyqfdpk5uwkj0p6al3n","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj isvalid=true raw={"scriptPubKey":"00145d5e33789cf53e062b804c2d5acb01a6bbfa2faf","witness_program":"5d5e33789cf53e062b804c2d5acb01a6bbfa2faf","address":"bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6 isvalid=true raw={"scriptPubKey":"00141e602d9b103dbff08bb08bda38dd85aac5d5ff45","witness_program":"1e602d9b103dbff08bb08bda38dd85aac5d5ff45","address":"bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qdnqs0cw05ejkwj2uuf039t3ff6dy6yet6eraf7 isvalid=true raw={"scriptPubKey":"00146cc107e1cfa66567495ce25f12ae294e9a4d132b","witness_program":"6cc107e1cfa66567495ce25f12ae294e9a4d132b","address":"bcrt1qdnqs0cw05ejkwj2uuf039t3ff6dy6yet6eraf7","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qkef5jqr6vquzjg747vgzl2m3f4znsut4zlnrf5 isvalid=true raw={"scriptPubKey":"0014b65349007a60382923d5f3102fab714d45387175","witness_program":"b65349007a60382923d5f3102fab714d45387175","address":"bcrt1qkef5jqr6vquzjg747vgzl2m3f4znsut4zlnrf5","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qxnrgkpnhqulu75s0c4h3pyg3q9t5tax7zm7w4z isvalid=true raw={"scriptPubKey":"001434c68b0677073fcf520fc56f109111015745f4de","witness_program":"34c68b0677073fcf520fc56f109111015745f4de","address":"bcrt1qxnrgkpnhqulu75s0c4h3pyg3q9t5tax7zm7w4z","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w isvalid=true raw={"scriptPubKey":"0014aa00439788c1dae440a170f621e1ea9f102ad7c4","witness_program":"aa00439788c1dae440a170f621e1ea9f102ad7c4","address":"bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qfav7zufffqluyfkjw4etu8nzwtgz6kf2kcm8v9 isvalid=true raw={"scriptPubKey":"00144f59e17129483fc226d27572be1e6272d02d592a","witness_program":"4f59e17129483fc226d27572be1e6272d02d592a","address":"bcrt1qfav7zufffqluyfkjw4etu8nzwtgz6kf2kcm8v9","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr isvalid=true raw={"scriptPubKey":"00146da8d455e20a191b91b8c70a3debbf07316a0ffd","witness_program":"6da8d455e20a191b91b8c70a3debbf07316a0ffd","address":"bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qrkvp59zrulh37ca35pfshaz33sqfma0ef7nmry isvalid=true raw={"scriptPubKey":"00141d981a1443e7ef1f63b1a0530bf4518c009df5f9","witness_program":"1d981a1443e7ef1f63b1a0530bf4518c009df5f9","address":"bcrt1qrkvp59zrulh37ca35pfshaz33sqfma0ef7nmry","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q95elgq5l2wqmvnm3gqmlkz0szzm39f3fgfjggp isvalid=true raw={"scriptPubKey":"00142d33f4029f5381b64f714037fb09f010b712a629","witness_program":"2d33f4029f5381b64f714037fb09f010b712a629","address":"bcrt1q95elgq5l2wqmvnm3gqmlkz0szzm39f3fgfjggp","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qcmuzx3kr6awkd2fzgm9w3ryr06g304n0sheunk isvalid=true raw={"scriptPubKey":"0014c6f82346c3d75d66a92246cae88c837e9117d66f","witness_program":"c6f82346c3d75d66a92246cae88c837e9117d66f","address":"bcrt1qcmuzx3kr6awkd2fzgm9w3ryr06g304n0sheunk","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q0sglqvqnx7c8x83efj56k9ayg2aga95utl2e8u isvalid=true raw={"scriptPubKey":"00147c11f0301337b0731e394ca9ab17a442ba8e969c","witness_program":"7c11f0301337b0731e394ca9ab17a442ba8e969c","address":"bcrt1q0sglqvqnx7c8x83efj56k9ayg2aga95utl2e8u","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q23hyyrs98zp5n97m82txj0rgx6z6qez85ugn2q isvalid=true raw={"scriptPubKey":"0014546e420e0538834997db3a96693c683685a06447","witness_program":"546e420e0538834997db3a96693c683685a06447","address":"bcrt1q23hyyrs98zp5n97m82txj0rgx6z6qez85ugn2q","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qyr95cv49nz0cwelr9vlwky5qye6ksswgfrxw5e isvalid=true raw={"scriptPubKey":"001420cb4c32a5989f8767e32b3eeb128026756841c8","witness_program":"20cb4c32a5989f8767e32b3eeb128026756841c8","address":"bcrt1qyr95cv49nz0cwelr9vlwky5qye6ksswgfrxw5e","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qu5z5kjrsjkxcxhrcql5ezrtms5tcjf2prhjuy3 isvalid=true raw={"scriptPubKey":"0014e5054b4870958d835c7807e9910d7b8517892541","witness_program":"e5054b4870958d835c7807e9910d7b8517892541","address":"bcrt1qu5z5kjrsjkxcxhrcql5ezrtms5tcjf2prhjuy3","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qq5z0f2sl8s5zvt8cswfzp8fzhdedz379qfhu56 isvalid=true raw={"scriptPubKey":"00140504f4aa1f3c28262cf88392209d22bb72d147c5","witness_program":"0504f4aa1f3c28262cf88392209d22bb72d147c5","address":"bcrt1qq5z0f2sl8s5zvt8cswfzp8fzhdedz379qfhu56","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qdj6j5pgxkn4qyhu4de0x3wuz7wtngesy5ddjzd isvalid=true raw={"scriptPubKey":"00146cb52a0506b4ea025f956e5e68bb82f397346604","witness_program":"6cb52a0506b4ea025f956e5e68bb82f397346604","address":"bcrt1qdj6j5pgxkn4qyhu4de0x3wuz7wtngesy5ddjzd","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs isvalid=true raw={"scriptPubKey":"001460b6103bf7cc9048e5b5008b4ba8963f67909cc0","witness_program":"60b6103bf7cc9048e5b5008b4ba8963f67909cc0","address":"bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq isvalid=true raw={"scriptPubKey":"00149691ba203337f36cdd3fcd14360caca1dc96baf3","witness_program":"9691ba203337f36cdd3fcd14360caca1dc96baf3","address":"bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qys7qpwcetdxwt225k3kyqp093st3rmtr29xrha isvalid=true raw={"scriptPubKey":"0014243c00bb195b4ce5a954b46c4005e58c1711ed63","witness_program":"243c00bb195b4ce5a954b46c4005e58c1711ed63","address":"bcrt1qys7qpwcetdxwt225k3kyqp093st3rmtr29xrha","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qcd0z38s0kqq5a2vfzajkewe8cp0gnvs424txc8 isvalid=true raw={"scriptPubKey":"0014c35e289e0fb0014ea98917656cbb27c05e89b215","witness_program":"c35e289e0fb0014ea98917656cbb27c05e89b215","address":"bcrt1qcd0z38s0kqq5a2vfzajkewe8cp0gnvs424txc8","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qlq4fnjjud43wa47en9hlc6mv7nf7e97cdwcedd isvalid=true raw={"scriptPubKey":"0014f82a99ca5c6d62eed7d9996ffc6b6cf4d3ec97d8","witness_program":"f82a99ca5c6d62eed7d9996ffc6b6cf4d3ec97d8","address":"bcrt1qlq4fnjjud43wa47en9hlc6mv7nf7e97cdwcedd","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q8uh20k3ukkkua0ygzg8dp2ghj6xnt6fcy8sldr isvalid=true raw={"scriptPubKey":"00143f2ea7da3cb5adcebc88120ed0a917968d35e938","witness_program":"3f2ea7da3cb5adcebc88120ed0a917968d35e938","address":"bcrt1q8uh20k3ukkkua0ygzg8dp2ghj6xnt6fcy8sldr","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qs4uv564vfuh4enxl4guda3wl6jxz0n3w5rhn3t isvalid=true raw={"scriptPubKey":"00148578ca6aac4f2f5cccdfaa38dec5dfd48c27ce2e","witness_program":"8578ca6aac4f2f5cccdfaa38dec5dfd48c27ce2e","address":"bcrt1qs4uv564vfuh4enxl4guda3wl6jxz0n3w5rhn3t","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qge82kw48ruvwm2qle0q34u6xkr7ms8kqkxacl0 isvalid=true raw={"scriptPubKey":"0014464eab3aa71f18eda81fcbc11af346b0fdb81ec0","witness_program":"464eab3aa71f18eda81fcbc11af346b0fdb81ec0","address":"bcrt1qge82kw48ruvwm2qle0q34u6xkr7ms8kqkxacl0","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q2smz6qx6pr5tj6f80w79ru0m0vrwcec2dtmqmw isvalid=true raw={"scriptPubKey":"001454362d00da08e8b969277bbc51f1fb7b06ec670a","witness_program":"54362d00da08e8b969277bbc51f1fb7b06ec670a","address":"bcrt1q2smz6qx6pr5tj6f80w79ru0m0vrwcec2dtmqmw","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q2jtyuchp4sh27zthpz3tgn5km2ymlcm6had06p isvalid=true raw={"scriptPubKey":"001454964e62e1ac2eaf097708a2b44e96da89bfe37a","witness_program":"54964e62e1ac2eaf097708a2b44e96da89bfe37a","address":"bcrt1q2jtyuchp4sh27zthpz3tgn5km2ymlcm6had06p","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[2026-06-03 20:51:53.714] [INFO ] [[Database] New connection created for thread={}] main
+[2026-06-03 20:51:53.763] [INFO ] [ChainIndexer                  ] [ChainIndexer] Local tip: 224  Core tip: 224
+[2026-06-03 20:51:53.764] [INFO ] [ChainIndexer                  ] [ChainIndexer] Already at tip   nothing to sync
+[2026-06-03 20:51:53.769] [INFO ] [[Database] Connection released for thread={}] main
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Mine blocks (regtest)
+5)  Merchant: receive payment
+6)  Merchant: receive payment (API/custom capacity)
+7)  Sync UTXOs now
+8)  Sync chain now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: [2026-06-03 20:51:53.772] [INFO ] [ApisServer                    ] [ApisServer] HTTP API server started on port 9080
+8
+[2026-06-03 20:52:04.157] [INFO ] [BTCHDWallet                   ] Controller (NODEMHDWallet): Both Syncers are free. I will assign a task to a Syncer.
+[2026-06-03 20:52:04.158] [INFO ] [SharedMonitor                 ] Controller (NODEMHDWallet): Assigning task to Syncer. Id = 2 
+[2026-06-03 20:52:04.159] [INFO ] [ChainIndexer                  ] ChainIndexer: Executing task...
+[2026-06-03 20:52:04.163] [INFO ] [[Database] New connection created for thread={}] chainIndexer
+[2026-06-03 20:52:04.219] [INFO ] [ReorgDetector                 ] [ReorgDetector] ourTip=224:594350e332 coreTip=594350e332756253613a522d9acecce764e4650dcf046cd6a8c8fcb19898a268
+[2026-06-03 20:52:04.219] [INFO ] [ReorgDetector                 ] [ReorgDetector] Tips agree   no reorg
+[2026-06-03 20:52:04.223] [INFO ] [[Database] Connection released for thread={}] chainIndexer
+[2026-06-03 20:52:04.227] [INFO ] [[Database] New connection created for thread={}] chainIndexer
+[2026-06-03 20:52:04.275] [INFO ] [[Database] Connection released for thread={}] chainIndexer
+[2026-06-03 20:52:04.276] [INFO ] [ChainIndexer                  ] ChainIndexer: Task finished.
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Mine blocks (regtest)
+5)  Merchant: receive payment
+6)  Merchant: receive payment (API/custom capacity)
+7)  Sync UTXOs now
+8)  Sync chain now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 8
+[2026-06-03 20:52:20.671] [INFO ] [BTCHDWallet                   ] Controller (NODEMHDWallet): Both Syncers are free. I will assign a task to a Syncer.
+[2026-06-03 20:52:20.672] [INFO ] [SharedMonitor                 ] Controller (NODEMHDWallet): Assigning task to Syncer. Id = 2 
+[2026-06-03 20:52:20.672] [INFO ] [ChainIndexer                  ] ChainIndexer: Executing task...
+[2026-06-03 20:52:20.678] [INFO ] [[Database] New connection created for thread={}] chainIndexer
+[2026-06-03 20:52:20.724] [INFO ] [ReorgDetector                 ] [ReorgDetector] ourTip=224:594350e332 coreTip=594350e332756253613a522d9acecce764e4650dcf046cd6a8c8fcb19898a268
+[2026-06-03 20:52:20.724] [INFO ] [ReorgDetector                 ] [ReorgDetector] Tips agree   no reorg
+[2026-06-03 20:52:20.726] [INFO ] [[Database] Connection released for thread={}] chainIndexer
+[2026-06-03 20:52:20.729] [INFO ] [[Database] New connection created for thread={}] chainIndexer
+[2026-06-03 20:52:20.777] [INFO ] [[Database] Connection released for thread={}] chainIndexer
+[2026-06-03 20:52:20.777] [INFO ] [ChainIndexer                  ] ChainIndexer: Task finished.
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Mine blocks (regtest)
+5)  Merchant: receive payment
+6)  Merchant: receive payment (API/custom capacity)
+7)  Sync UTXOs now
+8)  Sync chain now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 4
+How many blocks to mine? [1]: 2
+Mining 2 block(s) on regtest...
+[2026-06-03 20:52:45.946] [INFO ] [HdAddressManager              ] [HdAddressManager => getNextMiningAddress()] countUsedKeys=5, LOOKAHEAD=5
+[2026-06-03 20:52:45.992] [INFO ] [[Controller => mineBlocks] miningAddress: {}] bcrt1qq5z0f2sl8s5zvt8cswfzp8fzhdedz379qfhu56
+Mined blocks:
+  4da84e2030cd304e1b326abfb876eab8a0661a63f72aea0aea6768bae5783f29
+  53a8e243cb3a1e44491b41a5d6638db0215b6539810fcc420dc1f7c79061d15f
+Tip height is now (via Core): 226
+Current block height: 226
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Mine blocks (regtest)
+5)  Merchant: receive payment
+6)  Merchant: receive payment (API/custom capacity)
+7)  Sync UTXOs now
+8)  Sync chain now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 7
+[2026-06-03 20:53:34.662] [INFO ] [BTCHDWallet                   ] Controller (NODEMHDWallet): Both Syncers are free. I will assign a task to a Syncer.
+[2026-06-03 20:53:34.662] [INFO ] [SharedMonitor                 ] Controller (NODEMHDWallet): Assigning task to Syncer. Id = 1 
+[2026-06-03 20:53:34.663] [INFO ] [UtxoSyncManager               ] UtxoSyncManager: Executing task...
+[2026-06-03 20:53:34.668] [INFO ] [[Database] New connection created for thread={}] UtxoSyncManager
+[2026-06-03 20:53:34.668] [INFO ] [UtxoSyncManager               ] [Sync] Resuming from height=224
+[2026-06-03 20:53:34.678] [INFO ] [UtxoSyncManager               ] Sync decision: lastHeight=224, tip=226, gap=2
+[2026-06-03 20:53:34.678] [INFO ] [UtxoSyncManager               ] Starting UTXO sync...
+[2026-06-03 20:53:34.728] [INFO ] [UtxoSyncManager               ] Blocks advanced by 2 (from 224 to 226)
+
+############################### Utxo Summary ###################################
+=== UTXO Summary ===
+Total Balance      : 6299.99985160 BTC
+Spendable Balance  : 6299.99985160 BTC
+Immature Balance   : 0.00000000 BTC
+
+Total UTXOs        : 129
+Spendable UTXOs    : 129
+
+Largest UTXO       : 99.18987980 BTC
+Smallest UTXO      : 0.08997180 BTC
+Average UTXO       : 48.83720815 BTC
+
+Dust UTXOs         : 0
+
+##################################################################################
+[2026-06-03 20:53:34.940] [INFO ] [[Database] Connection released for thread={}] UtxoSyncManager
+[2026-06-03 20:53:34.940] [INFO ] [UtxoSyncManager               ] UTXO sync completed in 262 ms: 129 UTXOs, 629999985160 sat total, 0 updated
+[2026-06-03 20:53:34.940] [INFO ] [UtxoSyncManager               ] [UtxoScheduler] Sync complete: height=226 utxos=129 sat=629999985160 updated=0
+[2026-06-03 20:53:34.940] [INFO ] [UtxoSyncManager               ] UtxoSyncManager: Task finished.
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Mine blocks (regtest)
+5)  Merchant: receive payment
+6)  Merchant: receive payment (API/custom capacity)
+7)  Sync UTXOs now
+8)  Sync chain now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 8
+[2026-06-03 20:53:38.789] [INFO ] [BTCHDWallet                   ] Controller (NODEMHDWallet): Both Syncers are free. I will assign a task to a Syncer.
+[2026-06-03 20:53:38.789] [INFO ] [SharedMonitor                 ] Controller (NODEMHDWallet): Assigning task to Syncer. Id = 2 
+[2026-06-03 20:53:38.790] [INFO ] [ChainIndexer                  ] ChainIndexer: Executing task...
+[2026-06-03 20:53:38.795] [INFO ] [[Database] New connection created for thread={}] chainIndexer
+[2026-06-03 20:53:38.840] [INFO ] [ReorgDetector                 ] [ReorgDetector] ourTip=224:594350e332 coreTip=53a8e243cb3a1e44491b41a5d6638db0215b6539810fcc420dc1f7c79061d15f
+[2026-06-03 20:53:38.841] [INFO ] [ReorgDetector                 ] [ReorgDetector] Tip mismatch! our=224:594350e332 core=53a8e243cb3a1e44491b41a5d6638db0215b6539810fcc420dc1f7c79061d15f
+[2026-06-03 20:53:38.939] [INFO ] [ReorgDetector                 ] [ReorgDetector] Scanning height=224 core=594350e33275 ours=594350e33275
+[2026-06-03 20:53:38.945] [WARN ] [ReorgDetector                 ] [ReorgDetector] Fork point found at height=224
+[2026-06-03 20:53:38.946] [INFO ] [ReorgDetector                 ] [ReorgDetector] Fork at height=224   rolling back 0 block(s)
+[2026-06-03 20:53:38.948] [INFO ] [ReorgDetector                 ] [ReorgDetector] getTxidsAboveHeight(224) ? 0 txids
+[2026-06-03 20:53:38.949] [INFO ] [ReorgDetector                 ] [ReorgDetector] Orphaned txids: 0
+[2026-06-03 20:53:38.950] [INFO ] [ReorgDetector                 ] [ReorgDetector] No orphaned txids   nothing to unspend
+[2026-06-03 20:53:38.951] [INFO ] [ReorgDetector                 ] [ReorgDetector] deleteUtxosCreatedAboveHeight(224): deleted 0 row(s)
+[2026-06-03 20:53:38.951] [INFO ] [ReorgDetector                 ] [ReorgDetector] deleteTransactionsAboveHeight(224): deleted 0 row(s)
+[2026-06-03 20:53:38.952] [INFO ] [ReorgDetector                 ] [ReorgDetector] deleteBlocksAboveHeight(224): deleted 0 block(s) (cascade applied)
+[2026-06-03 20:53:38.952] [INFO ] [ReorgDetector                 ] [ReorgDetector] updateChainTip ? height=224 hash=594350e33275
+[2026-06-03 20:53:38.953] [INFO ] [ReorgDetector                 ] [ReorgDetector] chain_tip ? height=224 hash=594350e33275
+[2026-06-03 20:53:38.953] [INFO ] [ReorgDetector                 ] [ReorgDetector] Rollback complete: removed 0 orphaned txids
+[2026-06-03 20:53:38.967] [INFO ] [[Database] Connection released for thread={}] chainIndexer
+[2026-06-03 20:53:38.971] [INFO ] [[Database] New connection created for thread={}] chainIndexer
+[2026-06-03 20:53:39.019] [INFO ] [ChainIndexer                  ] [ChainIndexer] Applying 2 new block(s) (225 ? 226)
+[2026-06-03 20:53:39.141] [INFO ] [ChainIndexer                  ] [ChainIndexer] chain_tip ? height=225 hash=4da84e2030cd
+[2026-06-03 20:53:39.141] [INFO ] [ChainIndexer                  ] [ChainIndexer] Block 225 committed (1 txs)
+[2026-06-03 20:53:39.234] [INFO ] [ChainIndexer                  ] [ChainIndexer] chain_tip ? height=226 hash=53a8e243cb3a
+[2026-06-03 20:53:39.235] [INFO ] [ChainIndexer                  ] [ChainIndexer] Block 226 committed (1 txs)
+[2026-06-03 20:53:39.254] [INFO ] [[Database] Connection released for thread={}] chainIndexer
+[2026-06-03 20:53:39.254] [INFO ] [ChainIndexer                  ] ChainIndexer: Task finished.
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Mine blocks (regtest)
+5)  Merchant: receive payment
+6)  Merchant: receive payment (API/custom capacity)
+7)  Sync UTXOs now
+8)  Sync chain now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 9
+--- Consolidate Change UTXOs ---
+[2026-06-03 20:53:50.776] [INFO ] [OwnSigner                     ] [consolidate] ?? Starting Change Consolidation ??????
+[2026-06-03 20:53:50.782] [INFO ] [OwnSigner                     ] [consolidate] Checking 7 used change address(es)...
+[2026-06-03 20:53:50.832] [INFO ] [OwnSigner                     ] [consolidate] Found 2 change UTXO(s) totalling 99.2798516 BTC
+[2026-06-03 20:53:50.833] [INFO ] [OwnSigner                     ] [consolidate] ?? Change UTXO Report ?????????????
+[2026-06-03 20:53:50.833] [INFO ] [OwnSigner                     ] [consolidate]   addr=bcrt1qge82kw48ruvwm2qle0q34u6xkr7ms8kqkxacl0 txid=d6ae61b8...:0 amount=99.1898798 BTC confs=14
+[2026-06-03 20:53:50.833] [INFO ] [OwnSigner                     ] [consolidate]   addr=bcrt1qs4uv564vfuh4enxl4guda3wl6jxz0n3w5rhn3t txid=816b1bee...:0 amount=0.0899718 BTC confs=15
+[2026-06-03 20:53:50.833] [INFO ] [OwnSigner                     ] [consolidate]   ?????????????????????????????????
+[2026-06-03 20:53:50.833] [INFO ] [OwnSigner                     ] [consolidate]   Total: 99.2798516 BTC across 2 UTXO(s)
+[2026-06-03 20:53:50.833] [INFO ] [OwnSigner                     ] [consolidate] ?????????????????????????????????????
+[2026-06-03 20:53:50.887] [WARN ] [[consolidate] {} already solvable ?] bcrt1qge82kw48ruvwm2qle0q34u6xkr7ms8kqkxacl0
+[2026-06-03 20:53:50.935] [WARN ] [[consolidate] {} already solvable ?] bcrt1qs4uv564vfuh4enxl4guda3wl6jxz0n3w5rhn3t
+[2026-06-03 20:53:50.935] [INFO ] [[consolidate] Consolidation target address: {}] bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6
+[2026-06-03 20:53:50.936] [INFO ] [OwnSigner                     ] [consolidate] Estimated vbytes=177 minFee=0.00003540 BTC (2x buffer) totalInput=99.2798516 BTC
+[2026-06-03 20:53:50.936] [INFO ] [OwnSigner                     ] [consolidate] Creating consolidation PSBT...
+[2026-06-03 20:53:51.009] [INFO ] [OwnSigner                     ] [consolidate] PSBT created. actualFee=0.00003559999999999999796551630737440063967369496822357177734375 BTC actualOutput=99.27981600 BTC
+[2026-06-03 20:53:51.059] [INFO ] [OwnSigner                     ] [consolidate] PSBT outputs:
+[2026-06-03 20:53:51.059] [INFO ] [OwnSigner                     ] [consolidate]   vout=0 addr=bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6 amount=99.279816 BTC
+[2026-06-03 20:53:51.060] [INFO ] [OwnSigner                     ] [consolidate] Signing 2 input(s)...
+[2026-06-03 20:53:51.061] [INFO ] [[consolidate] Signing with fingerprint={}] 98667b10
+[2026-06-03 20:53:51.062] [INFO ] [OwnSigner                     ] [consolidate] Using manual HD signing (watch-only wallet has no private keys).
+[2026-06-03 20:53:51.112] [INFO ] [OwnSigner                     ] [consolidate] Input 0 path=m/84h/1h/0h/1/28 masterFp=98667b10
+[2026-06-03 20:53:51.131] [INFO ] [OwnSigner                     ] [consolidate] Input 0 signed. sig=3045022100...
+[2026-06-03 20:53:51.132] [INFO ] [OwnSigner                     ] [consolidate] Input 1 path=m/84h/1h/0h/1/27 masterFp=98667b10
+[2026-06-03 20:53:51.138] [INFO ] [OwnSigner                     ] [consolidate] Input 1 signed. sig=3045022100...
+[2026-06-03 20:53:51.138] [INFO ] [OwnSigner                     ] [consolidate] Manual signing complete.
+[2026-06-03 20:53:51.284] [INFO ] [[consolidate] ? Consolidation broadcasted! txid={}] 252881cbdaba415576082b9c8bed51a4d5c0a4683e1c2bef806eac8ac674aebc
+[2026-06-03 20:53:51.284] [INFO ] [OwnSigner                     ] [consolidate] 2 change UTXOs ? 1 spendable UTXO
+[2026-06-03 20:53:51.487] [INFO ] [HdAddressManager              ] [HdAddressManager => importIntoCore] network=REGTEST coinType=1
+[2026-06-03 20:53:51.487] [INFO ] [HdAddressManager              ] [HdAddressManager => importIntoCore] Importing 10 addresses into watch-only wallet...
+[2026-06-03 20:53:51.489] [INFO ] [HdAddressManager              ] [import] Building descriptor for bcrt1qks0vml48guc43va0wtre0eznj70ty8mmqvlk3u: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[2026-06-03 20:53:51.494] [INFO ] [HdAddressManager              ] [import] Building descriptor for bcrt1qk4v3r8rg7hc8vhcmf2w8mh6cx560z7ehh6kcqz: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[2026-06-03 20:53:51.541] [INFO ] [HdAddressManager              ] [import] Building descriptor for bcrt1qkvaaydar3sxcz7g6lteazmkmu4x3t9dh74eugj: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[2026-06-03 20:53:51.591] [INFO ] [HdAddressManager              ] [import] Building descriptor for bcrt1q3wfucgwlesq6nk5mzwm0t72wr5kfhjn99qqd3c: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[2026-06-03 20:53:51.643] [INFO ] [HdAddressManager              ] [import] Building descriptor for bcrt1qq5kvcnwa9qmdcxqt3eysf9qrpxlydymv0var3f: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[2026-06-03 20:53:51.696] [INFO ] [HdAddressManager              ] [import] Building descriptor for bcrt1q4pu2pccp2v08pj3prvam64etsndga0auc7nfs5: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[2026-06-03 20:53:51.746] [INFO ] [HdAddressManager              ] [import] Building descriptor for bcrt1qt0j46c54x2ww2373pwlkn9qdkrtft9c0vcem3w: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[2026-06-03 20:53:51.794] [INFO ] [HdAddressManager              ] [import] Building descriptor for bcrt1qrezur6xtzpvevxv3aapkamnlt2xjleurcr63e7: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[2026-06-03 20:53:51.842] [INFO ] [HdAddressManager              ] [import] Building descriptor for bcrt1qq8ta5dqj6r70cevfgus898d540yl7tpzdn9dw6: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[2026-06-03 20:53:51.889] [INFO ] [HdAddressManager              ] [import] Building descriptor for bcrt1qlahmzqsjfg3kk64v7uehjmq0z395ehf32ajp09: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[2026-06-03 20:53:56.230] [INFO ] [HdAddressManager              ] [HdAddressManager] Import complete: 10 success 0 failed
+[2026-06-03 20:53:56.233] [INFO ] [HdAddressManager              ] [HdAddressManager => getNextMiningAddress()] countUsedKeys=14, LOOKAHEAD=5
+[2026-06-03 20:53:56.255] [INFO ] [OwnSigner                     ] [consolidate] Mined 1 block to confirm.
+[2026-06-03 20:53:56.258] [INFO ] [HdAddressManager              ] [HdAddressManager] Lookahead check: unused receive=13 threshold=5
+[2026-06-03 20:53:56.260] [INFO ] [HdAddressManager              ] [HdAddressManager] Lookahead OK: receive=13
+? Consolidation complete!
+txid: 252881cbdaba415576082b9c8bed51a4d5c0a4683e1c2bef806eac8ac674aebc
+Your change UTXOs have been merged into one spendable UTXO.
+Verify with:
+  bitcoin-cli -regtest getrawtransaction 252881cbdaba415576082b9c8bed51a4d5c0a4683e1c2bef806eac8ac674aebc 1
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Mine blocks (regtest)
+5)  Merchant: receive payment
+6)  Merchant: receive payment (API/custom capacity)
+7)  Sync UTXOs now
+8)  Sync chain now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 5
+[2026-06-03 20:54:09.449] [INFO ] [BTCHDWallet                   ] [App] Starting merchant payment flow at height=227
+??????????????????????????????????????????????????
+ [2026-06-03 20:54:09.450] ?? Brade   receivePaymentForGoods ??
+??????????????????????????????????????????????????
+[2026-06-03 20:54:09.450] [INFO ] [NetworkManagerImpl            ] [NetworkManager] Waiting for customer LN pubkey...
