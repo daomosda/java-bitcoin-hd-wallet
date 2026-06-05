@@ -2,7 +2,6 @@
 
 mkdir -p /home/<USER_HOME>/.bitcoinlike/bitcoin/regtest
 nano /home/<USER_HOME>/.bitcoinlike/bitcoin/regtest/bitcoin.conf
-
 ```
 [regtest]
 regtest=1
@@ -12,6 +11,7 @@ rpcuser=<your-rpc-user>
 rpcpassword=<your-rpc-password>
 rpcallowip=127.0.0.1
 rpcport=18443
+
 txindex=1
 descriptors=1
 fallbackfee=0.0002
