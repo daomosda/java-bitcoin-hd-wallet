@@ -8,8 +8,8 @@ nano /home/conaldes/.bitcoinlike/bitcoin/regtest/bitcoin.conf
 regtest=1
 datadir=/home/conaldes/.bitcoinlike/bitcoin
 server=1
-rpcuser=olamosda
-rpcpassword=cona.btc-Dao_5MoS7
+rpcuser=your_user_name
+rpcpassword=your_password
 rpcallowip=127.0.0.1
 rpcport=18443
 
