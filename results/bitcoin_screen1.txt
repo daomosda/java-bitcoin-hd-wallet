@@ -1,58 +1,55 @@
-conaldes@daomosda:~$ bitcoin-cli -regtest -rpcuser=olamosda -rpcpassword=cona.btc-Dao_5MoS7 getrawtransaction 252881cbda
-ba415576082b9c8bed51a4d5c0a4683e1c2bef806eac8ac674aebc 1
+conaldes@daomosda:~$ bitcoin-cli -regtest -rpcuser=olamosda -rpcpassword=cona.btc-Dao_5MoS7 getrawtransaction 4f15cff6102e2f0860bb9c2f52a5df69aa4ad4a923c75492f1abadda1037e039 1
 {
-  "txid": "252881cbdaba415576082b9c8bed51a4d5c0a4683e1c2bef806eac8ac674aebc",
-  "hash": "dad90d6715d6f11f5a5f516c3731bfadbb2f3c463cd4b30ff1d300f9b45d4e5c",
+  "txid": "4f15cff6102e2f0860bb9c2f52a5df69aa4ad4a923c75492f1abadda1037e039",
+  "hash": "230feb418ae45f825c8a0b7fc21b3c50adb670e2384b74db544bd60e5be57a23",
   "version": 2,
-  "size": 341,
-  "vsize": 178,
-  "weight": 710,
+  "size": 222,
+  "vsize": 141,
+  "weight": 561,
   "locktime": 0,
   "vin": [
     {
-      "txid": "d6ae61b8415f61857e0dfde177d020fe5d58e70a8a87fdc160db6952e34c9e6d",
+      "txid": "987aec52f4e4f917d7d83a0ca829988b827166fb146d1cb4f9c408cff79a6b2b",
       "vout": 0,
       "scriptSig": {
         "asm": "",
         "hex": ""
       },
       "txinwitness": [
-        "3045022100a9971ff551ab6ddc47cd9ee0af3036ca455d04550c0fb8e32d979a34052bbd93022002230602fbb333ce2caabc3460e5b54de36a95c5048f300267b923e336761a9f01",
-        "0276197c7cdcb85020cf599f853199894f24cfef4ad8e4ed50aa6ee1d7877c4737"
-      ],
-      "sequence": 4294967293
-    },
-    {
-      "txid": "816b1bee7a3f1b26182661512fbcd37422e78be1af3e93ee5e32aede9479555e",
-      "vout": 0,
-      "scriptSig": {
-        "asm": "",
-        "hex": ""
-      },
-      "txinwitness": [
-        "3045022100d1f0f41a272804cc5cc28bb9d0aec7a5ab0e27ffba498bd05b3549c14792520e022036fa33e0f5fddd8d63797729e35d097c9513c50ec40fff9bcf00094b006fed6a01",
-        "02bc1ec2eaea9793697c8c90527fc63669527a2111acfd8069f1b4b5cb8997adc2"
+        "3044022049124d7cb7eefd32ca84fd8f6bfcf9da161f24b7b52ed97852ec7c3820777d8d0220335587920429ae253e956ea6bb9eb49fad114206b08e98a3029e234d24decf8801",
+        "028f44efe3e2cc0bf1e3aff7307d47ca11497fda1880a287ed22f128a7609d4c0c"
       ],
       "sequence": 4294967293
     }
   ],
   "vout": [
     {
-      "value": 99.27981600,
+      "value": 49.69997180,
       "n": 0,
       "scriptPubKey": {
-        "asm": "0 1e602d9b103dbff08bb08bda38dd85aac5d5ff45",
-        "desc": "addr(bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6)#e3mhxwdy",
-        "hex": "00141e602d9b103dbff08bb08bda38dd85aac5d5ff45",
-        "address": "bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6",
+        "asm": "0 aa00439788c1dae440a170f621e1ea9f102ad7c4",
+        "desc": "addr(bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w)#efwdvv40",
+        "hex": "0014aa00439788c1dae440a170f621e1ea9f102ad7c4",
+        "address": "bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w",
+        "type": "witness_v0_keyhash"
+      }
+    },
+    {
+      "value": 0.30000000,
+      "n": 1,
+      "scriptPubKey": {
+        "asm": "0 e296ecdbda991c19f9466e8af28065b3bd82a1c2",
+        "desc": "addr(bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje)#29dskjsj",
+        "hex": "0014e296ecdbda991c19f9466e8af28065b3bd82a1c2",
+        "address": "bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje",
         "type": "witness_v0_keyhash"
       }
     }
   ],
-  "hex": "020000000001026d9e4ce35269db60c1fd878a0ae7585dfe20d077e1fd0d7e85615f41b861aed60000000000fdffffff5e557994deae325eee933eafe18be72274d3bc2f51612618261b3f7aee1b6b810000000000fdffffff0120fac04f020000001600141e602d9b103dbff08bb08bda38dd85aac5d5ff4502483045022100a9971ff551ab6ddc47cd9ee0af3036ca455d04550c0fb8e32d979a34052bbd93022002230602fbb333ce2caabc3460e5b54de36a95c5048f300267b923e336761a9f01210276197c7cdcb85020cf599f853199894f24cfef4ad8e4ed50aa6ee1d7877c473702483045022100d1f0f41a272804cc5cc28bb9d0aec7a5ab0e27ffba498bd05b3549c14792520e022036fa33e0f5fddd8d63797729e35d097c9513c50ec40fff9bcf00094b006fed6a012102bc1ec2eaea9793697c8c90527fc63669527a2111acfd8069f1b4b5cb8997adc200000000",
-  "blockhash": "321a0837b61b2e51006ab189d950cdf9f499e26c9a49e88cb6e64f863bdafa50",
-  "confirmations": 1,
-  "time": 1780516436,
-  "blocktime": 1780516436
+  "hex": "020000000001012b6b9af7cf08c4f9b41c6d14fb6671828b9829a80c3ad8d717f9e4f452ec7a980000000000fdffffff027c233c2801000000160014aa00439788c1dae440a170f621e1ea9f102ad7c480c3c90100000000160014e296ecdbda991c19f9466e8af28065b3bd82a1c202473044022049124d7cb7eefd32ca84fd8f6bfcf9da161f24b7b52ed97852ec7c3820777d8d0220335587920429ae253e956ea6bb9eb49fad114206b08e98a3029e234d24decf880121028f44efe3e2cc0bf1e3aff7307d47ca11497fda1880a287ed22f128a7609d4c0c00000000",
+  "blockhash": "0e8b47a5f61a1601cf98e4f74366a07b2f29975d958f8247b9dc6c52bc8cdb4c",
+  "confirmations": 17,
+  "time": 1780763045,
+  "blocktime": 1780763045
 }
 conaldes@daomosda:~$

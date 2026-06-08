@@ -31,5 +31,3 @@ bitcoin-cli -regtest -datadir=/home/<USER_HOME>/.bitcoinlike/bitcoin getblockcha
 # Stop bitcoind in regtest
 
 bitcoin-cli -regtest -conf=/home/<USER_HOME>/.bitcoinlike/bitcoin/regtest/bitcoin.conf stop
-
-
