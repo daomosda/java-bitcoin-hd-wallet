@@ -36,7 +36,7 @@ nano ~/.bitcoinlike/bitcoin/regtest/bitcoin.conf
 ```ini
 [regtest]
 regtest=1
-datadir=/home/<your-username>/.bitcoinlike/bitcoin
+datadir=/home/<USER_HOME>/.bitcoinlike/bitcoin
 server=1
 rpcuser=<your-rpc-user>
 rpcpassword=<your-rpc-password>
