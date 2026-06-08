@@ -1,12 +1,12 @@
 # Regtest Setup Guide
 
-mkdir -p /home/conaldes/.bitcoinlike/bitcoin/regtest
-nano /home/conaldes/.bitcoinlike/bitcoin/regtest/bitcoin.conf
+mkdir -p /home/USER_HOME/.bitcoinlike/bitcoin/regtest
+nano /home/USER_HOME/.bitcoinlike/bitcoin/regtest/bitcoin.conf
 
 ```
 [regtest]
 regtest=1
-datadir=/home/conaldes/.bitcoinlike/bitcoin
+datadir=/home/USER_HOME/.bitcoinlike/bitcoin
 server=1
 rpcuser=your_user_name
 rpcpassword=your_password
@@ -23,14 +23,14 @@ fallbackfee=0.0002
 ```bash
 # Start bitcoind in regtest
 
-bitcoind -regtest -daemon -conf=/home/conaldes/.bitcoinlike/bitcoin/regtest/bitcoin.conf
+bitcoind -regtest -daemon -conf=/home/USER_HOME/.bitcoinlike/bitcoin/regtest/bitcoin.conf
 
 # Verify
 
-bitcoin-cli -regtest -datadir=/home/conaldes/.bitcoinlike/bitcoin getblockchaininfo
+bitcoin-cli -regtest -datadir=/home/USER_HOME/.bitcoinlike/bitcoin getblockchaininfo
 ```
 # Stop bitcoind in regtest
 
-bitcoin-cli -regtest -conf=/home/conaldes/.bitcoinlike/bitcoin/regtest/bitcoin.conf stop
+bitcoin-cli -regtest -conf=/home/USER_HOME/.bitcoinlike/bitcoin/regtest/bitcoin.conf stop
 
 
