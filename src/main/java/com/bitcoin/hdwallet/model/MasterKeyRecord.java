@@ -4,7 +4,7 @@ import java.util.Objects;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public class MasterKeyRecord {

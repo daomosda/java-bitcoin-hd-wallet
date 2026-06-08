@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public final class UtxoSet {

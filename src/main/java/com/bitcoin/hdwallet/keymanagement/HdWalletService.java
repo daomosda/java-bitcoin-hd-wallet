@@ -18,7 +18,7 @@ import java.util.Arrays;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public final class HdWalletService {

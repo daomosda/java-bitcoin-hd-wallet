@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.core;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 import com.bitcoin.hdwallet.chaindata.BlockData;

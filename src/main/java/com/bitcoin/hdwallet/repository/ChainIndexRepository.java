@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.repository;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 import com.bitcoin.hdwallet.chaindata.StoredBlock;

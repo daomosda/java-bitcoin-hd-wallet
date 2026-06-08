@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public class UtxoAnalyzer {

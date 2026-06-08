@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.lightningnetwork;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public final class IdGenerator {

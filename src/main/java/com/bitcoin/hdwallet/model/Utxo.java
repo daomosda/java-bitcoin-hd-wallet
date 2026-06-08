@@ -3,7 +3,7 @@ package com.bitcoin.hdwallet.model;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 

@@ -5,7 +5,7 @@ import java.security.NoSuchAlgorithmException;
 import java.util.Arrays;
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 // Base58.java

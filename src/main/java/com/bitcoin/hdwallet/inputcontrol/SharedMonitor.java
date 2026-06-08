@@ -4,7 +4,7 @@ import com.bitcoin.hdwallet.core.AppLogger;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public class SharedMonitor {

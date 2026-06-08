@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.crypto;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 import com.bitcoin.hdwallet.chainindexing.KeyPair;

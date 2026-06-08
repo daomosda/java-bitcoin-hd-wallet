@@ -11,7 +11,7 @@ import com.bitcoin.hdwallet.lightningnetwork.PaymentException;
 import java.util.Scanner;
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 // BitcoinWalletApp.java — integrate payment handlers

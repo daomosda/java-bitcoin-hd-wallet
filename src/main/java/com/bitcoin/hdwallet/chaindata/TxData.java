@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.chaindata;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 // ── TxData.java ──────────────────────────────────────────────────────

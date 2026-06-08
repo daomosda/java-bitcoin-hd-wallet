@@ -7,7 +7,7 @@ import org.bouncycastle.jce.provider.BouncyCastleProvider;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 // Script.java — add SegWit script types

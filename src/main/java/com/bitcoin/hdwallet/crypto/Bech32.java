@@ -7,7 +7,7 @@ import java.util.Locale;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 // Bech32.java

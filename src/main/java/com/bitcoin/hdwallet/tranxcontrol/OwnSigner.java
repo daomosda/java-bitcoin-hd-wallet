@@ -42,7 +42,7 @@ import org.json.JSONObject;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 public class OwnSigner {
     
@@ -97,7 +97,7 @@ public class OwnSigner {
         AppLogger.info("[sendCoins] changeAddress={}", changeAddress);
         AppLogger.info("[sendCoins] amount={}", amountBtc);
               
-        JSONObject res = (JSONObject) walletRpc.executeRpc(
+        JSONObject res = (JSONObject) BitcoinRpcClient.executeRpc(
                 "walletcreatefundedpsbt",
                 /* inputs */ new JSONArray(),   // let Core choose UTXOs
                 /* outputs */ new JSONObject().put(destinationAddress, amountBtc),
@@ -137,7 +137,7 @@ public class OwnSigner {
     public JSONObject decodePsbt(String psbtBase64)
         throws Exception {
 
-        JSONObject decoded = (JSONObject) walletRpc.executeRpc(
+        JSONObject decoded = (JSONObject) BitcoinRpcClient.executeRpc(
             "decodepsbt",
             psbtBase64
         );
@@ -513,7 +513,7 @@ public class OwnSigner {
     public String finalizePsbt(String signedPsbt) throws Exception {
 
         JSONObject result =
-            (JSONObject) walletRpc.executeRpc(
+            (JSONObject) BitcoinRpcClient.executeRpc(
                 "finalizepsbt",
                 signedPsbt,
                 false   // <<< don't extract yet
@@ -542,7 +542,7 @@ public class OwnSigner {
     ) throws Exception {
 
         return (String)
-            walletRpc.executeRpc(
+            BitcoinRpcClient.executeRpc(
                 "sendrawtransaction",
                 txHex
             );
@@ -557,7 +557,7 @@ public class OwnSigner {
     
     // In OwnSigner.sendCoins() — before fundrawtransaction or walletcreatefundedpsbt
     public void verifyUtxoSolvable(String txid, int vout) throws Exception {
-        JSONArray utxos = (JSONArray) walletRpc.executeRpc(
+        JSONArray utxos = (JSONArray) BitcoinRpcClient.executeRpc(
                 "listunspent", 0, 9_999_999,
                 new JSONArray(), true,
                 new JSONObject().put("minimumAmount", 0));
@@ -581,9 +581,32 @@ public class OwnSigner {
         AppLogger.warn("[verify] UTXO not found in listunspent: {}:{}", txid, vout);
     }
     
-    public String sendCoins(String destAddress, BigDecimal amountBtc, String changeAddress) throws Exception {
+    public String sendCoins(String destAddress, BigDecimal amountBtc, 
+            String changeAddress, int targetBlocks) throws Exception {
+        
+        // ── 1. Estimate fee first ─────────────────────────────────────────────
+        BigDecimal estimatedFee = fundingGuard.estimateFee(targetBlocks);
+        AppLogger.info("[sendCoins] estimatedFee={} BTC", estimatedFee);
+
+        // ── 2. ✅ Ensure funded — mines if regtest and underfunded ────────────
+        FundingGuard.FundingResult funding = fundingGuard.ensureFunded(
+                amountBtc, estimatedFee);
+
+        AppLogger.info("[sendCoins] Funding confirmed: {}", funding);
+
+        if (funding.requiredMining()) {
+            AppLogger.warn("[sendCoins] Mined {} block(s) to fund transaction.",
+                    funding.roundsMined());
+        }
+
+        // ── 3. Select UTXOs from confirmed spendable set ──────────────────────
+        List<Utxo> selectedUtxos = coinSelector.select(amountBtc.add(estimatedFee));
+        
+        // ── ✅ Ensure all inputs have solving data before building PSBT ────────
+        ensureInputsHaveSolvingData(selectedUtxos, masterKey, network);
+
         // 1) Create funded PSBT from watch-only wallet
-        JSONObject createRes = (JSONObject) walletRpc.executeRpc(
+        JSONObject createRes = (JSONObject) BitcoinRpcClient.executeRpc(
             "walletcreatefundedpsbt",
             new JSONArray(),
             new JSONObject().put(destAddress, amountBtc.toPlainString()),
@@ -596,7 +619,7 @@ public class OwnSigner {
         String unsignedPsbtBase64 = createRes.getString("psbt");
 
         // 2) Decode once for convenience (what you're already doing)
-        JSONObject decoded = (JSONObject) walletRpc.executeRpc(
+        JSONObject decoded = (JSONObject) BitcoinRpcClient.executeRpc(
             "decodepsbt",
             unsignedPsbtBase64
         );
@@ -606,14 +629,14 @@ public class OwnSigner {
         //System.out.println("[signedPsbtBase64] " + signedPsbtBase64);
 
         // Optional: verify partial_signatures present
-        JSONObject decodedSigned = (JSONObject) walletRpc.executeRpc(
+        JSONObject decodedSigned = (JSONObject) BitcoinRpcClient.executeRpc(
             "decodepsbt",
             signedPsbtBase64
         );
         //System.out.println("[decodepsbt signed] " + decodedSigned.toString(2));
 
         // 4) Finalize and broadcast via Core
-        JSONObject fin = (JSONObject) walletRpc.executeRpc(
+        JSONObject fin = (JSONObject) BitcoinRpcClient.executeRpc(
             "finalizepsbt",
             signedPsbtBase64,
             true // extract
@@ -622,20 +645,7 @@ public class OwnSigner {
             throw new IllegalStateException("PSBT not complete");
         }
         String hex = fin.getString("hex");
-        String txid = (String) walletRpc.executeRpc("sendrawtransaction", hex);
-        System.out.println("Broadcasted txid=" + txid);
-                
-        System.out.println("SUCCESS txid=" + txid);
-        
-        HdAddressManager addrMgr = (HdAddressManager) CachedWalletMnemMap.getObject("addrMgr");
-        // ✅ Mine 1 block to confirm — regtest only
-        if (AppNWKConfig.getInstance().isRegtest()) {
-            String miningAddr = addrMgr.getNextMiningAddress();
-            nodeRpc.executeRpc("generatetoaddress", 1, miningAddr);
-            AppLogger.info("[sendCoins] Mined 1 block to confirm tx.");
-        }
-
-        addrMgr.ensureLookahead();
+        String txid = (String) BitcoinRpcClient.executeRpc("sendrawtransaction", hex);     
         
         return txid;
     }
@@ -643,7 +653,7 @@ public class OwnSigner {
     /*
     public String sendBuiltTransaction(String unsignedPsbtBase64) throws Exception {
         // 2) Decode once for convenience (what you're already doing)
-        JSONObject decoded = (JSONObject) walletRpc.executeRpc(
+        JSONObject decoded = (JSONObject) BitcoinRpcClient.executeRpc(
             "decodepsbt",
             unsignedPsbtBase64
         );
@@ -653,14 +663,14 @@ public class OwnSigner {
         //System.out.println("[signedPsbtBase64] " + signedPsbtBase64);
 
         // Optional: verify partial_signatures present
-        JSONObject decodedSigned = (JSONObject) walletRpc.executeRpc(
+        JSONObject decodedSigned = (JSONObject) BitcoinRpcClient.executeRpc(
             "decodepsbt",
             signedPsbtBase64
         );
         //System.out.println("[decodepsbt signed] " + decodedSigned.toString(2));
 
         // 4) Finalize and broadcast via Core
-        JSONObject fin = (JSONObject) walletRpc.executeRpc(
+        JSONObject fin = (JSONObject) BitcoinRpcClient.executeRpc(
             "finalizepsbt",
             signedPsbtBase64,
             true // extract
@@ -669,7 +679,7 @@ public class OwnSigner {
             throw new IllegalStateException("PSBT not complete");
         }
         String hex = fin.getString("hex");
-        String txid = (String) walletRpc.executeRpc("sendrawtransaction", hex);
+        String txid = (String) BitcoinRpcClient.executeRpc("sendrawtransaction", hex);
         System.out.println("Broadcasted txid=" + txid);
                 
         System.out.println("SUCCESS txid=" + txid);
@@ -719,7 +729,7 @@ public class OwnSigner {
         ensureInputsHaveSolvingData(selectedUtxos, masterKey, network);   
 
         // ── Create funded PSBT ────────────────────────────────────────────────
-        JSONObject createRes = (JSONObject) walletRpc.executeRpc(
+        JSONObject createRes = (JSONObject) BitcoinRpcClient.executeRpc(
                 "walletcreatefundedpsbt",
                 buildInputsArray(selectedUtxos),
                 new JSONObject().put(destAddress, amountBtc.toPlainString()),
@@ -742,7 +752,7 @@ public class OwnSigner {
         String unsignedPsbt = createRes.getString("psbt");
 
         // ── Decode, sign, finalize, broadcast ────────────────────────────────
-        JSONObject decoded      = (JSONObject) walletRpc.executeRpc(
+        JSONObject decoded      = (JSONObject) BitcoinRpcClient.executeRpc(
                 "decodepsbt", unsignedPsbt);
         String     signedPsbt  = signPsbtWithOwnSigner(unsignedPsbt, decoded);
         
@@ -763,27 +773,16 @@ public class OwnSigner {
             AppLogger.warn("[sendCoins] No change output — full amount consumed by fee?");
         }
 
-        JSONObject fin = (JSONObject) walletRpc.executeRpc(
+        JSONObject fin = (JSONObject) BitcoinRpcClient.executeRpc(
                 "finalizepsbt", signedPsbt, true);
 
         if (!fin.getBoolean("complete")) {
             throw new IllegalStateException("PSBT not complete");
         }
 
-        String txid = (String) walletRpc.executeRpc(
+        String txid = (String) BitcoinRpcClient.executeRpc(
                 "sendrawtransaction", fin.getString("hex"));
-
-        AppLogger.info("[sendCoins] ✅ txid={}", txid);
-        
-        HdAddressManager addrMgr = (HdAddressManager) CachedWalletMnemMap.getObject("addrMgr");
-        // ✅ Mine 1 block to confirm — regtest only
-        if (AppNWKConfig.getInstance().isRegtest()) {
-            String miningAddr = addrMgr.getNextMiningAddress();
-            nodeRpc.executeRpc("generatetoaddress", 1, miningAddr);
-            AppLogger.info("[sendCoins] Mined 1 block to confirm tx.");
-        }
-
-        addrMgr.ensureLookahead();
+                
         return txid;
     }
         
@@ -952,7 +951,7 @@ public class OwnSigner {
            String address = utxo.getAddress();
 
            // ── Check current solving status ──────────────────────────────────
-           JSONObject addrInfo = (JSONObject) walletRpc.executeRpc(
+           JSONObject addrInfo = (JSONObject) BitcoinRpcClient.executeRpc(
                    "getaddressinfo", address);
 
            boolean solvable  = addrInfo.optBoolean("solvable", false);
@@ -1012,7 +1011,7 @@ public class OwnSigner {
                    fingerprint, coinType, accountXpub,
                    changeComponent, index);
 
-           JSONObject descInfo  = (JSONObject) walletRpc.executeRpc(
+           JSONObject descInfo  = (JSONObject) BitcoinRpcClient.executeRpc(
                    "getdescriptorinfo", raw);
            String checksummed   = descInfo.getString("descriptor");
 
@@ -1057,7 +1056,7 @@ public class OwnSigner {
 
        // ── Final verification ────────────────────────────────────────────────
        for (Utxo utxo : selectedUtxos) {
-           JSONObject verify   = (JSONObject) walletRpc.executeRpc(
+           JSONObject verify   = (JSONObject) BitcoinRpcClient.executeRpc(
                    "getaddressinfo", utxo.getAddress());
            boolean    solvable = verify.optBoolean("solvable", false);
            String     newDesc  = verify.optString("desc", "");
@@ -1233,7 +1232,7 @@ public class OwnSigner {
         JSONArray addrFilter = new JSONArray();
         usedChangeAddresses.forEach(addrFilter::put);
 
-        JSONArray utxos = (JSONArray) walletRpc.executeRpc(
+        JSONArray utxos = (JSONArray) BitcoinRpcClient.executeRpc(
                 "listunspent",
                 1,           // minconf — confirmed only
                 9_999_999,   // maxconf
@@ -1320,7 +1319,7 @@ public class OwnSigner {
         JSONArray reimportBatch = new JSONArray();
 
         for (Utxo utxo : utxos) {
-            JSONObject info   = (JSONObject) walletRpc.executeRpc(
+            JSONObject info   = (JSONObject) BitcoinRpcClient.executeRpc(
                     "getaddressinfo", utxo.getAddress());
             boolean solvable  = info.optBoolean("solvable", false);
             String  desc      = info.optString("desc", "");
@@ -1348,7 +1347,7 @@ public class OwnSigner {
                     fingerprint, coinType, accountXpub,
                     keyRecord.getKeyIndex());
 
-            String checksummed = (String) ((JSONObject) walletRpc.executeRpc(
+            String checksummed = (String) ((JSONObject) BitcoinRpcClient.executeRpc(
                     "getdescriptorinfo", raw)).getString("descriptor");
 
             reimportBatch.put(new JSONObject()
@@ -1359,7 +1358,7 @@ public class OwnSigner {
         }
 
         if (reimportBatch.length() > 0) {
-            JSONArray results = (JSONArray) walletRpc.executeRpc(
+            JSONArray results = (JSONArray) BitcoinRpcClient.executeRpc(
                     "importdescriptors", reimportBatch);
             for (int i = 0; i < results.length(); i++) {
                 JSONObject r = results.getJSONObject(i);
@@ -1488,7 +1487,7 @@ public class OwnSigner {
         // ── 8. Create PSBT — Core handles fee calculation ─────────────────────
         AppLogger.info("[consolidate] Creating consolidation PSBT...");
         
-        Object raw = walletRpc.executeRpc(
+        Object raw = BitcoinRpcClient.executeRpc(
                 "walletcreatefundedpsbt",
                 inputs,
                 outputs,
@@ -1519,7 +1518,7 @@ public class OwnSigner {
                 actualFee, actualOut);
 
         // ── 9. Log outputs for verification ───────────────────────────────────
-        JSONObject decoded  = (JSONObject) walletRpc.executeRpc(
+        JSONObject decoded  = (JSONObject) BitcoinRpcClient.executeRpc(
                 "decodepsbt", psbt);
         JSONArray  psbtVout = decoded.getJSONObject("tx").getJSONArray("vout");
        
@@ -1568,7 +1567,7 @@ public class OwnSigner {
 
        // ── 12. Broadcast ─────────────────────────────────────────────────────
        String rawHex = fin.getString("hex");
-       String txid   = (String) walletRpc.executeRpc(
+       String txid   = (String) BitcoinRpcClient.executeRpc(
                "sendrawtransaction", rawHex);
 
        AppLogger.info("[consolidate] ✅ Consolidation broadcasted!"
@@ -1611,7 +1610,7 @@ public class OwnSigner {
         AppLogger.info("[consolidate] Using manual HD signing"
                 + " (watch-only wallet has no private keys).");
 
-        JSONObject decoded    = (JSONObject) walletRpc.executeRpc(
+        JSONObject decoded    = (JSONObject) BitcoinRpcClient.executeRpc(
                 "decodepsbt", psbtBase64);
         JSONArray  decodedIns = decoded.getJSONArray("inputs");
 

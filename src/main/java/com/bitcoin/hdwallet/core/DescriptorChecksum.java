@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.core;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 import java.nio.charset.StandardCharsets;

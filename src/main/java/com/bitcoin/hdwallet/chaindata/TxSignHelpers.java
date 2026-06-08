@@ -8,7 +8,7 @@ import java.security.NoSuchAlgorithmException;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 public class TxSignHelpers {
     

@@ -8,7 +8,7 @@ import java.nio.file.Path;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public final class MasterKeyProvider {

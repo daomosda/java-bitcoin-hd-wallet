@@ -19,7 +19,7 @@ import org.json.JSONObject;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 /**

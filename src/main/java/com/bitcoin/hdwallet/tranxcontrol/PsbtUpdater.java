@@ -5,7 +5,7 @@ import java.io.IOException;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public class PsbtUpdater {

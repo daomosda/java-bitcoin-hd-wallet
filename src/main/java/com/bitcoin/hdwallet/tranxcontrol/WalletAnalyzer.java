@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.tranxcontrol;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 import com.bitcoin.hdwallet.core.BitcoinRpcClient;

@@ -3,7 +3,7 @@ package com.bitcoin.hdwallet.chainindexing;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public final class Bytes {

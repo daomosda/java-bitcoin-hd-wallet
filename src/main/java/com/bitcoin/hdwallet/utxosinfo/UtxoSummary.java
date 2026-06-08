@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public class UtxoSummary {

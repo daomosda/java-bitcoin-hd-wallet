@@ -4,7 +4,7 @@ import com.bitcoin.hdwallet.crypto.SegWitAddress.Network;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 import java.io.IOException;

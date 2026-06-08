@@ -5,7 +5,7 @@ import com.bitcoin.hdwallet.core.UtxoSyncManager;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public class PaymentOrchestrator {

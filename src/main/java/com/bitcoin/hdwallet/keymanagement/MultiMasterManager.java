@@ -11,7 +11,7 @@ import java.util.Set;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public final class MultiMasterManager {

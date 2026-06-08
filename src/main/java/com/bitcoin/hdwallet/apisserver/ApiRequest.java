@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.apisserver;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 import com.fasterxml.jackson.databind.JsonNode;

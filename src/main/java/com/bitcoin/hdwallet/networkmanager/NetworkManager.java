@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.networkmanager;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 import com.bitcoin.hdwallet.model.InvoicePayload;

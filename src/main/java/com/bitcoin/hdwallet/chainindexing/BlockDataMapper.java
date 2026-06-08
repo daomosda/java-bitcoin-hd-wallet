@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.chainindexing;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 // ── BlockDataMapper.java ─────────────────────────────────────────────

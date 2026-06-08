@@ -61,7 +61,7 @@ import org.json.JSONObject;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public class BTCHDWallet extends Thread {
@@ -227,13 +227,13 @@ public class BTCHDWallet extends Thread {
                 String nodeUsage = "--" + node_usage;
                 switch (nodeUsage) {
                     case "--customer" -> {
-                            int customerPort = 8334;
+                            int customerPort = 8379;
                             server = new P2PServer(customerPort, networkManager);
                             server.start();
                             AppLogger.info("[Customer] P2P server started on port {}", customerPort);
                             client = new P2PClient(networkManager);
                             String merchantHost = "127.0.0.1";
-                            int merchantPort = 8333;
+                            int merchantPort = 8377;
                             if (!isMerchant) {
                                 AppLogger.info("[Customer] Connecting to merchant {}:{}",
                                         merchantHost, merchantPort);
@@ -242,13 +242,13 @@ public class BTCHDWallet extends Thread {
                             }                          
                     }
                     case "--merchant", "--not-applicable" -> {
-                            int merchantPort = 8333;
+                            int merchantPort = 8377;
                             server = new P2PServer(merchantPort, networkManager);
                             server.start();
                             AppLogger.info("[Merchant] P2P server started on port {}", merchantPort);
                             client = new P2PClient(networkManager);
                             String customerHost = "127.0.0.1";
-                            int customerPort = 8334;
+                            int customerPort = 8379;
                             if (!isMerchant) {
                                 AppLogger.info("[Merchant] Optionally connecting to customer {}:{}",
                                         customerHost, customerPort);
@@ -950,35 +950,9 @@ public class BTCHDWallet extends Thread {
             throw new IllegalArgumentException("Invalid address for network " + network);
         }
                 
-        String txid = ownSigner.sendCoins(toAddress, amountBtc, changeAddress);
+        String txid = ownSigner.sendCoins(toAddress, amountBtc, changeAddress, targetBlocks);
         addrMgr.markUsed(toAddress);
         addrMgr.markUsed(changeAddress);
-        WalletAnalyzer walletAnalyzer = new WalletAnalyzer(walletRpc);
-        walletAnalyzer.analyzeWallet();
-       
-        addrMgr.ensureLookahead();
-                
-        System.out.println("Broadcasted txid: " + txid);
-        System.out.println("Verify in Core with:");
-        System.out.println("  bitcoin-cli -regtest getrawtransaction " + txid + " 1");
-        
-        destAddress = addrMgr.getNextMiningAddress();
-        if (!walletRpc.isValidCoreAddress(destAddress)) {
-            throw new IllegalArgumentException("Invalid address for network " + network);
-        }
-        changeAddress = addrMgr.getNextChangeAddress();
-        if (!walletRpc.isValidCoreAddress(changeAddress)) {
-            throw new IllegalArgumentException("Invalid address for network " + network);
-        }
-                               
-        String tranxid = ownSigner.sendCoins(destAddress, amountBtc, changeAddress, 
-                masterKey, network, targetBlocks); 
-        addrMgr.markUsed(destAddress);
-        addrMgr.markUsed(changeAddress);
-        
-        System.out.println("Broadcasted txid: " + tranxid);
-        System.out.println("Verify in Core with:");
-        System.out.println("  bitcoin-cli -regtest getrawtransaction " + tranxid + " 1");  
         
         // ── Confirm on regtest ────────────────────────────────────────────────
         if (AppNWKConfig.getInstance().isRegtest()) {
@@ -986,10 +960,15 @@ public class BTCHDWallet extends Thread {
             BitcoinRpcClient.executeRpc("generatetoaddress", 1, miningAddress);
             AppLogger.info("[sendCoins] Mined 1 block to confirm tx.");
         }
-        
-        walletAnalyzer.analyzeWallet();
-        
+       
         addrMgr.ensureLookahead();
+                
+        System.out.println("Broadcasted txid: " + txid);
+        System.out.println("Verify in Core with:");
+        System.out.println("  bitcoin-cli -regtest getrawtransaction " + txid + " 1");        
+            
+        WalletAnalyzer walletAnalyzer = new WalletAnalyzer(walletRpc);
+        walletAnalyzer.analyzeWallet();
         
         Set<String> usedReceiveAddresses = walletAnalyzer.getReceiveAddresses();
         for (String usedReceiveAddress : usedReceiveAddresses) {
@@ -1412,7 +1391,7 @@ public class BTCHDWallet extends Thread {
         }
 
         // First transaction: basic sendCoins(to, amount, change)
-        String txid1 = ownSigner.sendCoins(toAddress, amountBtc, changeAddress);
+        String txid1 = ownSigner.sendCoins(toAddress, amountBtc, changeAddress, targetBlocks);
         addrMgr.markUsed(toAddress);
         addrMgr.markUsed(changeAddress);
 

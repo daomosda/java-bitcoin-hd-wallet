@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.keymanagement;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 import java.io.IOException;

@@ -10,7 +10,7 @@ import java.sql.*;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public class ChainReorgHandler {

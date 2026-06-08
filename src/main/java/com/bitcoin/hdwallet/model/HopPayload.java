@@ -5,7 +5,7 @@ import com.bitcoin.hdwallet.chainindexing.Bytes;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public final class HopPayload {

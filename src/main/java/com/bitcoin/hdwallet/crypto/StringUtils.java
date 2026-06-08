@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.crypto;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 import java.io.UnsupportedEncodingException;

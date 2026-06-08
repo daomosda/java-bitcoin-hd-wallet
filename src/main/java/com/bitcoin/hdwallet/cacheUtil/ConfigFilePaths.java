@@ -6,7 +6,7 @@ import java.nio.file.Paths;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 public class ConfigFilePaths {	

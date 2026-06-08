@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.model;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 
 import com.bitcoin.hdwallet.crypto.Script;

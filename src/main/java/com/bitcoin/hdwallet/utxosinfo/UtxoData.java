@@ -2,7 +2,7 @@ package com.bitcoin.hdwallet.utxosinfo;
 
 /**
  *
- * @author CONALDES
+ * @author DAOMOSDA
  */
 public class UtxoData {
     public String txid;
