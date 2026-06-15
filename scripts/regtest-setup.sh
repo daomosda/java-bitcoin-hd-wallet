@@ -6,8 +6,8 @@
 set -e
 
 WALLET_NAME="btcnode_watchonly"
-RPC_USER="olamosda"
-RPC_PASS="cona.btc-Dao_5MoS7"
+RPC_USER="rpc_user"
+RPC_PASS="rpc_password"
 CLI="bitcoin-cli -regtest"
 
 echo "Starting bitcoind..."
