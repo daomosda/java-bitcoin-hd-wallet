@@ -90,7 +90,7 @@ zmqpubrawtx=tcp://127.0.0.1:28333
 git clone https://github.com/daomosda/java-bitcoin-hd-wallet
 cd java-bitcoin-hd-wallet
 mvn compile
-mvn exec:java -Dexec.mainClass="com.bitcoin.hdwallet.entrypoint.BTCHDWallet"
+mvn exec:java -Dexec.mainClass="com.bitcoin.hidzmq.hdwallet.HIDZMQHDWallet"
 ```
 The app launches as one of three node types: standalone, merchant, or customer, each with a tailored CLI menu. For example, a merchant node presents:
 
