@@ -95,15 +95,15 @@ public class NetworkController {
 
     private void printMerchantMenu() {
         System.out.println("\n======================================");
-        System.out.println("1)  Merchant: receive payment for goods");
+        System.out.println("1) Merchant: receive payment for goods");
         System.out.println("2) Merchant: receive payment (API/custom capacity)");
-        System.out.println("0)  Exit");
+        System.out.println("0) Exit");
         System.out.print("Select option: ");
     }
     private void printCustomerMenu() {
         System.out.println("\n======================================");
         System.out.println("1) Customer: pay for goods");
-        System.out.println("0)  Exit");
+        System.out.println("0) Exit");
         System.out.print("Select option: ");
     }
     // ─────────────────────────────────────────────────────────────────
@@ -121,10 +121,8 @@ public class NetworkController {
         } catch (PaymentException e) {
             System.out.println("Payment failed at stage [" + e.getStage() + "]: "
                 + e.getMessage());
-            AppLogger.error("[App] Merchant payment failed", e);
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());
-            AppLogger.error("[App] Merchant payment error", e);
         }
     }
 
@@ -150,10 +148,8 @@ public class NetworkController {
         } catch (PaymentException e) {
             System.out.println("Payment failed at stage [" + e.getStage() + "]: "
                 + e.getMessage());
-            AppLogger.error("[App] API payment failed", e);
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());
-            AppLogger.error("[App] API payment error", e);
         }
     }
 
@@ -183,10 +179,8 @@ public class NetworkController {
 
         } catch (PaymentException e) {
             System.out.println("Payment failed: " + e.getMessage());
-            AppLogger.error("[App] Customer payment failed", e);
         } catch (Exception e) {
             System.out.println("Unexpected error: " + e.getMessage());
-            AppLogger.error("[App] Customer payment error", e);
         }
     }    
 }

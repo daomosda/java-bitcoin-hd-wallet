@@ -165,10 +165,11 @@ public class NetworkManagerImpl implements NetworkManager {
      */
     @Override
     public String waitForLnPubKey() throws InterruptedException {
-        AppLogger.info("[NetworkManager] Waiting for customer LN pubkey...");
+        AppLogger.info(" Waiting will timeout after {} seconds for LN pubkey.", (PEER_WAIT_MS/1_000L));
 
         String pubKey = lnPubKeyQueue.poll(PEER_WAIT_MS, TimeUnit.MILLISECONDS);
         if (pubKey == null) {
+            AppLogger.info(" Ensure a peer node is running on another computer, then select this option again.");
             throw new InterruptedException(
                 "Timeout waiting for LN pubkey after " + PEER_WAIT_MS + " ms");
         }
@@ -295,7 +296,7 @@ public class NetworkManagerImpl implements NetworkManager {
      */
     @Override
     public InvoicePayload waitForInvoice() throws InterruptedException {
-        AppLogger.info("[NetworkManager] Waiting for invoice from merchant...");
+        AppLogger.info(" Waiting for invoice from merchant... [waiting time {} second]", (MESSAGE_WAIT_MS/1_000L));
 
         InvoicePayload payload = invoiceQueue.poll(
             MESSAGE_WAIT_MS, TimeUnit.MILLISECONDS);
@@ -324,7 +325,7 @@ public class NetworkManagerImpl implements NetworkManager {
      * @throws java.lang.InterruptedException
      */
     public String waitForChannelId() throws InterruptedException {
-        AppLogger.info("[NetworkManager] Waiting for channel ID from merchant...");
+        AppLogger.info(" Waiting for channel ID from merchant... [waiting time {} second]", (MESSAGE_WAIT_MS/1_000L));
         String channelId = channelIdQueue.poll(MESSAGE_WAIT_MS, TimeUnit.MILLISECONDS);
         if (channelId == null) {
             throw new InterruptedException(
