@@ -2,8 +2,6 @@
 
 A Bitcoin HD wallet and transaction engine implemented in Java, built from protocol fundamentals with no wallet framework dependencies. Implements BIP32/BIP39 key derivation, SegWit transaction construction, PSBT creation and signing, Bitcoin Core descriptor wallet, and realtime ZMQ and Trezor integration, UTXO chain indexing with reorg detection, and Lightning-oriented payment channel tooling.
 
-See [ARCHITECTURE.md](docs/ARCHITECTURE.md) for system design and protocol coverage, and [ROADMAP.md](ROADMAP.md) for planned features.
-
 ## What Makes This Different
 
 Most Java Bitcoin projects use BitcoinJ for everything — address generation, signing, and serialization handled by the library. This project implements the protocol layer directly:
