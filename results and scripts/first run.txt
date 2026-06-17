@@ -1,0 +1,1406 @@
+cd C:\Users\CONALDES\Documents\NetBeansProjects\HIDZMQHDWallet; "JAVA_HOME=C:\\Program Files\\Java\\jdk-25" cmd /c "\"C:\\Users\\CONALDES\\netbeans-30-bin\\netbeans\\java\\maven\\bin\\mvn.cmd\" -Dexec.vmArgs= \"-Dexec.args=${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}\" -Dexec.appArgs= -Dexec.mainClass=com.bitcoin.hidzmq.hdwallet.HIDZMQHDWallet \"-Dexec.executable=C:\\Program Files\\Java\\jdk-25\\bin\\java.exe\" -Dmaven.ext.class.path=C:\\Users\\CONALDES\\netbeans-30-bin\\netbeans\\java\\maven-nblib\\netbeans-eventspy.jar --no-transfer-progress process-classes org.codehaus.mojo:exec-maven-plugin:3.5.1:exec"
+Scanning for projects...
+
+--------------------< com.olamosda:HIDZMQHDWallet >---------------------
+Building HIDZMQHDWallet 1.0-SNAPSHOT
+  from pom.xml
+--------------------------------[ jar ]---------------------------------
+
+--- resources:3.4.0:resources (default-resources) @ HIDZMQHDWallet ---
+Copying 3 resources from src\main\resources to target\classes
+
+--- compiler:3.15.0:compile (default-compile) @ HIDZMQHDWallet ---
+Nothing to compile - all classes are up to date.
+
+--- exec:3.5.1:exec (default-cli) @ HIDZMQHDWallet ---
+[21:28:52.5943693] [INFO] HIDZMQHDWallet - 
+Node usage mode setting.
+????????????????????????????????????????????????????????????????????????????????
+[21:28:52.5993803] [INFO] HIDZMQHDWallet - Application includes merchant and customer functionalities.
+[21:28:52.5993803] [INFO] HIDZMQHDWallet - Select usage mode (merchant and customer) to enable on CLI menu.
+Enter 1 -> 'merchant', 2 -> 'customer', 3 -> 'not-applicable'  or 4 -> 'quit' to exit: 1
+Input: merchant
+
+[21:28:58.4764965] [INFO] AppNWKConfig - Loaded 24 entries from bitcoin.conf
+[21:28:58.4785203] [INFO] AppNWKConfig - Network resolved: REGTEST
+[21:28:58.4785203] [INFO] AppNWKConfig - wallet.name=daowallet, watchonly.wallet.name=btcnode_watchonly
+[21:28:58.484456] [INFO] ChainDatabase -  Initialized with path: C:\Users\CONALDES\.bitcoinlike\chaindbpath\blockchain.db
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.sqlite.SQLiteJDBCLoader in an unnamed module (file:/C:/Users/CONALDES/.m2/repository/org/xerial/sqlite-jdbc/3.49.1.0/sqlite-jdbc-3.49.1.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[21:28:58.7092628] [INFO] ChainDatabase -  New connection created for thread = main
+[21:28:58.729262] [INFO] ChainDatabase -  Migrations complete
+[21:28:58.7420446] [INFO] BitcoinRpcClient - BCJSONRpchttp: http://127.0.0.1:18443
+[21:28:59.0409391] [INFO] HIDZMQHDWallet - Bitcoin Core is running in REGTEST mode.
+[21:28:59.1515163] [INFO] BitcoinRpcClient - [Wallet] Creating watch-only descriptor wallet 'btcnode_watchonly' ...
+[Wallet] Created watch-only descriptor wallet '{}' (warning: {})Master key repository found
+[WalletSeedStore] Seed loaded: C:\Users\CONALDES\.msthdwkp\wltseed\wallet_seed.json
+DB path: C:\Users\CONALDES\.bitcoinlike\hdwltk\hdwKeys.db
+[21:28:59.4765988] [INFO] HIDZMQHDWallet - Log file does not exist: C:\Users\CONALDES\.bitcoinlike\addrctl\addressCtl.log
+[21:28:59.7121826] [INFO] HdAddressManager - [importIntoCore] network=REGTEST coinType=1
+[21:28:59.7121826] [INFO] HdAddressManager - [importIntoCore] Importing 10 addresses into watch-only wallet...
+[21:28:59.7171448] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:28:59.7271484] [INFO] HdAddressManager - [import] Building descriptor for bcrt1q3dg42jdye80a2fdxsh8gc4fjw7xgy0zatj9kqz: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:28:59.7771459] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:28:59.8246127] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:28:59.8735622] [INFO] HdAddressManager - [import] Building descriptor for bcrt1q3xvy0wd4xexmwugue9mw3aax0fmrcjyred50ca: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:28:59.9261247] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:28:59.9806739] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qu5z5kjrsjkxcxhrcql5ezrtms5tcjf2prhjuy3: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:29:00.0389619] [INFO] HdAddressManager - [import] Building descriptor for bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:29:00.0887418] [INFO] HdAddressManager - [import] Building descriptor for bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:29:00.1375668] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:29:00.8637739] [INFO] HdAddressManager - Import complete: 10 success 0 failed
+[21:29:00.865805] [INFO] HdAddressManager - [getNextMiningAddress()] countUsedKeys=10, LOOKAHEAD=5
+[21:29:00.8822365] [INFO] HIDZMQHDWallet - Mining address: bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq, path: m/84'/1'/0'/0/0
+[21:29:00.9815114] [INFO] HdAddressManager - [importIntoCore] network=REGTEST coinType=1
+[21:29:00.9825111] [INFO] HdAddressManager - [importIntoCore] Importing 5 addresses into watch-only wallet...
+[21:29:00.9834646] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVY...
+[21:29:00.9894714] [INFO] HdAddressManager - [import] Building descriptor for bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVY...
+[21:29:01.0383173] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVY...
+[21:29:01.0865125] [INFO] HdAddressManager - [import] Building descriptor for bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVY...
+[21:29:01.1337765] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVY...
+[21:29:01.3900908] [INFO] HdAddressManager - Import complete: 5 success 0 failed
+[21:29:01.3935959] [INFO] HdAddressManager - [getNextChangeAddress()] countUnusedChangeKeys=5, CHANGE_LOOKAHEAD=3
+[21:29:01.4161368] [INFO] HIDZMQHDWallet - Consolidation address: bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6, path: m/84'/1'/0'/1/10
+[21:29:01.4251352] [INFO] HdAddressManager - [getNextMiningAddress()] countUsedKeys=9, LOOKAHEAD=5
+[21:29:01.4446402] [INFO] HIDZMQHDWallet -  addr: bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w
+[21:29:01.4446402] [INFO] HIDZMQHDWallet -  addr: bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr
+[21:29:01.4456849] [INFO] HIDZMQHDWallet -  addr: bcrt1q3xvy0wd4xexmwugue9mw3aax0fmrcjyred50ca
+[21:29:01.4456849] [INFO] HIDZMQHDWallet -  addr: bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92
+[21:29:01.4456849] [INFO] HIDZMQHDWallet -  addr: bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+[21:29:01.4456849] [INFO] HIDZMQHDWallet -  addr: bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje
+[21:29:01.4456849] [INFO] HIDZMQHDWallet -  addr: bcrt1q3dg42jdye80a2fdxsh8gc4fjw7xgy0zatj9kqz
+[21:29:01.4456849] [INFO] HIDZMQHDWallet -  addr: bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+[21:29:01.4456849] [INFO] HIDZMQHDWallet -  addr: bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7
+[21:29:01.4466456] [INFO] HIDZMQHDWallet -  addr: bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h
+[21:29:01.4466456] [INFO] HIDZMQHDWallet -  addr: bcrt1qu5z5kjrsjkxcxhrcql5ezrtms5tcjf2prhjuy3
+[21:29:01.4466456] [INFO] HIDZMQHDWallet -  addr: bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+[21:29:01.4466456] [INFO] HIDZMQHDWallet -  addr: bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs
+[21:29:01.4466456] [INFO] HIDZMQHDWallet -  addr: bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj
+[21:29:01.4466456] [INFO] HIDZMQHDWallet -  addr: bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6
+[21:29:01.4516734] [INFO] HIDZMQHDWallet - #####################  Point 0 #####################
+
+[21:29:01.4516734] [INFO] HIDZMQHDWallet -  Verifying ZMQ configuration...
+[21:29:01.4566931] [INFO] HIDZMQHDWallet - #####################  Point 1 #####################
+
+[21:29:01.4586757] [INFO] HIDZMQHDWallet - [Controller => main] After creating networkManager
+[21:29:01.4616747] [INFO] P2PServer -  Listening on port 8377
+[21:29:01.4626486] [INFO] HIDZMQHDWallet - [Merchant] P2P server started on port 8377
+[21:29:01.4686745] [INFO] HIDZMQHDWallet - #####################  Point 2 #####################
+
+[21:29:01.7242547] [INFO] HIDZMQHDWallet - --- Hardware Wallet Status ---
+[21:29:01.7262567] [WARN] TrezorSigner -  No Trezor device found on USB.
+[21:29:01.7262567] [INFO] HIDZMQHDWallet - No hardware wallet detected.
+[21:29:01.7578386] [INFO] ApisServer - HTTP API server started on port 8080
+[21:29:01.7578386] [INFO] HIDZMQHDWallet -  Port selected and used: 8080
+[21:29:01.7578386] [INFO] HIDZMQHDWallet - #####################  Point 3 #####################
+
+[validateaddress] addr=bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w isvalid=true raw={"scriptPubKey":"0014aa00439788c1dae440a170f621e1ea9f102ad7c4","witness_program":"aa00439788c1dae440a170f621e1ea9f102ad7c4","address":"bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr isvalid=true raw={"scriptPubKey":"00146da8d455e20a191b91b8c70a3debbf07316a0ffd","witness_program":"6da8d455e20a191b91b8c70a3debbf07316a0ffd","address":"bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q3xvy0wd4xexmwugue9mw3aax0fmrcjyred50ca isvalid=true raw={"scriptPubKey":"0014899847b9b5364db7711cc976e8f7a67a763c4883","witness_program":"899847b9b5364db7711cc976e8f7a67a763c4883","address":"bcrt1q3xvy0wd4xexmwugue9mw3aax0fmrcjyred50ca","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92 isvalid=true raw={"scriptPubKey":"00147a0cc6a90a7650ecdcec1f9607de9c0aa9796b35","witness_program":"7a0cc6a90a7650ecdcec1f9607de9c0aa9796b35","address":"bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa isvalid=true raw={"scriptPubKey":"0014508a9086f1d1f25ddbee7869a38c43bb0ec49405","witness_program":"508a9086f1d1f25ddbee7869a38c43bb0ec49405","address":"bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje isvalid=true raw={"scriptPubKey":"0014e296ecdbda991c19f9466e8af28065b3bd82a1c2","witness_program":"e296ecdbda991c19f9466e8af28065b3bd82a1c2","address":"bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q3dg42jdye80a2fdxsh8gc4fjw7xgy0zatj9kqz isvalid=true raw={"scriptPubKey":"00148b515549a4c9dfd525a685ce8c5532778c823c5d","witness_program":"8b515549a4c9dfd525a685ce8c5532778c823c5d","address":"bcrt1q3dg42jdye80a2fdxsh8gc4fjw7xgy0zatj9kqz","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph isvalid=true raw={"scriptPubKey":"00145f490a508fe2bc7631e91a8a2b14f640b6fbbe6c","witness_program":"5f490a508fe2bc7631e91a8a2b14f640b6fbbe6c","address":"bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7 isvalid=true raw={"scriptPubKey":"00148d31e6347c013d8b109a0f21bba0d5fd249fe20d","witness_program":"8d31e6347c013d8b109a0f21bba0d5fd249fe20d","address":"bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h isvalid=true raw={"scriptPubKey":"0014e8106b0516d6fe71db3777047f14ceff63d14efd","witness_program":"e8106b0516d6fe71db3777047f14ceff63d14efd","address":"bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qu5z5kjrsjkxcxhrcql5ezrtms5tcjf2prhjuy3 isvalid=true raw={"scriptPubKey":"0014e5054b4870958d835c7807e9910d7b8517892541","witness_program":"e5054b4870958d835c7807e9910d7b8517892541","address":"bcrt1qu5z5kjrsjkxcxhrcql5ezrtms5tcjf2prhjuy3","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq isvalid=true raw={"scriptPubKey":"00149691ba203337f36cdd3fcd14360caca1dc96baf3","witness_program":"9691ba203337f36cdd3fcd14360caca1dc96baf3","address":"bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs isvalid=true raw={"scriptPubKey":"001460b6103bf7cc9048e5b5008b4ba8963f67909cc0","witness_program":"60b6103bf7cc9048e5b5008b4ba8963f67909cc0","address":"bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj isvalid=true raw={"scriptPubKey":"00145d5e33789cf53e062b804c2d5acb01a6bbfa2faf","witness_program":"5d5e33789cf53e062b804c2d5acb01a6bbfa2faf","address":"bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6 isvalid=true raw={"scriptPubKey":"00141e602d9b103dbff08bb08bda38dd85aac5d5ff45","witness_program":"1e602d9b103dbff08bb08bda38dd85aac5d5ff45","address":"bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:29:02.4924396] [INFO] HIDZMQHDWallet - Initializing wallet with SegWit descriptors...
+[21:29:02.5400073] [INFO] HIDZMQHDWallet - Connected to Bitcoin network: version=280100, connections=0
+[21:29:02.5410073] [INFO] HIDZMQHDWallet - Importing account descriptors into wallet 'btcnode_watchonly'...
+[21:29:02.5430066] [INFO] HIDZMQHDWallet - [Descriptor info] accountXpub = tpubDCF9R7G5aX7JLteM6f2BX4GfYp3bZ1vCiPuQDWGa2wR2MxF9Fj6znQZfge9x4s2tBKh7cCKwABvgoX4gQLN7DEZWngXFd95XgN5PBVVBUkr
+[21:29:02.6027495] [INFO] RegtestZmqListener - run() Listening for REGTEST blocks...
+[21:29:02.6899576] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqXw52VbCyU1LWMMsfcckDTR45Cxzcp1UYn3LJRXfU2sJgj7KR96PZ15SdAe9oCsEggFxcK6jNJCoPe4a1hmqF4PN4nLnb9qH/0/1)#n9yts9pk
+[21:29:02.6899576] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqbbDE7JvcPtxwpUqryicLABmc9FSx1vMvoMX35hRhxWcc46KHkpsnJt4ZfYtACdnPhsCSxKFbr5WehLWFDqu1ZrKj5voRoLR/0/2)#hcwz40lq
+[21:29:02.6899576] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqeUA6rF4g3KLdxFdVFfywSxqC8LoZdreD1A6aCzdFsf9kZ1n4MaDk5J7cWmU9Ym4u2fCRCijJSai5aVmdH8CccvD1MdKif6V/0/3)#342znle2
+[21:29:02.6899576] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqgz4mp4aEzLqSDuEaKKCkBaov13vV1nAen2KGndjgXtLa5jmc7g9Gbumc6T8pG3TuHFEgwWmibBvS76PuSDWKvmohVAQCAVy/0/4)#nrm8kzac
+[21:29:02.6909725] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqhe8iiLXuJ79TvQBNkrWTk8pEz7eAY4i4r75g7q3TV2k2c38BxBvMAttMC2d3JvH3DmD1QwPjnFs8t8RsGTuN3QcTFcGA46L/0/5)#6qulfm4u
+[21:29:02.6909725] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqkRpNvwgtDTV19qgvzjLJJLcGiXPtpfihMJzNdz5HoeUnefxmYu5p9abSmWC4FMSd9htWkf3spTcEjgbzRRiJUkgbHZAMTK8/0/6)#s6lwez9r
+[21:29:02.6909725] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqq2F6c2sC6gfE4eJeGLGtdhpWyR4mQyQTcq94K5qm4Xt51aqytsMiUwDbMYqMnRetHPwHyQ33HPF2sR8RcBF9y9Zi2WND7AZ/0/7)#zrk4axnt
+[21:29:02.6909725] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqsDShxtmihoB7ZF9kHNoVZCmZdEHJJ3XfJuVSMJhvfeAkbK7rAJmaUE8Kyt5vkotFp2b3Sb8o2KA5QF6F6HEu7NSnvfEHbW2/0/8)#0885cxjg
+[21:29:02.6909725] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqt5q3J3wPHw6YPWAV6TsdGjxUJzAtSbJqRvNZGkfTemZJLCP4jqJxcz7jK2WqAU6JZLarhTXQwCpvKC3nNpt9mGS2Y5oHm7o/0/9)#5l5ual3t
+[21:29:02.6909725] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqxR3LCR5qfPautQSCoUySpjomSLWF34JRAbZUVRHphuN9Lj1hn6ggsydzf7n1quhH7r6AuPwQxL31T9XvPtzgUvuF4z8L2Bt/0/10)#vgxz5xhg
+[21:29:02.6909725] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHepcFLQcFLcqhP5MYFCfv6Cc2n6s2GXS9LVuUXEwKvQY8DZFo4YsLKcE3gdWMaW7kQLMYPns8vnfQgNWgvRJUComtLF54GRG/1/11)#dwa5jftf
+[21:29:02.6909725] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHgS42bvC5dTHkdQgH3Uvu1QQ8LvgEqFkQEwvtNdojJjWinuUW93TWr5AcRRrhFvJifb2eKLyEBiB1oKXFdU1JErfTMbNjbRS/1/12)#9tuew8fv
+[21:29:02.6909725] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHkXafGefDCgzhjpJ4nnR1yeXuAvrXAyYJ8UsxpYbqbKNTnDw4RGR3CUsbnA8tNewxXn2pCZzqNe3tUfG2zAh7rmG93bfh4p6/1/13)#sqfsd2qr
+[21:29:02.6909725] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHmPnZH9wZDncsBtK6DkzCRavEhfCUpknSJqygJtsYFT1t2PXnXeV2CitgC1ztd94MR2pCRqt8hbG8ofVAoUW9oyWKX25uDsd/1/14)#g89pj7ch
+[21:29:02.6909725] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHoaYzT1JCxhuyfGVgnttLuthf4H1DeHuLdYZMcW7CaHeX9EctAhEE8mmcJAvtZHn8QP5ZrYU15Ykx7qY4sgddEP4MxYc4mnv/1/15)#57z73n54
+[21:29:02.9264478] [INFO] HIDZMQHDWallet - Descriptor imported successfully.
+[21:29:02.9264478] [INFO] HIDZMQHDWallet - Descriptor imported successfully.
+[21:29:02.9306704] [INFO] HIDZMQHDWallet - [Controller => initializeWallet()] info.blocks() = 0
+[21:29:02.9316664] [INFO] HIDZMQHDWallet - Bootstrapping regtest...
+Mined 202 block(s). First=58d2d3c9a01d Last=5c94b04590aa
+[21:29:12.3105987] [INFO] HIDZMQHDWallet - BlockchainInfo{chain=regtest blocks=202 headers=202 tip=5c94b04590aa ibd=false pruned=false warnings='[]'}
+[21:29:12.3105987] [INFO] HIDZMQHDWallet - Controller : Both Syncers are free. I will assign a task to a Syncer.
+[21:29:12.311566] [INFO] SharedMonitor - Controller (HIDZMQHDWallet): Assigning task to worker with Id = 1 
+[21:29:12.3155646] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{1:58d2d3c9a01d txs=1 size=1 weight=0}
+[21:29:12.3595693] [INFO] ChainIndexer - Local tip: -1  Core tip: 202
+[21:29:12.3595693] [INFO] ChainIndexer - Syncing 203 blocks (0 ? 202)
+Commit transaction: database in auto-commit mode
+run() Processed block 1 with 1 transactions.
+[21:29:12.4121458] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{3:65a9c71ddba3 txs=1 size=1 weight=0}
+[21:29:12.4651448] [INFO] ChainIndexer - chain_tip ? height=0 hash=0f9188f13cb7
+[21:29:12.4651448] [INFO] ChainIndexer -  Block 0 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 3 with 1 transactions.
+[21:29:12.5150269] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:12.5583513] [INFO] ChainIndexer - chain_tip ? height=1 hash=58d2d3c9a01d
+[21:29:12.5593537] [INFO] ChainIndexer -  Block 1 committed (1 txs)
+run() Received: BlockData{5:2e765c193297 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 5 with 1 transactions.
+[21:29:12.6163291] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:12.6617209] [INFO] ChainIndexer - chain_tip ? height=2 hash=261d129a7bdd
+[21:29:12.6617209] [INFO] ChainIndexer -  Block 2 committed (1 txs)
+run() Received: BlockData{7:111f18c90a30 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 7 with 1 transactions.
+[21:29:12.7182918] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:12.7619211] [INFO] ChainIndexer - chain_tip ? height=3 hash=65a9c71ddba3
+[21:29:12.7628969] [INFO] ChainIndexer -  Block 3 committed (1 txs)
+run() Received: BlockData{9:120188f0868c txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 9 with 1 transactions.
+[21:29:12.817022] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:12.8553536] [INFO] ChainIndexer - chain_tip ? height=4 hash=0ce6ca497e35
+[21:29:12.8553536] [INFO] ChainIndexer -  Block 4 committed (1 txs)
+run() Received: BlockData{11:2efd2d566994 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 11 with 1 transactions.
+[21:29:12.9258229] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:12.9532551] [INFO] ChainIndexer - chain_tip ? height=5 hash=2e765c193297
+[21:29:12.9532551] [INFO] ChainIndexer -  Block 5 committed (1 txs)
+run() Received: BlockData{13:12da2b70042e txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 13 with 1 transactions.
+[21:29:13.0325517] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:13.0505847] [INFO] ChainIndexer - chain_tip ? height=6 hash=0161800914f3
+[21:29:13.0505847] [INFO] ChainIndexer -  Block 6 committed (1 txs)
+run() Received: BlockData{15:4f8ecf6a04e2 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 15 with 1 transactions.
+[21:29:13.1411588] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:13.1501132] [INFO] ChainIndexer - chain_tip ? height=7 hash=111f18c90a30
+[21:29:13.1501132] [INFO] ChainIndexer -  Block 7 committed (1 txs)
+run() Received: BlockData{17:6ce20218f454 txs=1 size=1 weight=0}
+[21:29:13.2528231] [INFO] ChainIndexer - chain_tip ? height=8 hash=7f474a06d6a1
+[21:29:13.2538592] [INFO] ChainIndexer -  Block 8 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 17 with 1 transactions.
+[21:29:13.2598152] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{19:780676949824 txs=1 size=1 weight=0}
+[21:29:13.3476901] [INFO] ChainIndexer - chain_tip ? height=9 hash=120188f0868c
+[21:29:13.3476901] [INFO] ChainIndexer -  Block 9 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 19 with 1 transactions.
+[21:29:13.3557214] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{21:4b6a50c39a28 txs=1 size=1 weight=0}
+[21:29:13.454727] [INFO] ChainIndexer - chain_tip ? height=10 hash=1cc414ac32f1
+[21:29:13.4557903] [INFO] ChainIndexer -  Block 10 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 21 with 1 transactions.
+[21:29:13.4627403] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{23:0020d733a028 txs=1 size=1 weight=0}
+[21:29:13.5575227] [INFO] ChainIndexer - chain_tip ? height=11 hash=2efd2d566994
+[21:29:13.5585248] [INFO] ChainIndexer -  Block 11 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 23 with 1 transactions.
+[21:29:13.5675058] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{25:63761e95db0c txs=1 size=1 weight=0}
+[21:29:13.6535034] [INFO] ChainIndexer - chain_tip ? height=12 hash=1c76130c0be5
+[21:29:13.6535034] [INFO] ChainIndexer -  Block 12 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 25 with 1 transactions.
+[21:29:13.6645412] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{27:095bac1406d2 txs=1 size=1 weight=0}
+[21:29:13.7458002] [INFO] ChainIndexer - chain_tip ? height=13 hash=12da2b70042e
+[21:29:13.7458002] [INFO] ChainIndexer -  Block 13 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 27 with 1 transactions.
+[21:29:13.7784337] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{29:7d6586ec0a9a txs=1 size=1 weight=0}
+[21:29:13.8370893] [INFO] ChainIndexer - chain_tip ? height=14 hash=67e6d0e5c603
+[21:29:13.8370893] [INFO] ChainIndexer -  Block 14 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 29 with 1 transactions.
+[21:29:13.8742967] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{31:7c5209fe80dc txs=1 size=1 weight=0}
+[21:29:13.9340694] [INFO] ChainIndexer - chain_tip ? height=15 hash=4f8ecf6a04e2
+[21:29:13.9340694] [INFO] ChainIndexer -  Block 15 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 31 with 1 transactions.
+[21:29:13.9777378] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{33:69de7b4b6157 txs=1 size=1 weight=0}
+[21:29:14.0275626] [INFO] ChainIndexer - chain_tip ? height=16 hash=2eafcb10a8bc
+[21:29:14.0275626] [INFO] ChainIndexer -  Block 16 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 33 with 1 transactions.
+[21:29:14.0769074] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:14.1212356] [INFO] ChainIndexer - chain_tip ? height=17 hash=6ce20218f454
+[21:29:14.1212356] [INFO] ChainIndexer -  Block 17 committed (1 txs)
+run() Received: BlockData{35:0299eb8e5a4f txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 35 with 1 transactions.
+[21:29:14.2021475] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:14.2243807] [INFO] ChainIndexer - chain_tip ? height=18 hash=1e3c7593e6dd
+[21:29:14.2243807] [INFO] ChainIndexer -  Block 18 committed (1 txs)
+run() Received: BlockData{37:06df49c9d214 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 37 with 1 transactions.
+[21:29:14.2988876] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:14.3209194] [INFO] ChainIndexer - chain_tip ? height=19 hash=780676949824
+[21:29:14.3209194] [INFO] ChainIndexer -  Block 19 committed (1 txs)
+run() Received: BlockData{39:59ca1abfb61c txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 39 with 1 transactions.
+[21:29:14.3951834] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:14.4131067] [INFO] ChainIndexer - chain_tip ? height=20 hash=6b484eb46294
+[21:29:14.4131067] [INFO] ChainIndexer -  Block 20 committed (1 txs)
+run() Received: BlockData{41:7e4f3e97d90a txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 41 with 1 transactions.
+[21:29:14.4997602] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:14.507759] [INFO] ChainIndexer - chain_tip ? height=21 hash=4b6a50c39a28
+[21:29:14.5087595] [INFO] ChainIndexer -  Block 21 committed (1 txs)
+run() Received: BlockData{43:073d0451a5bf txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 43 with 1 transactions.
+[21:29:14.599511] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:14.6035179] [INFO] ChainIndexer - chain_tip ? height=22 hash=14e12a4aeb1a
+[21:29:14.6035179] [INFO] ChainIndexer -  Block 22 committed (1 txs)
+run() Received: BlockData{45:58745e96f40a txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 45 with 1 transactions.
+[21:29:14.6956856] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:14.6976837] [INFO] ChainIndexer - chain_tip ? height=23 hash=0020d733a028
+[21:29:14.6992517] [INFO] ChainIndexer -  Block 23 committed (1 txs)
+run() Received: BlockData{47:718fa26cd40f txs=1 size=1 weight=0}
+[21:29:14.7997447] [INFO] ChainIndexer - chain_tip ? height=24 hash=0340c9d62878
+[21:29:14.7997447] [INFO] ChainIndexer -  Block 24 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 47 with 1 transactions.
+[21:29:14.8127914] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{49:1c7a25ce29f8 txs=1 size=1 weight=0}
+[21:29:14.8959949] [INFO] ChainIndexer - chain_tip ? height=25 hash=63761e95db0c
+[21:29:14.8970346] [INFO] ChainIndexer -  Block 25 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 49 with 1 transactions.
+[21:29:14.9109939] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{51:0201ad15fe4d txs=1 size=1 weight=0}
+[21:29:14.9920189] [INFO] ChainIndexer - chain_tip ? height=26 hash=7f6cc442a472
+[21:29:14.9920189] [INFO] ChainIndexer -  Block 26 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 51 with 1 transactions.
+[21:29:15.0177132] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{53:228ff69cc0b1 txs=1 size=1 weight=0}
+[21:29:15.0893341] [INFO] ChainIndexer - chain_tip ? height=27 hash=095bac1406d2
+[21:29:15.0893341] [INFO] ChainIndexer -  Block 27 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 53 with 1 transactions.
+[21:29:15.1192469] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{55:6ca58a5f1cf0 txs=1 size=1 weight=0}
+[21:29:15.1835231] [INFO] ChainIndexer - chain_tip ? height=28 hash=3bce66ff257a
+[21:29:15.1835231] [INFO] ChainIndexer -  Block 28 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 55 with 1 transactions.
+[21:29:15.2150803] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{57:1fb6bec580bc txs=1 size=1 weight=0}
+[21:29:15.2769262] [INFO] ChainIndexer - chain_tip ? height=29 hash=7d6586ec0a9a
+[21:29:15.2769262] [INFO] ChainIndexer -  Block 29 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 57 with 1 transactions.
+[21:29:15.3110601] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{59:5efecccbbb79 txs=1 size=1 weight=0}
+[21:29:15.3724394] [INFO] ChainIndexer - chain_tip ? height=30 hash=7818d1f6976f
+[21:29:15.3724394] [INFO] ChainIndexer -  Block 30 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 59 with 1 transactions.
+[21:29:15.4034809] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{61:386272ec98df txs=1 size=1 weight=0}
+[21:29:15.4637716] [INFO] ChainIndexer - chain_tip ? height=31 hash=7c5209fe80dc
+[21:29:15.4637716] [INFO] ChainIndexer -  Block 31 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 61 with 1 transactions.
+[21:29:15.4990072] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{63:1c6acea977ad txs=1 size=1 weight=0}
+[21:29:15.5622345] [INFO] ChainIndexer - chain_tip ? height=32 hash=1693026ad949
+[21:29:15.5622345] [INFO] ChainIndexer -  Block 32 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 63 with 1 transactions.
+[21:29:15.6057549] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{65:667a0d9d516e txs=1 size=1 weight=0}
+[21:29:15.6609678] [INFO] ChainIndexer - chain_tip ? height=33 hash=69de7b4b6157
+[21:29:15.6609678] [INFO] ChainIndexer -  Block 33 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 65 with 1 transactions.
+[21:29:15.713484] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:15.7569845] [INFO] ChainIndexer - chain_tip ? height=34 hash=632a2032bd70
+[21:29:15.7569845] [INFO] ChainIndexer -  Block 34 committed (1 txs)
+run() Received: BlockData{67:281242d2a9c8 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 67 with 1 transactions.
+[21:29:15.809178] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:15.856099] [INFO] ChainIndexer - chain_tip ? height=35 hash=0299eb8e5a4f
+[21:29:15.8570806] [INFO] ChainIndexer -  Block 35 committed (1 txs)
+run() Received: BlockData{69:45e19f1ebfe4 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 69 with 1 transactions.
+[21:29:15.9141915] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{71:679ddf7edc1a txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 71 with 1 transactions.
+[21:29:16.014453] [INFO] ChainIndexer - chain_tip ? height=36 hash=69b80fcd9896
+[21:29:16.014453] [INFO] ChainIndexer -  Block 36 committed (1 txs)
+[21:29:16.0175061] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{73:2db508a34510 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 73 with 1 transactions.
+[21:29:16.1317985] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:16.1411214] [INFO] ChainIndexer - chain_tip ? height=37 hash=06df49c9d214
+[21:29:16.1411214] [INFO] ChainIndexer -  Block 37 committed (1 txs)
+run() Received: BlockData{75:656506d347c2 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 75 with 1 transactions.
+[21:29:16.2288201] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:16.2328643] [INFO] ChainIndexer - chain_tip ? height=38 hash=2715f677a88e
+[21:29:16.2328643] [INFO] ChainIndexer -  Block 38 committed (1 txs)
+run() Received: BlockData{77:52063d476a04 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 77 with 1 transactions.
+[21:29:16.3253817] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:16.3265022] [INFO] ChainIndexer - chain_tip ? height=39 hash=59ca1abfb61c
+[21:29:16.3268577] [INFO] ChainIndexer -  Block 39 committed (1 txs)
+run() Received: BlockData{79:6cf91655c7e9 txs=1 size=1 weight=0}
+[21:29:16.4165813] [INFO] ChainIndexer - chain_tip ? height=40 hash=5a2fe8bcfc77
+[21:29:16.4165813] [INFO] ChainIndexer -  Block 40 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 79 with 1 transactions.
+[21:29:16.4215432] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{81:7da10ad42bbc txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 81 with 1 transactions.
+[21:29:16.5278394] [INFO] ChainIndexer - chain_tip ? height=41 hash=7e4f3e97d90a
+[21:29:16.5278394] [INFO] ChainIndexer -  Block 41 committed (1 txs)
+[21:29:16.5318271] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{83:58cc6068e2d6 txs=1 size=1 weight=0}
+[21:29:16.6268381] [INFO] ChainIndexer - chain_tip ? height=42 hash=4519d14a3d30
+[21:29:16.6268381] [INFO] ChainIndexer -  Block 42 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 83 with 1 transactions.
+[21:29:16.6448282] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{85:29d619828e56 txs=1 size=1 weight=0}
+[21:29:16.7166492] [INFO] ChainIndexer - chain_tip ? height=43 hash=073d0451a5bf
+[21:29:16.7166492] [INFO] ChainIndexer -  Block 43 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 85 with 1 transactions.
+[21:29:16.7384662] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{87:63c2a6bd4da1 txs=1 size=1 weight=0}
+[21:29:16.8111742] [INFO] ChainIndexer - chain_tip ? height=44 hash=2ea132af1461
+[21:29:16.8111742] [INFO] ChainIndexer -  Block 44 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 87 with 1 transactions.
+[21:29:16.8336426] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{89:1ad63f6f2718 txs=1 size=1 weight=0}
+[21:29:16.9020767] [INFO] ChainIndexer - chain_tip ? height=45 hash=58745e96f40a
+[21:29:16.9020767] [INFO] ChainIndexer -  Block 45 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 89 with 1 transactions.
+[21:29:16.9312851] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{91:0200b1e8e74c txs=1 size=1 weight=0}
+[21:29:16.9927285] [INFO] ChainIndexer - chain_tip ? height=46 hash=122121d7cad1
+[21:29:16.9927285] [INFO] ChainIndexer -  Block 46 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 91 with 1 transactions.
+[21:29:17.0288822] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{93:24c86faff154 txs=1 size=1 weight=0}
+[21:29:17.0874776] [INFO] ChainIndexer - chain_tip ? height=47 hash=718fa26cd40f
+[21:29:17.0874776] [INFO] ChainIndexer -  Block 47 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 93 with 1 transactions.
+[21:29:17.1418194] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:17.1859133] [INFO] ChainIndexer - chain_tip ? height=48 hash=4a18fccdfbe8
+[21:29:17.1859133] [INFO] ChainIndexer -  Block 48 committed (1 txs)
+run() Received: BlockData{95:4998d676c5e1 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 95 with 1 transactions.
+[21:29:17.2425417] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:17.2808354] [INFO] ChainIndexer - chain_tip ? height=49 hash=1c7a25ce29f8
+[21:29:17.2808354] [INFO] ChainIndexer -  Block 49 committed (1 txs)
+run() Received: BlockData{97:13680732da8b txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 97 with 1 transactions.
+[21:29:17.3721973] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:17.41156] [INFO] ChainIndexer - chain_tip ? height=50 hash=4b27e2bc492b
+[21:29:17.412511] [INFO] ChainIndexer -  Block 50 committed (1 txs)
+run() Received: BlockData{99:5fe9222780fa txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 99 with 1 transactions.
+[21:29:17.471688] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:17.5051808] [INFO] ChainIndexer - chain_tip ? height=51 hash=0201ad15fe4d
+[21:29:17.5051808] [INFO] ChainIndexer -  Block 51 committed (1 txs)
+run() Received: BlockData{101:43b3138b4c2d txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 101 with 1 transactions.
+[21:29:17.5636514] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:17.6016508] [INFO] ChainIndexer - chain_tip ? height=52 hash=5534c8f112f7
+[21:29:17.6016508] [INFO] ChainIndexer -  Block 52 committed (1 txs)
+run() Received: BlockData{103:5e8253e6e388 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 103 with 1 transactions.
+[21:29:17.6586524] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:17.6936626] [INFO] ChainIndexer - chain_tip ? height=53 hash=228ff69cc0b1
+[21:29:17.6946667] [INFO] ChainIndexer -  Block 53 committed (1 txs)
+run() Received: BlockData{105:73f63f7c6423 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 105 with 1 transactions.
+[21:29:17.7512386] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:17.7842043] [INFO] ChainIndexer - chain_tip ? height=54 hash=5ff21f77e033
+[21:29:17.7842043] [INFO] ChainIndexer -  Block 54 committed (1 txs)
+run() Received: BlockData{107:4dd76e7c0d15 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 107 with 1 transactions.
+[21:29:17.8443598] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{109:2afa11411771 txs=1 size=1 weight=0}
+[21:29:17.9013002] [INFO] ChainIndexer - chain_tip ? height=55 hash=6ca58a5f1cf0
+[21:29:17.9013002] [INFO] ChainIndexer -  Block 55 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 109 with 1 transactions.
+[21:29:17.9390439] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{111:06f8aead14fa txs=1 size=1 weight=0}
+[21:29:17.9957063] [INFO] ChainIndexer - chain_tip ? height=56 hash=7f1eddb4c808
+[21:29:17.9957063] [INFO] ChainIndexer -  Block 56 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 111 with 1 transactions.
+[21:29:18.0437597] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{113:10455d8115c0 txs=1 size=1 weight=0}
+[21:29:18.1016504] [INFO] ChainIndexer - chain_tip ? height=57 hash=1fb6bec580bc
+[21:29:18.1016504] [INFO] ChainIndexer -  Block 57 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 113 with 1 transactions.
+[21:29:18.1463495] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{115:7ab2891d0f02 txs=1 size=1 weight=0}
+[21:29:18.1981614] [INFO] ChainIndexer - chain_tip ? height=58 hash=54d497a368e1
+[21:29:18.1981614] [INFO] ChainIndexer -  Block 58 committed (1 txs)
+Commit transaction: database in auto-commit mode
+run() Processed block 115 with 1 transactions.
+[21:29:18.2570137] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:18.2973374] [INFO] ChainIndexer - chain_tip ? height=59 hash=5efecccbbb79
+[21:29:18.2983371] [INFO] ChainIndexer -  Block 59 committed (1 txs)
+run() Received: BlockData{117:52e3dcf881f5 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 117 with 1 transactions.
+[21:29:18.3590154] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:18.3892344] [INFO] ChainIndexer - chain_tip ? height=60 hash=68c116c2a3cf
+[21:29:18.3892344] [INFO] ChainIndexer -  Block 60 committed (1 txs)
+run() Received: BlockData{119:5c7c841a3b9a txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 119 with 1 transactions.
+[21:29:18.4570301] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:18.4870258] [INFO] ChainIndexer - chain_tip ? height=61 hash=386272ec98df
+[21:29:18.4870258] [INFO] ChainIndexer -  Block 61 committed (1 txs)
+run() Received: BlockData{121:63382f07f4af txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 121 with 1 transactions.
+[21:29:18.5553448] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:18.5829505] [INFO] ChainIndexer - chain_tip ? height=62 hash=6f68f9e390a9
+[21:29:18.5829505] [INFO] ChainIndexer -  Block 62 committed (1 txs)
+run() Received: BlockData{123:4a3d9ab538ed txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 123 with 1 transactions.
+[21:29:18.6624452] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:18.6833639] [INFO] ChainIndexer - chain_tip ? height=63 hash=1c6acea977ad
+[21:29:18.6833639] [INFO] ChainIndexer -  Block 63 committed (1 txs)
+run() Received: BlockData{125:00ac998c53c7 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 125 with 1 transactions.
+[21:29:18.7601819] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:18.7771828] [INFO] ChainIndexer - chain_tip ? height=64 hash=4518ebef4755
+[21:29:18.7781899] [INFO] ChainIndexer -  Block 64 committed (1 txs)
+run() Received: BlockData{127:22831d526d66 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 127 with 1 transactions.
+[21:29:18.8549458] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:18.8679853] [INFO] ChainIndexer - chain_tip ? height=65 hash=667a0d9d516e
+[21:29:18.8679853] [INFO] ChainIndexer -  Block 65 committed (1 txs)
+run() Received: BlockData{129:6f9bb0e8212c txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 129 with 1 transactions.
+[21:29:18.9591009] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:18.9691702] [INFO] ChainIndexer - chain_tip ? height=66 hash=3a1f0adb2589
+[21:29:18.9691702] [INFO] ChainIndexer -  Block 66 committed (1 txs)
+run() Received: BlockData{131:548cefa0c988 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 131 with 1 transactions.
+[21:29:19.0601569] [INFO] ChainIndexer - chain_tip ? height=67 hash=281242d2a9c8
+[21:29:19.0601569] [INFO] ChainIndexer -  Block 67 committed (1 txs)
+[21:29:19.0611554] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{133:7d558c899e18 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 133 with 1 transactions.
+[21:29:19.1740411] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:19.1750467] [INFO] ChainIndexer - chain_tip ? height=68 hash=656cb7705b6a
+[21:29:19.1760313] [INFO] ChainIndexer -  Block 68 committed (1 txs)
+[21:29:19.1770513] [INFO] RegtestZmqListener - performSync() Resuming from height=133
+[21:29:19.2234284] [INFO] RegtestZmqListener - performSync() Sync decision: lastHeight=133, tip=202, gap=69
+[21:29:19.2234284] [INFO] RegtestZmqListener - performSync() Gap 69 > threshold 10 ? running block sync
+[21:29:19.2264146] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:29:19.2676086] [INFO] ChainIndexer - chain_tip ? height=69 hash=45e19f1ebfe4
+[21:29:19.2676086] [INFO] ChainIndexer -  Block 69 committed (1 txs)
+[21:29:19.3141421] [INFO] RegtestZmqListener - syncFromCore() Block sync: 133 ? 202
+[21:29:19.361232] [INFO] ChainIndexer - chain_tip ? height=70 hash=0b5f2285465c
+[21:29:19.361232] [INFO] ChainIndexer -  Block 70 committed (1 txs)
+[21:29:19.458483] [INFO] ChainIndexer - chain_tip ? height=71 hash=679ddf7edc1a
+[21:29:19.458483] [INFO] ChainIndexer -  Block 71 committed (1 txs)
+[21:29:19.5494547] [INFO] ChainIndexer - chain_tip ? height=72 hash=5847ab0987ca
+[21:29:19.5494547] [INFO] ChainIndexer -  Block 72 committed (1 txs)
+[21:29:19.6543345] [INFO] ChainIndexer - chain_tip ? height=73 hash=2db508a34510
+[21:29:19.6543345] [INFO] ChainIndexer -  Block 73 committed (1 txs)
+[21:29:19.7512025] [INFO] ChainIndexer - chain_tip ? height=74 hash=1743c0620044
+[21:29:19.7512025] [INFO] ChainIndexer -  Block 74 committed (1 txs)
+[21:29:19.846807] [INFO] ChainIndexer - chain_tip ? height=75 hash=656506d347c2
+[21:29:19.846807] [INFO] ChainIndexer -  Block 75 committed (1 txs)
+[21:29:19.9367996] [INFO] ChainIndexer - chain_tip ? height=76 hash=0a05bd999521
+[21:29:19.9367996] [INFO] ChainIndexer -  Block 76 committed (1 txs)
+[21:29:20.028931] [INFO] ChainIndexer - chain_tip ? height=77 hash=52063d476a04
+[21:29:20.028931] [INFO] ChainIndexer -  Block 77 committed (1 txs)
+[21:29:20.1247591] [INFO] ChainIndexer - chain_tip ? height=78 hash=53c31ffadd1b
+[21:29:20.1247591] [INFO] ChainIndexer -  Block 78 committed (1 txs)
+[21:29:20.2277317] [INFO] ChainIndexer - chain_tip ? height=79 hash=6cf91655c7e9
+[21:29:20.2277317] [INFO] ChainIndexer -  Block 79 committed (1 txs)
+[21:29:20.3212572] [INFO] ChainIndexer - chain_tip ? height=80 hash=7861a2e533f0
+[21:29:20.3212572] [INFO] ChainIndexer -  Block 80 committed (1 txs)
+[21:29:20.4136255] [INFO] ChainIndexer - chain_tip ? height=81 hash=7da10ad42bbc
+[21:29:20.4136255] [INFO] ChainIndexer -  Block 81 committed (1 txs)
+[21:29:20.5159052] [INFO] ChainIndexer - chain_tip ? height=82 hash=55175b23ce8c
+[21:29:20.5169596] [INFO] ChainIndexer -  Block 82 committed (1 txs)
+[21:29:20.608806] [INFO] ChainIndexer - chain_tip ? height=83 hash=58cc6068e2d6
+[21:29:20.608806] [INFO] ChainIndexer -  Block 83 committed (1 txs)
+[21:29:20.7047597] [INFO] ChainIndexer - chain_tip ? height=84 hash=2dfe2c32acb1
+[21:29:20.7047597] [INFO] ChainIndexer -  Block 84 committed (1 txs)
+[21:29:20.8017168] [INFO] ChainIndexer - chain_tip ? height=85 hash=29d619828e56
+[21:29:20.8026826] [INFO] ChainIndexer -  Block 85 committed (1 txs)
+[21:29:20.8952258] [INFO] ChainIndexer - chain_tip ? height=86 hash=466042c13a96
+[21:29:20.8952258] [INFO] ChainIndexer -  Block 86 committed (1 txs)
+[21:29:20.9885485] [INFO] ChainIndexer - chain_tip ? height=87 hash=63c2a6bd4da1
+[21:29:20.9885485] [INFO] ChainIndexer -  Block 87 committed (1 txs)
+[21:29:21.0875941] [INFO] ChainIndexer - chain_tip ? height=88 hash=76e8eccbb226
+[21:29:21.0875941] [INFO] ChainIndexer -  Block 88 committed (1 txs)
+[21:29:21.1821669] [INFO] ChainIndexer - chain_tip ? height=89 hash=1ad63f6f2718
+[21:29:21.1821669] [INFO] ChainIndexer -  Block 89 committed (1 txs)
+[21:29:21.2758855] [INFO] ChainIndexer - chain_tip ? height=90 hash=619a4bd6590e
+[21:29:21.2758855] [INFO] ChainIndexer -  Block 90 committed (1 txs)
+[21:29:21.3787845] [INFO] ChainIndexer - chain_tip ? height=91 hash=0200b1e8e74c
+[21:29:21.3787845] [INFO] ChainIndexer -  Block 91 committed (1 txs)
+[21:29:21.4754535] [INFO] ChainIndexer - chain_tip ? height=92 hash=4f7fc22e3b94
+[21:29:21.4754535] [INFO] ChainIndexer -  Block 92 committed (1 txs)
+[21:29:21.5780779] [INFO] ChainIndexer - chain_tip ? height=93 hash=24c86faff154
+[21:29:21.5780779] [INFO] ChainIndexer -  Block 93 committed (1 txs)
+[21:29:21.6786177] [INFO] ChainIndexer - chain_tip ? height=94 hash=045ceb1c4931
+[21:29:21.6786177] [INFO] ChainIndexer -  Block 94 committed (1 txs)
+[21:29:21.7678434] [INFO] ChainIndexer - chain_tip ? height=95 hash=4998d676c5e1
+[21:29:21.7678434] [INFO] ChainIndexer -  Block 95 committed (1 txs)
+[21:29:21.8678927] [INFO] ChainIndexer - chain_tip ? height=96 hash=104cd1a8bfc5
+[21:29:21.8678927] [INFO] ChainIndexer -  Block 96 committed (1 txs)
+[21:29:21.9610711] [INFO] ChainIndexer - chain_tip ? height=97 hash=13680732da8b
+[21:29:21.9741763] [INFO] ChainIndexer -  Block 97 committed (1 txs)
+[21:29:22.0687837] [INFO] ChainIndexer - chain_tip ? height=98 hash=129b2c34c13a
+[21:29:22.0687837] [INFO] ChainIndexer -  Block 98 committed (1 txs)
+[21:29:22.1605992] [INFO] ChainIndexer - chain_tip ? height=99 hash=5fe9222780fa
+[21:29:22.1605992] [INFO] ChainIndexer -  Block 99 committed (1 txs)
+[21:29:22.2564943] [INFO] ChainIndexer - chain_tip ? height=100 hash=1a332cf7f1e9
+[21:29:22.257491] [INFO] ChainIndexer -  Block 100 committed (1 txs)
+[21:29:22.348464] [INFO] ChainIndexer - chain_tip ? height=101 hash=43b3138b4c2d
+[21:29:22.348464] [INFO] ChainIndexer -  Block 101 committed (1 txs)
+[21:29:22.4487777] [INFO] ChainIndexer - chain_tip ? height=102 hash=112760d375d5
+[21:29:22.4487777] [INFO] ChainIndexer -  Block 102 committed (1 txs)
+[21:29:22.5405214] [INFO] ChainIndexer - chain_tip ? height=103 hash=5e8253e6e388
+[21:29:22.5405214] [INFO] ChainIndexer -  Block 103 committed (1 txs)
+[21:29:22.6431295] [INFO] ChainIndexer - chain_tip ? height=104 hash=30cf494cde35
+[21:29:22.6431295] [INFO] ChainIndexer -  Block 104 committed (1 txs)
+[21:29:22.7467791] [INFO] ChainIndexer - chain_tip ? height=105 hash=73f63f7c6423
+[21:29:22.74778] [INFO] ChainIndexer -  Block 105 committed (1 txs)
+[21:29:22.9067676] [INFO] ChainIndexer - chain_tip ? height=106 hash=26a958838dcd
+[21:29:22.9067676] [INFO] ChainIndexer -  Block 106 committed (1 txs)
+[21:29:23.0005339] [INFO] ChainIndexer - chain_tip ? height=107 hash=4dd76e7c0d15
+[21:29:23.0005339] [INFO] ChainIndexer -  Block 107 committed (1 txs)
+[21:29:23.1018546] [INFO] ChainIndexer - chain_tip ? height=108 hash=5cebd66e3175
+[21:29:23.1018546] [INFO] ChainIndexer -  Block 108 committed (1 txs)
+[21:29:23.206594] [INFO] ChainIndexer - chain_tip ? height=109 hash=2afa11411771
+[21:29:23.206594] [INFO] ChainIndexer -  Block 109 committed (1 txs)
+[21:29:23.3045368] [INFO] ChainIndexer - chain_tip ? height=110 hash=055f7f92edb7
+[21:29:23.3271967] [INFO] ChainIndexer -  Block 110 committed (1 txs)
+[21:29:23.4242748] [INFO] ChainIndexer - chain_tip ? height=111 hash=06f8aead14fa
+[21:29:23.4242748] [INFO] ChainIndexer -  Block 111 committed (1 txs)
+[21:29:23.5229947] [INFO] ChainIndexer - chain_tip ? height=112 hash=73e595c0173f
+[21:29:23.523996] [INFO] ChainIndexer -  Block 112 committed (1 txs)
+[21:29:23.6250837] [INFO] ChainIndexer - chain_tip ? height=113 hash=10455d8115c0
+[21:29:23.6260808] [INFO] ChainIndexer -  Block 113 committed (1 txs)
+[21:29:23.7182708] [INFO] ChainIndexer - chain_tip ? height=114 hash=4fec4399cc4d
+[21:29:23.7182708] [INFO] ChainIndexer -  Block 114 committed (1 txs)
+[21:29:23.8183431] [INFO] ChainIndexer - chain_tip ? height=115 hash=7ab2891d0f02
+[21:29:23.8183431] [INFO] ChainIndexer -  Block 115 committed (1 txs)
+[21:29:23.9089128] [INFO] ChainIndexer - chain_tip ? height=116 hash=390616d4071c
+[21:29:23.9089128] [INFO] ChainIndexer -  Block 116 committed (1 txs)
+[21:29:24.0055248] [INFO] ChainIndexer - chain_tip ? height=117 hash=52e3dcf881f5
+[21:29:24.0055248] [INFO] ChainIndexer -  Block 117 committed (1 txs)
+[21:29:24.1085552] [INFO] ChainIndexer - chain_tip ? height=118 hash=66e58b284e61
+[21:29:24.1094899] [INFO] ChainIndexer -  Block 118 committed (1 txs)
+[21:29:24.2092539] [INFO] ChainIndexer - chain_tip ? height=119 hash=5c7c841a3b9a
+[21:29:24.2092539] [INFO] ChainIndexer -  Block 119 committed (1 txs)
+[21:29:24.3027542] [INFO] ChainIndexer - chain_tip ? height=120 hash=6160b8229170
+[21:29:24.3027542] [INFO] ChainIndexer -  Block 120 committed (1 txs)
+[21:29:24.4078124] [INFO] ChainIndexer - chain_tip ? height=121 hash=63382f07f4af
+[21:29:24.4078124] [INFO] ChainIndexer -  Block 121 committed (1 txs)
+[21:29:24.5049448] [INFO] ChainIndexer - chain_tip ? height=122 hash=6c7a7839b2d1
+[21:29:24.5049448] [INFO] ChainIndexer -  Block 122 committed (1 txs)
+[21:29:24.6123854] [INFO] ChainIndexer - chain_tip ? height=123 hash=4a3d9ab538ed
+[21:29:24.6123854] [INFO] ChainIndexer -  Block 123 committed (1 txs)
+[21:29:24.7049832] [INFO] ChainIndexer - chain_tip ? height=124 hash=163f39bfc7f1
+[21:29:24.7049832] [INFO] ChainIndexer -  Block 124 committed (1 txs)
+[21:29:24.8020391] [INFO] ChainIndexer - chain_tip ? height=125 hash=00ac998c53c7
+[21:29:24.8020391] [INFO] ChainIndexer -  Block 125 committed (1 txs)
+[21:29:24.9008379] [INFO] ChainIndexer - chain_tip ? height=126 hash=2600f228e545
+[21:29:24.9017811] [INFO] ChainIndexer -  Block 126 committed (1 txs)
+[21:29:24.9967655] [INFO] ChainIndexer - chain_tip ? height=127 hash=22831d526d66
+[21:29:24.9967655] [INFO] ChainIndexer -  Block 127 committed (1 txs)
+[21:29:25.0888739] [INFO] ChainIndexer - chain_tip ? height=128 hash=620e1014d5db
+[21:29:25.0888739] [INFO] ChainIndexer -  Block 128 committed (1 txs)
+[21:29:25.1908899] [INFO] ChainIndexer - chain_tip ? height=129 hash=6f9bb0e8212c
+[21:29:25.1918933] [INFO] ChainIndexer -  Block 129 committed (1 txs)
+[21:29:25.2918126] [INFO] ChainIndexer - chain_tip ? height=130 hash=38f95ecbd0f2
+[21:29:25.2928136] [INFO] ChainIndexer -  Block 130 committed (1 txs)
+[21:29:25.3877793] [INFO] ChainIndexer - chain_tip ? height=131 hash=548cefa0c988
+[21:29:25.3887286] [INFO] ChainIndexer -  Block 131 committed (1 txs)
+[21:29:25.4822051] [INFO] ChainIndexer - chain_tip ? height=132 hash=1722c7d0ee7f
+[21:29:25.4822051] [INFO] ChainIndexer -  Block 132 committed (1 txs)
+[21:29:25.5767068] [INFO] ChainIndexer - chain_tip ? height=133 hash=7d558c899e18
+[21:29:25.5767068] [INFO] ChainIndexer -  Block 133 committed (1 txs)
+[21:29:25.6767558] [INFO] ChainIndexer - chain_tip ? height=134 hash=3d08f792bc97
+[21:29:25.6767558] [INFO] ChainIndexer -  Block 134 committed (1 txs)
+[21:29:25.7783425] [INFO] ChainIndexer - chain_tip ? height=135 hash=141d26206cb0
+[21:29:25.7783425] [INFO] ChainIndexer -  Block 135 committed (1 txs)
+[21:29:25.8733322] [INFO] ChainIndexer - chain_tip ? height=136 hash=40e93ae59873
+[21:29:25.8733322] [INFO] ChainIndexer -  Block 136 committed (1 txs)
+[21:29:25.9698501] [INFO] ChainIndexer - chain_tip ? height=137 hash=38fdaa283631
+[21:29:25.9698501] [INFO] ChainIndexer -  Block 137 committed (1 txs)
+[21:29:26.0021939] [INFO] RegtestZmqListener - syncFromCore() Processed block 200
+[21:29:26.0610744] [INFO] ChainIndexer - chain_tip ? height=138 hash=08f5c651f25a
+[21:29:26.0610744] [INFO] ChainIndexer -  Block 138 committed (1 txs)
+[21:29:26.1536654] [INFO] ChainIndexer - chain_tip ? height=139 hash=70736bb65238
+[21:29:26.1536654] [INFO] ChainIndexer -  Block 139 committed (1 txs)
+[21:29:26.1899342] [INFO] RegtestZmqListener - syncFromCore() Block sync complete up to height 202
+Commit transaction: database in auto-commit mode
+[21:29:26.1918627] [INFO] RegtestZmqListener - syncOnce() Starting UTXO sync...
+[21:29:26.2391913] [INFO] RegtestZmqListener - syncOnce() First sync - expecting empty or initial UTXO set.
+[21:29:26.244226] [INFO] ChainIndexer - chain_tip ? height=140 hash=34c812504372
+[21:29:26.244226] [INFO] ChainIndexer -  Block 140 committed (1 txs)
+[21:29:26.3406635] [INFO] ChainIndexer - chain_tip ? height=141 hash=16e12a418e64
+[21:29:26.3406635] [INFO] ChainIndexer -  Block 141 committed (1 txs)
+[21:29:26.4050182] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+
+############################### Utxo Summary ###################################
+=== UTXO Summary ===
+Total Balance      : 5100.00000000 BTC
+Spendable Balance  : 5100.00000000 BTC
+Immature Balance   : 0.00000000 BTC
+
+Total UTXOs        : 102
+Spendable UTXOs    : 102
+
+Largest UTXO       : 50.00000000 BTC
+Smallest UTXO      : 50.00000000 BTC
+Average UTXO       : 50.00000000 BTC
+
+Dust UTXOs         : 0
+
+##################################################################################
+[21:29:26.457202] [INFO] ChainIndexer - chain_tip ? height=142 hash=372186b984d5
+[21:29:26.457202] [INFO] ChainIndexer -  Block 142 committed (1 txs)
+Commit transaction: database in auto-commit mode
+[21:29:26.477381] [INFO] RegtestZmqListener - syncOnce() UTXO sync completed in 287 ms: 102 UTXOs, 510000000000 sat total, 0 updated
+[21:29:26.477381] [INFO] RegtestZmqListener - run() Initial sync complete: height=202, utxos=102, total_sat=510000000000
+[21:29:26.5502617] [INFO] ChainIndexer - chain_tip ? height=143 hash=40ac05748f46
+[21:29:26.5502617] [INFO] ChainIndexer -  Block 143 committed (1 txs)
+[21:29:26.6485848] [INFO] ChainIndexer - chain_tip ? height=144 hash=2474f2d5a655
+[21:29:26.649581] [INFO] ChainIndexer -  Block 144 committed (1 txs)
+[21:29:26.7401707] [INFO] ChainIndexer - chain_tip ? height=145 hash=2a1e565eb787
+[21:29:26.7401707] [INFO] ChainIndexer -  Block 145 committed (1 txs)
+[21:29:26.8407525] [INFO] ChainIndexer - chain_tip ? height=146 hash=0130ca927468
+[21:29:26.8417519] [INFO] ChainIndexer -  Block 146 committed (1 txs)
+[21:29:26.9311311] [INFO] ChainIndexer - chain_tip ? height=147 hash=0f0c9c80147b
+[21:29:26.9311311] [INFO] ChainIndexer -  Block 147 committed (1 txs)
+[21:29:27.023579] [INFO] ChainIndexer - chain_tip ? height=148 hash=43a06f2a0646
+[21:29:27.0245803] [INFO] ChainIndexer -  Block 148 committed (1 txs)
+[21:29:27.1198813] [INFO] ChainIndexer - chain_tip ? height=149 hash=3cb408558c90
+[21:29:27.1198813] [INFO] ChainIndexer -  Block 149 committed (1 txs)
+[21:29:27.2166857] [INFO] ChainIndexer - chain_tip ? height=150 hash=748d2c784b74
+[21:29:27.2176878] [INFO] ChainIndexer -  Block 150 committed (1 txs)
+[21:29:27.3103876] [INFO] ChainIndexer - chain_tip ? height=151 hash=32679ba927a8
+[21:29:27.3103876] [INFO] ChainIndexer -  Block 151 committed (1 txs)
+[21:29:27.4089108] [INFO] ChainIndexer - chain_tip ? height=152 hash=6c53436071d1
+[21:29:27.4215167] [INFO] ChainIndexer -  Block 152 committed (1 txs)
+[21:29:27.5244958] [INFO] ChainIndexer - chain_tip ? height=153 hash=18480ddd9443
+[21:29:27.5254954] [INFO] ChainIndexer -  Block 153 committed (1 txs)
+[21:29:27.6171248] [INFO] ChainIndexer - chain_tip ? height=154 hash=12d656be8bd1
+[21:29:27.6181295] [INFO] ChainIndexer -  Block 154 committed (1 txs)
+[21:29:27.712219] [INFO] ChainIndexer - chain_tip ? height=155 hash=5c7225056e57
+[21:29:27.712219] [INFO] ChainIndexer -  Block 155 committed (1 txs)
+[21:29:27.8072416] [INFO] ChainIndexer - chain_tip ? height=156 hash=6025262cf62e
+[21:29:27.8083442] [INFO] ChainIndexer -  Block 156 committed (1 txs)
+[21:29:27.9081849] [INFO] ChainIndexer - chain_tip ? height=157 hash=58fca912e3f1
+[21:29:27.9091868] [INFO] ChainIndexer -  Block 157 committed (1 txs)
+[21:29:28.0015567] [INFO] ChainIndexer - chain_tip ? height=158 hash=56f05fbea578
+[21:29:28.0015567] [INFO] ChainIndexer -  Block 158 committed (1 txs)
+[21:29:28.0945814] [INFO] ChainIndexer - chain_tip ? height=159 hash=3c054784b709
+[21:29:28.0945814] [INFO] ChainIndexer -  Block 159 committed (1 txs)
+[21:29:28.1922491] [INFO] ChainIndexer - chain_tip ? height=160 hash=293f135ec6cf
+[21:29:28.1922491] [INFO] ChainIndexer -  Block 160 committed (1 txs)
+[21:29:28.2928373] [INFO] ChainIndexer - chain_tip ? height=161 hash=4e92a568831c
+[21:29:28.2928373] [INFO] ChainIndexer -  Block 161 committed (1 txs)
+[21:29:28.3852444] [INFO] ChainIndexer - chain_tip ? height=162 hash=12c6bdab1a96
+[21:29:28.3852444] [INFO] ChainIndexer -  Block 162 committed (1 txs)
+[21:29:28.4845165] [INFO] ChainIndexer - chain_tip ? height=163 hash=47354769ea0d
+[21:29:28.4845165] [INFO] ChainIndexer -  Block 163 committed (1 txs)
+[21:29:28.584388] [INFO] ChainIndexer - chain_tip ? height=164 hash=7b563bd86a06
+[21:29:28.5853912] [INFO] ChainIndexer -  Block 164 committed (1 txs)
+[21:29:28.6767956] [INFO] ChainIndexer - chain_tip ? height=165 hash=2df02a1a32dd
+[21:29:28.6767956] [INFO] ChainIndexer -  Block 165 committed (1 txs)
+[21:29:28.7701765] [INFO] ChainIndexer - chain_tip ? height=166 hash=20ab1f12f999
+[21:29:28.7701765] [INFO] ChainIndexer -  Block 166 committed (1 txs)
+[21:29:28.8654786] [INFO] ChainIndexer - chain_tip ? height=167 hash=3112585ad194
+[21:29:28.8665257] [INFO] ChainIndexer -  Block 167 committed (1 txs)
+[21:29:28.9555946] [INFO] ChainIndexer - chain_tip ? height=168 hash=3baef1d7628a
+[21:29:28.956595] [INFO] ChainIndexer -  Block 168 committed (1 txs)
+[21:29:29.055234] [INFO] ChainIndexer - chain_tip ? height=169 hash=1079d4b773ed
+[21:29:29.055234] [INFO] ChainIndexer -  Block 169 committed (1 txs)
+[21:29:29.1549952] [INFO] ChainIndexer - chain_tip ? height=170 hash=2a82a5689f44
+[21:29:29.1559959] [INFO] ChainIndexer -  Block 170 committed (1 txs)
+[21:29:29.2494614] [INFO] ChainIndexer - chain_tip ? height=171 hash=71d113ef9d88
+[21:29:29.2494614] [INFO] ChainIndexer -  Block 171 committed (1 txs)
+[21:29:29.3425723] [INFO] ChainIndexer - chain_tip ? height=172 hash=30e1f088a262
+[21:29:29.3425723] [INFO] ChainIndexer -  Block 172 committed (1 txs)
+[21:29:29.4391945] [INFO] ChainIndexer - chain_tip ? height=173 hash=3bb79e37b060
+[21:29:29.4401956] [INFO] ChainIndexer -  Block 173 committed (1 txs)
+[21:29:29.5371962] [INFO] ChainIndexer - chain_tip ? height=174 hash=053179ff9306
+[21:29:29.5371962] [INFO] ChainIndexer -  Block 174 committed (1 txs)
+[21:29:29.6340855] [INFO] ChainIndexer - chain_tip ? height=175 hash=5c76f727c995
+[21:29:29.635085] [INFO] ChainIndexer -  Block 175 committed (1 txs)
+[21:29:29.733618] [INFO] ChainIndexer - chain_tip ? height=176 hash=414ae6332e1e
+[21:29:29.733618] [INFO] ChainIndexer -  Block 176 committed (1 txs)
+[21:29:29.8270891] [INFO] ChainIndexer - chain_tip ? height=177 hash=15830fb757fc
+[21:29:29.8280893] [INFO] ChainIndexer -  Block 177 committed (1 txs)
+[21:29:29.9277753] [INFO] ChainIndexer - chain_tip ? height=178 hash=56ab92194e73
+[21:29:29.9287757] [INFO] ChainIndexer -  Block 178 committed (1 txs)
+[21:29:30.0205726] [INFO] ChainIndexer - chain_tip ? height=179 hash=7ed935ace6d6
+[21:29:30.0205726] [INFO] ChainIndexer -  Block 179 committed (1 txs)
+[21:29:30.1116404] [INFO] ChainIndexer - chain_tip ? height=180 hash=152a6d64fddd
+[21:29:30.1116404] [INFO] ChainIndexer -  Block 180 committed (1 txs)
+[21:29:30.2016099] [INFO] ChainIndexer - chain_tip ? height=181 hash=259aa7d78af1
+[21:29:30.2016099] [INFO] ChainIndexer -  Block 181 committed (1 txs)
+[21:29:30.3011282] [INFO] ChainIndexer - chain_tip ? height=182 hash=35e0cd2569ca
+[21:29:30.3011282] [INFO] ChainIndexer -  Block 182 committed (1 txs)
+[21:29:30.3972334] [INFO] ChainIndexer - chain_tip ? height=183 hash=26776a20a497
+[21:29:30.3972334] [INFO] ChainIndexer -  Block 183 committed (1 txs)
+[21:29:30.5505228] [INFO] ChainIndexer - chain_tip ? height=184 hash=5d6937d06edf
+[21:29:30.5515321] [INFO] ChainIndexer -  Block 184 committed (1 txs)
+[21:29:30.6476828] [INFO] ChainIndexer - chain_tip ? height=185 hash=5eeef4c84986
+[21:29:30.6476828] [INFO] ChainIndexer -  Block 185 committed (1 txs)
+[21:29:30.7487497] [INFO] ChainIndexer - chain_tip ? height=186 hash=5e4390063a02
+[21:29:30.7496968] [INFO] ChainIndexer -  Block 186 committed (1 txs)
+[21:29:30.8457719] [INFO] ChainIndexer - chain_tip ? height=187 hash=49ea0851d202
+[21:29:30.8462909] [INFO] ChainIndexer -  Block 187 committed (1 txs)
+[21:29:30.9391757] [INFO] ChainIndexer - chain_tip ? height=188 hash=2f4331b77eae
+[21:29:30.9391757] [INFO] ChainIndexer -  Block 188 committed (1 txs)
+[21:29:31.03568] [INFO] ChainIndexer - chain_tip ? height=189 hash=18cead34b4a6
+[21:29:31.03568] [INFO] ChainIndexer -  Block 189 committed (1 txs)
+[21:29:31.1357609] [INFO] ChainIndexer - chain_tip ? height=190 hash=2f1fa46a3600
+[21:29:31.1367571] [INFO] ChainIndexer -  Block 190 committed (1 txs)
+[21:29:31.2293548] [INFO] ChainIndexer - chain_tip ? height=191 hash=2f27528e7500
+[21:29:31.2293548] [INFO] ChainIndexer -  Block 191 committed (1 txs)
+[21:29:31.3286977] [INFO] ChainIndexer - chain_tip ? height=192 hash=0090357e6eac
+[21:29:31.3286977] [INFO] ChainIndexer -  Block 192 committed (1 txs)
+[21:29:31.4263089] [INFO] ChainIndexer - chain_tip ? height=193 hash=3e27a874cfce
+[21:29:31.4263089] [INFO] ChainIndexer -  Block 193 committed (1 txs)
+[21:29:31.5159448] [INFO] ChainIndexer - chain_tip ? height=194 hash=75974b5f649d
+[21:29:31.5159448] [INFO] ChainIndexer -  Block 194 committed (1 txs)
+[21:29:31.606823] [INFO] ChainIndexer - chain_tip ? height=195 hash=4f2e9d669268
+[21:29:31.606823] [INFO] ChainIndexer -  Block 195 committed (1 txs)
+[21:29:31.6957306] [INFO] ChainIndexer - chain_tip ? height=196 hash=434294d7eb22
+[21:29:31.6967327] [INFO] ChainIndexer -  Block 196 committed (1 txs)
+[21:29:31.7877616] [INFO] ChainIndexer - chain_tip ? height=197 hash=206cb60f25e4
+[21:29:31.7877616] [INFO] ChainIndexer -  Block 197 committed (1 txs)
+[21:29:31.8754313] [INFO] ChainIndexer - chain_tip ? height=198 hash=383e0c0089ee
+[21:29:31.8754313] [INFO] ChainIndexer -  Block 198 committed (1 txs)
+[21:29:31.9677977] [INFO] ChainIndexer - chain_tip ? height=199 hash=53f1ce451c56
+[21:29:31.9677977] [INFO] ChainIndexer -  Block 199 committed (1 txs)
+[21:29:32.0600725] [INFO] ChainIndexer - chain_tip ? height=200 hash=102855a5763c
+[21:29:32.0600725] [INFO] ChainIndexer -  Block 200 committed (1 txs)
+[21:29:32.1513587] [INFO] ChainIndexer - chain_tip ? height=201 hash=6a1be7aaaff7
+[21:29:32.1523591] [INFO] ChainIndexer -  Block 201 committed (1 txs)
+[21:29:32.2443352] [INFO] ChainIndexer - chain_tip ? height=202 hash=5c94b04590aa
+[21:29:32.2443352] [INFO] ChainIndexer -  Block 202 committed (1 txs)
+Commit transaction: database in auto-commit mode
+[21:29:32.2553398] [INFO] ChainDatabase -  New connection created for thread = main
+[21:29:32.3021601] [INFO] ChainSyncer -  Already at tip height=202
+[21:29:32.304161] [INFO] HIDZMQHDWallet - Wallet + Lightning initialized
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Merchant: receive payment
+10) Merchant: receive payment (API/custom capacity)
+11) Consolidate change UTXOs
+0)  Exit application
+Select option: 1
+=== Wallet Info ===
+Wallet name        : btcnode_watchonly
+Balance (spendable): 5100.0 BTC
+Watch-only balance : 5100.0 BTC
+Transaction count  : 202
+
+=== UTXOs ===
+UTXO count        : 102
+UTXO total amount : 5100.0 BTC
+
+=== Watched addresses (sample) ===
+  bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Merchant: receive payment
+10) Merchant: receive payment (API/custom capacity)
+11) Consolidate change UTXOs
+0)  Exit application
+Select option: 2
+[21:30:03.7849248] [INFO] HIDZMQHDWallet - === Fee Estimates (BTC/kB and sat/vB) ===
+Target  1 blocks: 1.00000000 BTC/kvB
+Target  2 blocks: 1.00000000 BTC/kvB
+Target  3 blocks: 1.00000000 BTC/kvB
+Target  6 blocks: 1.00000000 BTC/kvB
+Target 12 blocks: 1.00000000 BTC/kvB
+
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Merchant: receive payment
+10) Merchant: receive payment (API/custom capacity)
+11) Consolidate change UTXOs
+0)  Exit application
+Select option: 3
+[21:30:08.7251009] [INFO] HIDZMQHDWallet - [sendCoins()] --- Send Coins ---
+[21:30:08.7285587] [INFO] HdAddressManager - [getNextMiningAddress()] countUsedKeys=8, LOOKAHEAD=5
+[validateaddress] addr=bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje isvalid=true raw={"scriptPubKey":"0014e296ecdbda991c19f9466e8af28065b3bd82a1c2","witness_program":"e296ecdbda991c19f9466e8af28065b3bd82a1c2","address":"bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:30:08.8214182] [INFO] HIDZMQHDWallet - Enter this addtress: bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje as destination
+Destination address: bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje
+Amount BTC (e.g. 0.1): 0.3
+Target blocks [6]: 6
+[21:30:33.708899] [INFO] HIDZMQHDWallet - [sendCoins()] Creating, signing, and broadcasting transaction...
+[21:30:33.7199955] [INFO] HdAddressManager - [getNextChangeAddress()] countUnusedChangeKeys=4, CHANGE_LOOKAHEAD=3
+[validateaddress] addr=bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w isvalid=true raw={"scriptPubKey":"0014aa00439788c1dae440a170f621e1ea9f102ad7c4","witness_program":"aa00439788c1dae440a170f621e1ea9f102ad7c4","address":"bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:30:33.8672107] [INFO] HIDZMQHDWallet - [sendCoins] estimatedFee=0.0001 BTC
+[21:30:33.8672107] [INFO] FundingGuard - Checking funds: amount=0.3 fee=0.0001 total_needed=0.3001 BTC
+[21:30:33.9227704] [INFO] FundingGuard - Current balance: spendable=5100.0 BTC utxos=102
+[21:30:33.9227704] [INFO] FundingGuard - ? Sufficient funds: 5100.0 BTC >= 0.3001 BTC
+[21:30:33.9237655] [INFO] HIDZMQHDWallet - [sendCoins] Funding confirmed: FundingResult{balance=5100.0 BTC utxos=102 mined=0 needed=0.3001 surplus=5099.6999}
+[21:30:33.9786577] [INFO] CoinSelector - Mature spendable Utxos from Core: 102
+[21:30:33.9796237] [INFO] CoinSelector - Adding Utxo: txid=e97b3e9bb28964413470f7e696cdcafaad1e64914c2166e10e021fb14d146791:0 amount=50.0 BTC confs=130 coinbase=false
+[21:30:33.9796237] [INFO] CoinSelector - Selected 1 Utxo(s) totalling 50.0 BTC to cover 1.3001 BTC
+[21:30:33.9796237] [INFO] OwnSigner - ensureInputsHaveSolvingData: Checking solving data for 1 input(s)...
+[21:30:33.9816234] [INFO] OwnSigner - ensureInputsHaveSolvingData: fingerprint=98667b10 coinType=1
+[21:30:34.0314801] [INFO] OwnSigner - ensureInputsHaveSolvingData:] addr=bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq solvable=true hasHdPath=true desc=wpkh([98667b10/84h/1h/0h/0/0]028f44efe3e2cc0bf1e3a...
+[21:30:34.0314801] [INFO] OwnSigner - ensureInputsHaveSolvingData: ? bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq already has solving data.
+[21:30:34.0314801] [INFO] OwnSigner - ensureInputsHaveSolvingData: All inputs already have solving data ?
+[signPsbtWithOwnSigner()] pubkeyHex=028f44efe3e2cc0bf1e3aff7307d47ca11497fda1880a287ed22f128a7609d4c0c
+[signPsbtWithOwnSigner()] input=0 path=m/84h/1h/0h/0/0 masterFp=98667b10
+[OwnSigner => signInput()] inputValueSat: 5000000000
+[OwnSigner => signInput()] scriptPubKey: [0, 20, -106, -111, -70, 32, 51, 55, -13, 108, -35, 63, -51, 20, 54, 12, -84, -95, -36, -106, -70, -13]
+[21:30:34.788792] [INFO] HIDZMQHDWallet - [sendCoins] Mined 1 block to confirm tx.
+[21:30:34.788792] [INFO] HIDZMQHDWallet - Controller : Both Syncers are free. I will assign a task to a Syncer.
+[21:30:34.788792] [INFO] SharedMonitor - Controller (HIDZMQHDWallet): Assigning task to worker with Id = 1 
+[21:30:34.7907962] [INFO] HdAddressManager - Lookahead check: unused receive=7 threshold=5
+[21:30:34.7927879] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:30:34.7927879] [INFO] RegtestZmqListener - performSync() Resuming from height=202
+[21:30:34.7937868] [INFO] HdAddressManager - Lookahead OK: receive=7
+[21:30:34.7937868] [INFO] HIDZMQHDWallet - [sendCoins()] Broadcasted txid: 968f8791d977c029acc6e9fbf20fc782b2b9329a6fce6a5f9be928a3f9f944a8
+[21:30:34.7937868] [INFO] HIDZMQHDWallet - [sendCoins()] Verify in Core with:
+[21:30:34.7937868] [INFO] HIDZMQHDWallet - [sendCoins()] bitcoin-cli -regtest getrawtransaction 968f8791d977c029acc6e9fbf20fc782b2b9329a6fce6a5f9be928a3f9f944a8 1
+Fetching data from Bitcoin Core...
+[21:30:34.7967872] [INFO] RegtestZmqListener - performSync() Sync decision: lastHeight=202, tip=203, gap=1
+[21:30:34.7977877] [INFO] RegtestZmqListener - syncOnce() Starting UTXO sync...
+[21:30:34.8426352] [INFO] RegtestZmqListener - syncOnce() Blocks advanced by 1 (from 202 to 203)
+Processing 104 UTXOs...
+[21:30:35.0051405] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+
+############################### Utxo Summary ###################################
+=== UTXO Summary ===
+Total Balance      : 5149.99997180 BTC
+Spendable Balance  : 5149.99997180 BTC
+Immature Balance   : 0.00000000 BTC
+
+Total UTXOs        : 104
+Spendable UTXOs    : 104
+
+Largest UTXO       : 50.00000000 BTC
+Smallest UTXO      : 0.30000000 BTC
+Average UTXO       : 49.51923050 BTC
+
+Dust UTXOs         : 0
+
+##################################################################################
+Commit transaction: database in auto-commit mode
+[21:30:35.0702615] [INFO] RegtestZmqListener - syncOnce() UTXO sync completed in 273 ms: 104 UTXOs, 514999997180 sat total, 0 updated
+[21:30:35.0702615] [INFO] RegtestZmqListener - run() Initial sync complete: height=203, utxos=104, total_sat=514999997180
+
+=== MINING / RECEIVING ADDRESSES (External) ===
+bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje
+
+=== CHANGE ADDRESSES (Internal) ===
+bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w
+[21:30:39.8325737] [INFO] HIDZMQHDWallet - [sendCoins()] usedReceiveAddress: bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+[21:30:39.8335076] [INFO] HIDZMQHDWallet - [sendCoins()] usedReceiveAddress: bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje
+[21:30:39.8335076] [INFO] HIDZMQHDWallet - [sendCoins()] usedChangeAddress: bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Merchant: receive payment
+10) Merchant: receive payment (API/custom capacity)
+11) Consolidate change UTXOs
+0)  Exit application
+Select option: 4
+[21:30:47.3010254] [INFO] HIDZMQHDWallet - [sendHwiCoins()] --- Send Coins ---
+[21:30:47.305795] [INFO] HdAddressManager - [getNextMiningAddress()] countUsedKeys=7, LOOKAHEAD=5
+[validateaddress] addr=bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h isvalid=true raw={"scriptPubKey":"0014e8106b0516d6fe71db3777047f14ceff63d14efd","witness_program":"e8106b0516d6fe71db3777047f14ceff63d14efd","address":"bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:30:47.4014952] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Enter this addtress: bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h as destination
+Destination address: 5
+Amount BTC (e.g. 0.1): 0.21
+Target blocks [6]: 6
+[21:31:06.4326382] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Creating, signing, and broadcasting transaction...
+[21:31:06.4356463] [INFO] HdAddressManager - [getNextChangeAddress()] countUnusedChangeKeys=3, CHANGE_LOOKAHEAD=3
+[validateaddress] addr=bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs isvalid=true raw={"scriptPubKey":"001460b6103bf7cc9048e5b5008b4ba8963f67909cc0","witness_program":"60b6103bf7cc9048e5b5008b4ba8963f67909cc0","address":"bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:31:06.5740012] [INFO] HIDZMQHDWallet - [sendHwiCoins()] estimatedFee=0.0001 BTC
+[21:31:06.5740012] [INFO] FundingGuard - Checking funds: amount=0.21 fee=0.0001 total_needed=0.2101 BTC
+[21:31:06.6256856] [INFO] FundingGuard - Current balance: spendable=5149.9999718 BTC utxos=104
+[21:31:06.6256856] [INFO] FundingGuard - ? Sufficient funds: 5149.9999718 BTC >= 0.2101 BTC
+[21:31:06.6256856] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Funding confirmed: FundingResult{balance=5149.9999718 BTC utxos=104 mined=0 needed=0.2101 surplus=5149.7898718}
+[21:31:06.6783531] [INFO] CoinSelector - Mature spendable Utxos from Core: 104
+[21:31:06.6793162] [INFO] CoinSelector - Adding Utxo: txid=e97b3e9bb28964413470f7e696cdcafaad1e64914c2166e10e021fb14d146791:0 amount=50.0 BTC confs=131 coinbase=false
+[21:31:06.6793162] [INFO] CoinSelector - Selected 1 Utxo(s) totalling 50.0 BTC to cover 1.2101 BTC
+[21:31:06.6793162] [INFO] OwnSigner - [sendHwiCoins()] destAddress=5
+[21:31:06.6793162] [INFO] OwnSigner - [sendHwiCoins()] changeAddress=bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs
+[21:31:06.6793162] [INFO] OwnSigner - [sendHwiCoins()] amountBtc=0.21
+[21:31:06.6793162] [INFO] OwnSigner - ensureInputsHaveSolvingData: Checking solving data for 1 input(s)...
+[21:31:06.6813203] [INFO] OwnSigner - ensureInputsHaveSolvingData: fingerprint=98667b10 coinType=1
+[21:31:06.7268514] [INFO] OwnSigner - ensureInputsHaveSolvingData:] addr=bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq solvable=true hasHdPath=true desc=wpkh([98667b10/84h/1h/0h/0/0]028f44efe3e2cc0bf1e3a...
+[21:31:06.7268514] [INFO] OwnSigner - ensureInputsHaveSolvingData: ? bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq already has solving data.
+[21:31:06.7268514] [INFO] OwnSigner - ensureInputsHaveSolvingData: All inputs already have solving data ?
+Jun 17, 2026 9:31:06 PM com.bitcoin.hidzmq.hdwallet.HIDZMQHDWallet run
+SEVERE: null
+com.bitcoin.hdwallet.core.BitcoinRpcException: RPC processing error
+	at com.bitcoin.hdwallet.core.BitcoinRpcClient.executeRpc(BitcoinRpcClient.java:284)
+	at com.bitcoin.hdwallet.tranxcontrol.OwnSigner.sendHwiCoins(OwnSigner.java:708)
+	at com.bitcoin.hidzmq.hdwallet.HIDZMQHDWallet.sendHwiCoins(HIDZMQHDWallet.java:1139)
+	at com.bitcoin.hidzmq.hdwallet.HIDZMQHDWallet.run(HIDZMQHDWallet.java:1391)
+Caused by: com.bitcoin.hdwallet.core.BitcoinRpcException: HTTP 500: {"result":null,"error":{"code":-5,"message":"Invalid Bitcoin address: 5"},"id":"java-rpc"}
+
+	at com.bitcoin.hdwallet.core.BitcoinRpcClient.executeRpc(BitcoinRpcClient.java:263)
+	... 3 more
+
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Merchant: receive payment
+10) Merchant: receive payment (API/custom capacity)
+11) Consolidate change UTXOs
+0)  Exit application
+Select option: 6
+How many blocks to mine? [1]: 5
+[21:31:46.0221966] [INFO] HIDZMQHDWallet - Mining 5 block(s) on regtest...
+[21:31:46.0258057] [INFO] HdAddressManager - [getNextMiningAddress()] countUsedKeys=6, LOOKAHEAD=5
+[21:31:46.0522749] [INFO] HIDZMQHDWallet - Mined blocks:
+[21:31:46.0522749] [INFO] HIDZMQHDWallet -   121db46529686825de50cd2121fa54d1c60b97678651de5b394b813dcc0984ec
+[21:31:46.0522749] [INFO] HIDZMQHDWallet -   60d51e794a53aa4727ac77c6b6f7466a54d31ca5867baf708390022f63eb5129
+[21:31:46.0522749] [INFO] HIDZMQHDWallet -   2e9e1c457271b6744ac64ff6ff050876789d4dc236adc1d90f54ec7229001736
+[21:31:46.0522749] [INFO] HIDZMQHDWallet -   6b0c05e9f6e7ec1ad53b03786789701a3f78805ba096f1119a17fe7e01102098
+[21:31:46.0522749] [INFO] HIDZMQHDWallet -   0b6eb52faac9e9a1608468db9ab036f3834e55aa07bf6ec3812d99a2e7edaf6e
+[21:31:46.0984367] [INFO] HIDZMQHDWallet - Tip height is now (via Core): 208
+[21:31:46.0984367] [INFO] HIDZMQHDWallet - Current block height: 208
+[21:31:46.0984367] [INFO] HIDZMQHDWallet - Controller : Both Syncers are free. I will assign a task to a Syncer.
+[21:31:46.0984367] [INFO] SharedMonitor - Controller (HIDZMQHDWallet): Assigning task to worker with Id = 1 
+[21:31:46.1024689] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{135:141d26206cb0 txs=1 size=1 weight=0}
+Rollback transaction: database in auto-commit mode
+[21:31:46.1981957] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{137:38fdaa283631 txs=1 size=1 weight=0}
+Rollback transaction: database in auto-commit mode
+[21:31:46.2915517] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:31:46.2925574] [INFO] RegtestZmqListener - performSync() Resuming from height=202
+[21:31:46.3398653] [INFO] RegtestZmqListener - performSync() Sync decision: lastHeight=202, tip=208, gap=6
+[21:31:46.3409281] [INFO] RegtestZmqListener - syncOnce() Starting UTXO sync...
+[21:31:46.3897609] [INFO] RegtestZmqListener - syncOnce() Blocks advanced by 5 (from 203 to 208)
+[21:31:46.4910715] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+
+############################### Utxo Summary ###################################
+=== UTXO Summary ===
+Total Balance      : 5399.99997180 BTC
+Spendable Balance  : 5399.99997180 BTC
+Immature Balance   : 0.00000000 BTC
+
+Total UTXOs        : 109
+Spendable UTXOs    : 109
+
+Largest UTXO       : 50.00000000 BTC
+Smallest UTXO      : 0.30000000 BTC
+Average UTXO       : 49.54128414 BTC
+
+Dust UTXOs         : 0
+
+##################################################################################
+Commit transaction: database in auto-commit mode
+[21:31:46.5634556] [INFO] RegtestZmqListener - syncOnce() UTXO sync completed in 223 ms: 109 UTXOs, 539999997180 sat total, 0 updated
+[21:31:46.5634556] [INFO] RegtestZmqListener - run() Initial sync complete: height=208, utxos=109, total_sat=539999997180
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Merchant: receive payment
+10) Merchant: receive payment (API/custom capacity)
+11) Consolidate change UTXOs
+0)  Exit application
+Select option: 7
+[21:31:54.6832385] [INFO] HIDZMQHDWallet - Controller : Both Syncers are free. I will assign a task to a Syncer.
+[21:31:54.6832385] [INFO] SharedMonitor - Controller (HIDZMQHDWallet): Assigning task to worker with Id = 2 
+[21:31:54.6832385] [INFO] ChainIndexer -  Executing task...
+[21:31:54.6882954] [INFO] ChainDatabase -  New connection created for thread = chainIndexer
+[21:31:54.7407494] [INFO] ChainIndexRepository -  getStoredTip ? 202:5c94b04590
+[21:31:54.7407494] [INFO] ReorgDetector - ourTip=202:5c94b04590 coreTip=0b6eb52faac9e9a1608468db9ab036f3834e55aa07bf6ec3812d99a2e7edaf6e
+[21:31:54.7407494] [INFO] ReorgDetector - Tip mismatch! our=202:5c94b04590 core=0b6eb52faac9e9a1608468db9ab036f3834e55aa07bf6ec3812d99a2e7edaf6e
+[21:31:54.8315581] [INFO] ReorgDetector - Scanning height=202 core=5c94b04590aa ours=5c94b04590aa
+[21:31:54.8315581] [WARN] ReorgDetector - Fork point found at height=202
+[21:31:54.8315581] [INFO] ReorgDetector - Fork at height=202   rolling back 0 block(s)
+[21:31:54.8315581] [INFO] ChainIndexRepository - getTxidsAboveHeight(202) ? 0 txids
+[21:31:54.8315581] [INFO] ReorgDetector - Orphaned txids: 0
+[21:31:54.8325542] [INFO] ChainIndexRepository - No orphaned txids   nothing to unspend
+[21:31:54.8325542] [INFO] ChainIndexRepository - [ReorgDetector] deleteUtxosCreatedAboveHeight(202): deleted 0 row(s)
+[21:31:54.8325542] [INFO] ChainIndexRepository - deleteTransactionsAboveHeight(202): deleted 0 row(s)
+[21:31:54.8325542] [INFO] ChainIndexRepository -  deleteBlocksAboveHeight(202): deleted 0 block(s) (cascade applied)
+[21:31:54.8335551] [INFO] ChainIndexRepository - updateChainTip ? height=202 hash=5c94b04590aa
+[21:31:54.8335551] [INFO] ReorgDetector - chain_tip ? height=202 hash=5c94b04590aa
+[21:31:54.8335551] [INFO] ReorgDetector - Rollback complete: removed 0 orphaned txids
+Commit transaction: database in auto-commit mode
+[21:31:54.8425626] [INFO] ChainDatabase -  New connection created for thread = chainIndexer
+[21:31:54.8878793] [INFO] ChainIndexer - Applying 6 new block(s) (203 ? 208)
+[21:31:54.9880481] [INFO] TxDataMapper - Witness stack size = 2
+[21:31:55.109275] [INFO] BlockDataMapper - [prevoutValue] No prevout data for d067a1b90aafd3ebce9867a719a326ce5f36ae127d4e4dbe66511f5da2d7000b:0 (both gettxout and getrawtransaction returned null)
+[21:31:55.109275] [WARN] BlockDataMapper - [getFee] Missing prevValue for input: d067a1b90aafd3ebce9867a719a326ce5f36ae127d4e4dbe66511f5da2d7000b (vout=0). Unable to determine fee precisely.
+[21:31:55.1102725] [WARN] BlockDataMapper - [getFee] Negative fee detected: inputs=0 sats, outputs=4999997180 sats, fee=-4999997180 sats. Clamping to 0. This usually means missing/incorrect prevout values.
+[21:31:55.1226834] [INFO] ChainIndexer - chain_tip ? height=203 hash=5f46427240ef
+[21:31:55.1226834] [INFO] ChainIndexer -  Block 203 committed (2 txs)
+[21:31:55.2122367] [INFO] ChainIndexer - chain_tip ? height=204 hash=121db4652968
+[21:31:55.2132494] [INFO] ChainIndexer -  Block 204 committed (1 txs)
+[21:31:55.316008] [INFO] ChainIndexer - chain_tip ? height=205 hash=60d51e794a53
+[21:31:55.316008] [INFO] ChainIndexer -  Block 205 committed (1 txs)
+[21:31:55.4120165] [INFO] ChainIndexer - chain_tip ? height=206 hash=2e9e1c457271
+[21:31:55.4120165] [INFO] ChainIndexer -  Block 206 committed (1 txs)
+[21:31:55.5094971] [INFO] ChainIndexer - chain_tip ? height=207 hash=6b0c05e9f6e7
+[21:31:55.5094971] [INFO] ChainIndexer -  Block 207 committed (1 txs)
+[21:31:55.6013041] [INFO] ChainIndexer - chain_tip ? height=208 hash=0b6eb52faac9
+[21:31:55.6013041] [INFO] ChainIndexer -  Block 208 committed (1 txs)
+Commit transaction: database in auto-commit mode
+[21:31:55.6536421] [INFO] ChainIndexer -  Task finished.
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Merchant: receive payment
+10) Merchant: receive payment (API/custom capacity)
+11) Consolidate change UTXOs
+0)  Exit application
+Select option: 8
+[21:31:59.81957] [INFO] HIDZMQHDWallet - Controller : Both Syncers are free. I will assign a task to a Syncer.
+[21:31:59.81957] [INFO] SharedMonitor - Controller (HIDZMQHDWallet): Assigning task to worker with Id = 3 
+[21:31:59.81957] [INFO] ChainIndexer -  Executing task...
+[21:31:59.8245863] [INFO] ChainDatabase -  New connection created for thread = chainIndexer
+[21:31:59.8715839] [INFO] ChainIndexRepository -  getStoredTip ? 208:0b6eb52faa
+[21:31:59.8715839] [INFO] ReorgDetector - ourTip=208:0b6eb52faa coreTip=0b6eb52faac9e9a1608468db9ab036f3834e55aa07bf6ec3812d99a2e7edaf6e
+[21:31:59.8715839] [INFO] ReorgDetector - Tips agree   no reorg
+[21:31:59.8766373] [INFO] ChainDatabase -  New connection created for thread = chainIndexer
+Commit transaction: database in auto-commit mode
+[21:31:59.9268949] [INFO] ChainIndexer -  Task finished.
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Merchant: receive payment
+10) Merchant: receive payment (API/custom capacity)
+11) Consolidate change UTXOs
+0)  Exit application
+Select option: 9
+[21:32:08.4298882] [INFO] HIDZMQHDWallet - Starting merchant payment flow at height=208
+[21:32:08.4298882] [INFO] NetworkManagerImpl -  Waiting will timeout after 10 seconds for LN pubkey.
+[21:32:18.4316766] [INFO] NetworkManagerImpl -  Ensure a peer node is running on another computer, then select this option again.
+[21:32:18.43852] [ERROR] HIDZMQHDWallet - Payment failed at stage [UNKNOWN]: [CLEANUP] Timeout waiting for LN pubkey after 10000 ms
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Merchant: receive payment
+10) Merchant: receive payment (API/custom capacity)
+11) Consolidate change UTXOs
+0)  Exit application
+Select option: 11
+[21:32:33.1633524] [INFO] HIDZMQHDWallet - --- Consolidate Change UTXOs ---
+[21:32:33.1639385] [INFO] OwnSigner -  ?? Starting Change Consolidation ??????
+[21:32:33.1659176] [INFO] OwnSigner -  Checking 3 used change address(es)...
+[21:32:33.2156252] [INFO] OwnSigner -  Found 1 change UTXO(s) totalling 49.6999718 BTC
+[21:32:33.2156252] [INFO] OwnSigner -  ?? Change UTXO Report ?????????????
+[21:32:33.2166358] [INFO] OwnSigner -   addr=bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w txid=968f8791...:1 amount=49.6999718 BTC confs=6
+[21:32:33.2166358] [INFO] OwnSigner -   ?????????????????????????????????
+[21:32:33.2166358] [INFO] OwnSigner -   Total: 49.6999718 BTC across 1 UTXO(s)
+[21:32:33.2166358] [INFO] OwnSigner -  ?????????????????????????????????????
+[21:32:33.2628766] [WARN] [consolidate] {} already solvable ? - bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w
+[21:32:33.2638766] [INFO] OwnSigner -  Consolidation target address: bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6
+[21:32:33.2638766] [INFO] OwnSigner -  Estimated vbytes=109 minFee=0.00002180 BTC (2x buffer) totalInput=49.6999718 BTC
+[21:32:33.2638766] [INFO] OwnSigner -  Creating consolidation PSBT...
+[21:32:33.3184956] [INFO] OwnSigner -  PSBT created. actualFee=0.0000219999999999999994279749337966478606176679022610187530517578125 BTC actualOutput=49.69994980 BTC
+[21:32:33.3637509] [INFO] OwnSigner -  PSBT outputs:
+[21:32:33.3637509] [INFO] OwnSigner -   vout=0 addr=bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6 amount=49.6999498 BTC
+[21:32:33.3637509] [INFO] OwnSigner -  Signing 1 input(s)...
+[21:32:33.3647909] [INFO] OwnSigner -  Signing with fingerprint=98667b10
+[21:32:33.3647909] [INFO] OwnSigner -  Using manual HD signing (watch-only wallet has no private keys).
+[21:32:33.4111938] [INFO] OwnSigner -  Input 0 path=m/84h/1h/0h/1/11 masterFp=98667b10
+[21:32:33.4161564] [INFO] OwnSigner -  Input 0 signed. sig=304402203d...
+[21:32:33.4161564] [INFO] OwnSigner -  Manual signing complete.
+[21:32:33.5805963] [INFO] OwnSigner -  ? Consolidation broadcasted! txid=c7f8a97db70aced2da70e1b26849bbc58be8584e4cefa12a61eb90cf6394b0dc
+[21:32:33.5805963] [INFO] OwnSigner -  1 change UTXOs ? 1 spendable UTXO
+[21:32:33.5826278] [INFO] HdAddressManager - Lookahead check: unused receive=5 threshold=5
+[21:32:33.5835952] [INFO] HdAddressManager - Lookahead OK: receive=5
+[21:32:33.5835952] [INFO] HIDZMQHDWallet - ? Consolidation complete!
+[21:32:33.5835952] [INFO] HIDZMQHDWallet - txid: c7f8a97db70aced2da70e1b26849bbc58be8584e4cefa12a61eb90cf6394b0dc
+[21:32:33.5835952] [INFO] HIDZMQHDWallet - Your change UTXOs have been merged into one spendable Utxo.
+[21:32:33.5835952] [INFO] HIDZMQHDWallet - Verify with:
+[21:32:33.5835952] [INFO] HIDZMQHDWallet -   bitcoin-cli -regtest getrawtransaction c7f8a97db70aced2da70e1b26849bbc58be8584e4cefa12a61eb90cf6394b0dc 1
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Merchant: receive payment
+10) Merchant: receive payment (API/custom capacity)
+11) Consolidate change UTXOs
+0)  Exit application
+Select option: 4
+[21:38:30.8434798] [INFO] HIDZMQHDWallet - [sendHwiCoins()] --- Send Coins ---
+[21:38:30.8500839] [INFO] HdAddressManager - [getNextMiningAddress()] countUsedKeys=5, LOOKAHEAD=5
+[validateaddress] addr=bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph isvalid=true raw={"scriptPubKey":"00145f490a508fe2bc7631e91a8a2b14f640b6fbbe6c","witness_program":"5f490a508fe2bc7631e91a8a2b14f640b6fbbe6c","address":"bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:38:30.9068708] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Enter this addtress: bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph as destination
+Destination address: bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+Amount BTC (e.g. 0.1): 0.21
+Target blocks [6]: 7
+[21:39:00.5387699] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Creating, signing, and broadcasting transaction...
+[21:39:00.6299507] [INFO] HdAddressManager - [importIntoCore] network=REGTEST coinType=1
+[21:39:00.6299507] [INFO] HdAddressManager - [importIntoCore] Importing 5 addresses into watch-only wallet...
+[21:39:00.63095] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVY...
+[21:39:00.6399189] [INFO] HdAddressManager - [import] Building descriptor for bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVY...
+[21:39:00.6882526] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qfjufmu7w73xvxzulgm2vuwfhv3cau85td9wymw: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVY...
+[21:39:00.7364064] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qsr42lj87kn6psz6nq4fkpttsfpz3deuatswt4m: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVY...
+[21:39:00.7867096] [INFO] HdAddressManager - [import] Building descriptor for bcrt1q47drfpndv8c2yn73g4pywdvaxpnwwya5yhxp9p: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVY...
+[21:39:04.2677425] [INFO] HdAddressManager - Import complete: 5 success 0 failed
+[21:39:04.2697494] [INFO] HdAddressManager - [getNextChangeAddress()] countUnusedChangeKeys=7, CHANGE_LOOKAHEAD=3
+[validateaddress] addr=bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa isvalid=true raw={"scriptPubKey":"0014508a9086f1d1f25ddbee7869a38c43bb0ec49405","witness_program":"508a9086f1d1f25ddbee7869a38c43bb0ec49405","address":"bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:39:04.3397986] [INFO] HIDZMQHDWallet - [sendHwiCoins()] estimatedFee=0.0001 BTC
+[21:39:04.3397986] [INFO] FundingGuard - Checking funds: amount=0.21 fee=0.0001 total_needed=0.2101 BTC
+[21:39:04.4406218] [INFO] FundingGuard - Current balance: spendable=5350.3 BTC utxos=108
+[21:39:04.4406218] [INFO] FundingGuard - ? Sufficient funds: 5350.3 BTC >= 0.2101 BTC
+[21:39:04.4416217] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Funding confirmed: FundingResult{balance=5350.3 BTC utxos=108 mined=0 needed=0.2101 surplus=5350.0899}
+[21:39:04.5376242] [INFO] CoinSelector - Mature spendable Utxos from Core: 108
+[21:39:04.5376242] [INFO] CoinSelector - Adding Utxo: txid=5eb9f40b6634dc0cad0a1228bac65dc944754288f0470810bf63da2aa4b7ea6c:0 amount=50.0 BTC confs=104 coinbase=false
+[21:39:04.5376242] [INFO] CoinSelector - Selected 1 Utxo(s) totalling 50.0 BTC to cover 1.2101 BTC
+[21:39:04.5376242] [INFO] OwnSigner - [sendHwiCoins()] destAddress=bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+[21:39:04.5376242] [INFO] OwnSigner - [sendHwiCoins()] changeAddress=bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+[21:39:04.5376242] [INFO] OwnSigner - [sendHwiCoins()] amountBtc=0.21
+[21:39:04.5376242] [INFO] OwnSigner - ensureInputsHaveSolvingData: Checking solving data for 1 input(s)...
+[21:39:04.5396623] [INFO] OwnSigner - ensureInputsHaveSolvingData: fingerprint=98667b10 coinType=1
+[21:39:04.5829061] [INFO] OwnSigner - ensureInputsHaveSolvingData:] addr=bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq solvable=true hasHdPath=true desc=wpkh([98667b10/84h/1h/0h/0/0]028f44efe3e2cc0bf1e3a...
+[21:39:04.5839627] [INFO] OwnSigner - ensureInputsHaveSolvingData: ? bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq already has solving data.
+[21:39:04.5839627] [INFO] OwnSigner - ensureInputsHaveSolvingData: All inputs already have solving data ?
+[21:39:04.6351652] [INFO] OwnSigner - [sendHwiCoins()] changepos=0 changeAddress=bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+[21:39:04.6361875] [INFO] OwnSigner - [sendHwiCoins()] PSBT created. fee=0.0000282 changepos=0
+HWI enumerate result: []
+[21:39:12.9531436] [INFO] OwnSigner - No hardware wallet detected
+[21:39:12.9531436] [INFO] OwnSigner - Falls back to software signing
+[signPsbtWithOwnSigner()] pubkeyHex=028f44efe3e2cc0bf1e3aff7307d47ca11497fda1880a287ed22f128a7609d4c0c
+[signPsbtWithOwnSigner()] input=0 path=m/84h/1h/0h/0/0 masterFp=98667b10
+[OwnSigner => signInput()] inputValueSat: 5000000000
+[OwnSigner => signInput()] scriptPubKey: [0, 20, -106, -111, -70, 32, 51, 55, -13, 108, -35, 63, -51, 20, 54, 12, -84, -95, -36, -106, -70, -13]
+[21:39:13.2911684] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Mined 1 block to confirm tx.
+[21:39:13.2911684] [INFO] HIDZMQHDWallet - Controller : Both Syncers are free. I will assign a task to a Syncer.
+[21:39:13.2911684] [INFO] SharedMonitor - Controller (HIDZMQHDWallet): Assigning task to worker with Id = 1 
+[21:39:13.2931732] [INFO] HdAddressManager - Lookahead check: unused receive=4 threshold=5
+[21:39:13.2931732] [INFO] HdAddressManager - Receive pool low   deriving 1 more addresses
+[21:39:13.2951705] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:39:13.2951705] [INFO] RegtestZmqListener - performSync() Resuming from height=208
+[21:39:13.3190588] [INFO] HdAddressManager -  Address derived = bcrt1q2smz6qx6pr5tj6f80w79ru0m0vrwcec2dtmqmw
+[21:39:13.3417795] [INFO] HdAddressManager -  Address derived = bcrt1qdj6j5pgxkn4qyhu4de0x3wuz7wtngesy5ddjzd
+[21:39:13.3427748] [INFO] RegtestZmqListener - performSync() Sync decision: lastHeight=208, tip=209, gap=1
+[21:39:13.3427748] [INFO] RegtestZmqListener - syncOnce() Starting UTXO sync...
+[21:39:13.3667802] [INFO] HdAddressManager -  Address derived = bcrt1qydt824ypj24mue7ftrnllk9lupwr6fcuzf8msh
+[21:39:13.3864306] [INFO] RegtestZmqListener - syncOnce() Blocks advanced by 1 (from 208 to 209)
+[21:39:13.3894396] [INFO] HdAddressManager -  Address derived = bcrt1q23hyyrs98zp5n97m82txj0rgx6z6qez85ugn2q
+[21:39:13.4136735] [INFO] HdAddressManager -  Address derived = bcrt1qea7ye876hw6en2uf6h0uyqfdpk5uwkj0p6al3n
+[21:39:13.4372908] [INFO] HdAddressManager -  Address derived = bcrt1q2jtyuchp4sh27zthpz3tgn5km2ymlcm6had06p
+[21:39:13.4543285] [INFO] HdAddressManager -  Address derived = bcrt1qdssd4nlgnsq2cgpvw3lumtkw05y6w6stsntt9a
+[21:39:13.4703783] [INFO] HdAddressManager -  Address derived = bcrt1qedd4kuy6rm0tsumpdhlrsyqwmej0jrjezq5e78
+[21:39:13.4863421] [INFO] HdAddressManager -  Address derived = bcrt1qutnhuueazu64d4utcl3mla72qlujus9lvqkkew
+[21:39:13.5019056] [INFO] HdAddressManager -  Address derived = bcrt1qkkw2y0nm5nqfggxyhuv36jk82lyhkwphgzjfzy
+[21:39:13.5028787] [INFO] HdAddressManager - [importIntoCore] network=REGTEST coinType=1
+[21:39:13.5028787] [INFO] HdAddressManager - [importIntoCore] Importing 10 addresses into watch-only wallet...
+[21:39:13.5048745] [INFO] HdAddressManager - [import] Building descriptor for bcrt1q2smz6qx6pr5tj6f80w79ru0m0vrwcec2dtmqmw: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:39:13.5168741] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qdj6j5pgxkn4qyhu4de0x3wuz7wtngesy5ddjzd: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:39:13.5373554] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:39:13.5638045] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qydt824ypj24mue7ftrnllk9lupwr6fcuzf8msh: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+
+############################### Utxo Summary ###################################
+=== UTXO Summary ===
+Total Balance      : 5449.99992160 BTC
+Spendable Balance  : 5449.99992160 BTC
+Immature Balance   : 0.00000000 BTC
+
+Total UTXOs        : 111
+Spendable UTXOs    : 111
+
+Largest UTXO       : 50.00000000 BTC
+Smallest UTXO      : 0.21000000 BTC
+Average UTXO       : 49.09909839 BTC
+
+Dust UTXOs         : 0
+
+##################################################################################
+Commit transaction: database in auto-commit mode
+[21:39:13.6138655] [INFO] RegtestZmqListener - syncOnce() UTXO sync completed in 271 ms: 111 UTXOs, 544999992160 sat total, 0 updated
+[21:39:13.6138655] [INFO] RegtestZmqListener - run() Initial sync complete: height=209, utxos=111, total_sat=544999992160
+[21:39:13.6138655] [INFO] HdAddressManager - [import] Building descriptor for bcrt1q23hyyrs98zp5n97m82txj0rgx6z6qez85ugn2q: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:39:13.6609453] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qea7ye876hw6en2uf6h0uyqfdpk5uwkj0p6al3n: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:39:13.7150503] [INFO] HdAddressManager - [import] Building descriptor for bcrt1q2jtyuchp4sh27zthpz3tgn5km2ymlcm6had06p: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:39:13.7640609] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qdssd4nlgnsq2cgpvw3lumtkw05y6w6stsntt9a: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:39:13.8141843] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qedd4kuy6rm0tsumpdhlrsyqwmej0jrjezq5e78: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:39:13.867722] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qutnhuueazu64d4utcl3mla72qlujus9lvqkkew: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:39:13.9233048] [INFO] HdAddressManager - [import] Building descriptor for bcrt1qkkw2y0nm5nqfggxyhuv36jk82lyhkwphgzjfzy: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGyke...
+[21:39:19.167636] [INFO] HdAddressManager - Import complete: 10 success 0 failed
+[21:39:19.1696351] [INFO] HdAddressManager - Lookahead OK: receive=14
+[21:39:19.1696351] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Broadcasted txid: 8f8499c452ae2f3b36837392d0fb7234ffdfccd9448468f5eb53ce57b286a0b8
+[21:39:19.1706348] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Verify in Core with:
+[21:39:19.1706348] [INFO] HIDZMQHDWallet - [sendHwiCoins()]   bitcoin-cli -regtest getrawtransaction 8f8499c452ae2f3b36837392d0fb7234ffdfccd9448468f5eb53ce57b286a0b8 1
+Fetching data from Bitcoin Core...
+Processing 111 UTXOs...
+
+=== MINING / RECEIVING ADDRESSES (External) ===
+bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje
+bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+
+=== CHANGE ADDRESSES (Internal) ===
+bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+[21:39:24.4011072] [INFO] HIDZMQHDWallet - [sendHwiCoins()] usedReceiveAddress: bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+[21:39:24.402107] [INFO] HIDZMQHDWallet - [sendHwiCoins()] usedReceiveAddress: bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje
+[21:39:24.402107] [INFO] HIDZMQHDWallet - [sendHwiCoins()] usedReceiveAddress: bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+[21:39:24.402107] [INFO] HIDZMQHDWallet - [sendHwiCoins()] usedChangeAddress: bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Merchant: receive payment
+10) Merchant: receive payment (API/custom capacity)
+11) Consolidate change UTXOs
+0)  Exit application
+Select option: 0
+[21:39:37.7864111] [INFO] HIDZMQHDWallet - Goodbye.
+[21:39:37.7904158] [INFO] ApisServer - HTTP API server stopped.
+[21:39:37.7944346] [INFO] HIDZMQHDWallet -  Shutdown hook   stopping ZMQ...
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  10:48 min
+Finished at: 2026-06-17T21:39:38+01:00
+------------------------------------------------------------------------

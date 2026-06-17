@@ -1,0 +1,54 @@
+conaldes@daomosda:~$ bitcoin-cli -regtest -rpcuser=olamosda -rpcpassword=cona.btc-Dao_5MoS7 getrawtransaction 8f8499c452ae2f3b36837392d0fb7234ffdfccd9448468f5eb53ce57b286a0b8 1
+{
+  "txid": "8f8499c452ae2f3b36837392d0fb7234ffdfccd9448468f5eb53ce57b286a0b8",
+  "hash": "a3d34314c47bb126caad46a0fee170b0b6ab7ab676a231f19170e32a691b45dc",
+  "version": 2,
+  "size": 223,
+  "vsize": 141,
+  "weight": 562,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "5eb9f40b6634dc0cad0a1228bac65dc944754288f0470810bf63da2aa4b7ea6c",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "3045022100b7bcf5c5645a65e2e52a20cfaf589541b750cdbe5d129d6185b8e676616982c802204e49a3a6e8c1a9e3dcb1eaea91cf4a9da19fa29ab3464371887b427d0e16c62401",
+        "028f44efe3e2cc0bf1e3aff7307d47ca11497fda1880a287ed22f128a7609d4c0c"
+      ],
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 49.78997180,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "0 508a9086f1d1f25ddbee7869a38c43bb0ec49405",
+        "desc": "addr(bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa)#y6njm0vk",
+        "hex": "0014508a9086f1d1f25ddbee7869a38c43bb0ec49405",
+        "address": "bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa",
+        "type": "witness_v0_keyhash"
+      }
+    },
+    {
+      "value": 0.21000000,
+      "n": 1,
+      "scriptPubKey": {
+        "asm": "0 5f490a508fe2bc7631e91a8a2b14f640b6fbbe6c",
+        "desc": "addr(bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph)#ckae8t0f",
+        "hex": "00145f490a508fe2bc7631e91a8a2b14f640b6fbbe6c",
+        "address": "bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph",
+        "type": "witness_v0_keyhash"
+      }
+    }
+  ],
+  "hex": "020000000001016ceab7a42ada63bf100847f088427544c95dc6ba28120aad0cdc34660bf4b95e0000000000fdffffff02bc77c52801000000160014508a9086f1d1f25ddbee7869a38c43bb0ec49405406f4001000000001600145f490a508fe2bc7631e91a8a2b14f640b6fbbe6c02483045022100b7bcf5c5645a65e2e52a20cfaf589541b750cdbe5d129d6185b8e676616982c802204e49a3a6e8c1a9e3dcb1eaea91cf4a9da19fa29ab3464371887b427d0e16c6240121028f44efe3e2cc0bf1e3aff7307d47ca11497fda1880a287ed22f128a7609d4c0c00000000",
+  "blockhash": "030982b5155475eb0adbba7b8d70d6058d227fb513630f4880ba43a067faa3e0",
+  "confirmations": 11,
+  "time": 1781728753,
+  "blocktime": 1781728753
+}

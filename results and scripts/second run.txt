@@ -1,0 +1,770 @@
+cd C:\Users\CONALDES\Documents\NetBeansProjects\HIDZMQHDWallet; "JAVA_HOME=C:\\Program Files\\Java\\jdk-25" cmd /c "\"C:\\Users\\CONALDES\\netbeans-30-bin\\netbeans\\java\\maven\\bin\\mvn.cmd\" -Dexec.vmArgs= \"-Dexec.args=${exec.vmArgs} -classpath %classpath ${exec.mainClass} ${exec.appArgs}\" -Dexec.appArgs= -Dexec.mainClass=com.bitcoin.hidzmq.hdwallet.HIDZMQHDWallet \"-Dexec.executable=C:\\Program Files\\Java\\jdk-25\\bin\\java.exe\" -Dmaven.ext.class.path=C:\\Users\\CONALDES\\netbeans-30-bin\\netbeans\\java\\maven-nblib\\netbeans-eventspy.jar --no-transfer-progress process-classes org.codehaus.mojo:exec-maven-plugin:3.5.1:exec"
+Scanning for projects...
+
+--------------------< com.olamosda:HIDZMQHDWallet >---------------------
+Building HIDZMQHDWallet 1.0-SNAPSHOT
+  from pom.xml
+--------------------------------[ jar ]---------------------------------
+
+--- resources:3.4.0:resources (default-resources) @ HIDZMQHDWallet ---
+Copying 3 resources from src\main\resources to target\classes
+
+--- compiler:3.15.0:compile (default-compile) @ HIDZMQHDWallet ---
+Nothing to compile - all classes are up to date.
+
+--- exec:3.5.1:exec (default-cli) @ HIDZMQHDWallet ---
+[21:41:30.9072931] [INFO] HIDZMQHDWallet - 
+Node usage mode setting.
+????????????????????????????????????????????????????????????????????????????????
+[21:41:30.9122919] [INFO] HIDZMQHDWallet - Application includes merchant and customer functionalities.
+[21:41:30.9132914] [INFO] HIDZMQHDWallet - Select usage mode (merchant and customer) to enable on CLI menu.
+Enter 1 -> 'merchant', 2 -> 'customer', 3 -> 'not-applicable'  or 4 -> 'quit' to exit: 3
+Input: not-applicable
+
+[21:41:56.8103479] [INFO] AppNWKConfig - Loaded 24 entries from bitcoin.conf
+[21:41:56.8123477] [INFO] AppNWKConfig - Network resolved: REGTEST
+[21:41:56.8123477] [INFO] AppNWKConfig - wallet.name=daowallet, watchonly.wallet.name=btcnode_watchonly
+[21:41:56.8169231] [INFO] ChainDatabase -  Initialized with path: C:\Users\CONALDES\.bitcoinlike\chaindbpath\blockchain.db
+SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.sqlite.SQLiteJDBCLoader in an unnamed module (file:/C:/Users/CONALDES/.m2/repository/org/xerial/sqlite-jdbc/3.49.1.0/sqlite-jdbc-3.49.1.0.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+[21:41:57.0257753] [INFO] ChainDatabase -  New connection created for thread = main
+[21:41:57.0287739] [INFO] ChainDatabase -  Migrations complete
+[21:41:57.0387439] [INFO] BitcoinRpcClient - BCJSONRpchttp: http://127.0.0.1:18443
+[21:41:57.3464666] [INFO] HIDZMQHDWallet - Bitcoin Core is running in REGTEST mode.
+Master key repository found
+[WalletSeedStore] Seed loaded: C:\Users\CONALDES\.msthdwkp\wltseed\wallet_seed.json
+DB path: C:\Users\CONALDES\.bitcoinlike\hdwltk\hdwKeys.db
+[21:41:57.4902417] [INFO] HIDZMQHDWallet - Log file exists: C:\Users\CONALDES\.bitcoinlike\addrctl\addressCtl.log
+[21:41:57.4972397] [INFO] HdAddressManager - [getNextMiningAddress()] countUsedKeys=14, LOOKAHEAD=5
+[21:41:57.5212398] [INFO] HIDZMQHDWallet -  addr: bcrt1qkkw2y0nm5nqfggxyhuv36jk82lyhkwphgzjfzy
+[21:41:57.5212398] [INFO] HIDZMQHDWallet -  addr: bcrt1qfjufmu7w73xvxzulgm2vuwfhv3cau85td9wymw
+[21:41:57.5212398] [INFO] HIDZMQHDWallet -  addr: bcrt1qdssd4nlgnsq2cgpvw3lumtkw05y6w6stsntt9a
+[21:41:57.5212398] [INFO] HIDZMQHDWallet -  addr: bcrt1q3xvy0wd4xexmwugue9mw3aax0fmrcjyred50ca
+[21:41:57.5212398] [INFO] HIDZMQHDWallet -  addr: bcrt1qsr42lj87kn6psz6nq4fkpttsfpz3deuatswt4m
+[21:41:57.5212398] [INFO] HIDZMQHDWallet -  addr: bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+[21:41:57.5212398] [INFO] HIDZMQHDWallet -  addr: bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92
+[21:41:57.5222398] [INFO] HIDZMQHDWallet -  addr: bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje
+[21:41:57.5222398] [INFO] HIDZMQHDWallet -  addr: bcrt1qydt824ypj24mue7ftrnllk9lupwr6fcuzf8msh
+[21:41:57.5222398] [INFO] HIDZMQHDWallet -  addr: bcrt1q3dg42jdye80a2fdxsh8gc4fjw7xgy0zatj9kqz
+[21:41:57.5222398] [INFO] HIDZMQHDWallet -  addr: bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+[21:41:57.5222398] [INFO] HIDZMQHDWallet -  addr: bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7
+[21:41:57.5222398] [INFO] HIDZMQHDWallet -  addr: bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h
+[21:41:57.5222398] [INFO] HIDZMQHDWallet -  addr: bcrt1qea7ye876hw6en2uf6h0uyqfdpk5uwkj0p6al3n
+[21:41:57.5232399] [INFO] HIDZMQHDWallet -  addr: bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj
+[21:41:57.5232399] [INFO] HIDZMQHDWallet -  addr: bcrt1qedd4kuy6rm0tsumpdhlrsyqwmej0jrjezq5e78
+[21:41:57.5232399] [INFO] HIDZMQHDWallet -  addr: bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6
+[21:41:57.5232399] [INFO] HIDZMQHDWallet -  addr: bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f
+[21:41:57.5232399] [INFO] HIDZMQHDWallet -  addr: bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x
+[21:41:57.5232399] [INFO] HIDZMQHDWallet -  addr: bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w
+[21:41:57.5232399] [INFO] HIDZMQHDWallet -  addr: bcrt1q47drfpndv8c2yn73g4pywdvaxpnwwya5yhxp9p
+[21:41:57.5232399] [INFO] HIDZMQHDWallet -  addr: bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr
+[21:41:57.5242395] [INFO] HIDZMQHDWallet -  addr: bcrt1qutnhuueazu64d4utcl3mla72qlujus9lvqkkew
+[21:41:57.5242395] [INFO] HIDZMQHDWallet -  addr: bcrt1q23hyyrs98zp5n97m82txj0rgx6z6qez85ugn2q
+[21:41:57.5242395] [INFO] HIDZMQHDWallet -  addr: bcrt1qu5z5kjrsjkxcxhrcql5ezrtms5tcjf2prhjuy3
+[21:41:57.5242395] [INFO] HIDZMQHDWallet -  addr: bcrt1qdj6j5pgxkn4qyhu4de0x3wuz7wtngesy5ddjzd
+[21:41:57.5242395] [INFO] HIDZMQHDWallet -  addr: bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+[21:41:57.5242395] [INFO] HIDZMQHDWallet -  addr: bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs
+[21:41:57.5242395] [INFO] HIDZMQHDWallet -  addr: bcrt1q2smz6qx6pr5tj6f80w79ru0m0vrwcec2dtmqmw
+[21:41:57.5252396] [INFO] HIDZMQHDWallet -  addr: bcrt1q2jtyuchp4sh27zthpz3tgn5km2ymlcm6had06p
+[21:41:57.5312391] [INFO] HIDZMQHDWallet - #####################  Point 0 #####################
+
+[21:41:57.5312391] [INFO] HIDZMQHDWallet -  Verifying ZMQ configuration...
+[21:41:57.5822411] [INFO] HIDZMQHDWallet - #####################  Point 1 #####################
+
+[21:41:57.5842407] [INFO] HIDZMQHDWallet - [Controller => main] After creating networkManager
+[21:41:57.588283] [INFO] P2PServer -  Listening on port 8377
+[21:41:57.5892447] [INFO] HIDZMQHDWallet - [Merchant] P2P server started on port 8377
+[21:41:57.5912414] [INFO] HIDZMQHDWallet - [Merchant] Optionally connecting to customer 127.0.0.1:8379
+[21:41:57.593243] [ERROR] HIDZMQHDWallet - [P2P] Failed to configure P2P for role not-applicable: Connection refused: connect
+[21:41:57.6022565] [INFO] HIDZMQHDWallet - #####################  Point 2 #####################
+
+[21:41:57.8527518] [INFO] HIDZMQHDWallet - --- Hardware Wallet Status ---
+[21:41:57.8537541] [WARN] TrezorSigner -  No Trezor device found on USB.
+[21:41:57.8537541] [INFO] HIDZMQHDWallet - No hardware wallet detected.
+[21:41:57.889602] [INFO] ApisServer - HTTP API server started on port 8080
+[21:41:57.8905965] [INFO] HIDZMQHDWallet -  Port selected and used: 8080
+[21:41:57.8905965] [INFO] HIDZMQHDWallet - #####################  Point 3 #####################
+
+[validateaddress] addr=bcrt1qkkw2y0nm5nqfggxyhuv36jk82lyhkwphgzjfzy isvalid=true raw={"scriptPubKey":"0014b59ca23e7ba4c09420c4bf191d4ac757c97b3837","witness_program":"b59ca23e7ba4c09420c4bf191d4ac757c97b3837","address":"bcrt1qkkw2y0nm5nqfggxyhuv36jk82lyhkwphgzjfzy","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qfjufmu7w73xvxzulgm2vuwfhv3cau85td9wymw isvalid=true raw={"scriptPubKey":"00144cb89df3cef44cc30b9f46d4ce39376471de1e8b","witness_program":"4cb89df3cef44cc30b9f46d4ce39376471de1e8b","address":"bcrt1qfjufmu7w73xvxzulgm2vuwfhv3cau85td9wymw","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qdssd4nlgnsq2cgpvw3lumtkw05y6w6stsntt9a isvalid=true raw={"scriptPubKey":"00146c20dacfe89c00ac202c747fcdaece7d09a76a0b","witness_program":"6c20dacfe89c00ac202c747fcdaece7d09a76a0b","address":"bcrt1qdssd4nlgnsq2cgpvw3lumtkw05y6w6stsntt9a","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q3xvy0wd4xexmwugue9mw3aax0fmrcjyred50ca isvalid=true raw={"scriptPubKey":"0014899847b9b5364db7711cc976e8f7a67a763c4883","witness_program":"899847b9b5364db7711cc976e8f7a67a763c4883","address":"bcrt1q3xvy0wd4xexmwugue9mw3aax0fmrcjyred50ca","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qsr42lj87kn6psz6nq4fkpttsfpz3deuatswt4m isvalid=true raw={"scriptPubKey":"001480eaafc8feb4f4180b53055360ad70484516e79d","witness_program":"80eaafc8feb4f4180b53055360ad70484516e79d","address":"bcrt1qsr42lj87kn6psz6nq4fkpttsfpz3deuatswt4m","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa isvalid=true raw={"scriptPubKey":"0014508a9086f1d1f25ddbee7869a38c43bb0ec49405","witness_program":"508a9086f1d1f25ddbee7869a38c43bb0ec49405","address":"bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92 isvalid=true raw={"scriptPubKey":"00147a0cc6a90a7650ecdcec1f9607de9c0aa9796b35","witness_program":"7a0cc6a90a7650ecdcec1f9607de9c0aa9796b35","address":"bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje isvalid=true raw={"scriptPubKey":"0014e296ecdbda991c19f9466e8af28065b3bd82a1c2","witness_program":"e296ecdbda991c19f9466e8af28065b3bd82a1c2","address":"bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qydt824ypj24mue7ftrnllk9lupwr6fcuzf8msh isvalid=true raw={"scriptPubKey":"0014235675548192abbe67c958e7ffd8bfe05c3d271c","witness_program":"235675548192abbe67c958e7ffd8bfe05c3d271c","address":"bcrt1qydt824ypj24mue7ftrnllk9lupwr6fcuzf8msh","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q3dg42jdye80a2fdxsh8gc4fjw7xgy0zatj9kqz isvalid=true raw={"scriptPubKey":"00148b515549a4c9dfd525a685ce8c5532778c823c5d","witness_program":"8b515549a4c9dfd525a685ce8c5532778c823c5d","address":"bcrt1q3dg42jdye80a2fdxsh8gc4fjw7xgy0zatj9kqz","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph isvalid=true raw={"scriptPubKey":"00145f490a508fe2bc7631e91a8a2b14f640b6fbbe6c","witness_program":"5f490a508fe2bc7631e91a8a2b14f640b6fbbe6c","address":"bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7 isvalid=true raw={"scriptPubKey":"00148d31e6347c013d8b109a0f21bba0d5fd249fe20d","witness_program":"8d31e6347c013d8b109a0f21bba0d5fd249fe20d","address":"bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h isvalid=true raw={"scriptPubKey":"0014e8106b0516d6fe71db3777047f14ceff63d14efd","witness_program":"e8106b0516d6fe71db3777047f14ceff63d14efd","address":"bcrt1qaqgxkpgk6ml8rkehwuz879xwla3aznhah76z0h","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qea7ye876hw6en2uf6h0uyqfdpk5uwkj0p6al3n isvalid=true raw={"scriptPubKey":"0014cf7c4c9fdabbb599ab89d5dfc2012d0da9c75a4f","witness_program":"cf7c4c9fdabbb599ab89d5dfc2012d0da9c75a4f","address":"bcrt1qea7ye876hw6en2uf6h0uyqfdpk5uwkj0p6al3n","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj isvalid=true raw={"scriptPubKey":"00145d5e33789cf53e062b804c2d5acb01a6bbfa2faf","witness_program":"5d5e33789cf53e062b804c2d5acb01a6bbfa2faf","address":"bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qedd4kuy6rm0tsumpdhlrsyqwmej0jrjezq5e78 isvalid=true raw={"scriptPubKey":"0014cb5b5b709a1edeb873616dfe38100ede64f90e59","witness_program":"cb5b5b709a1edeb873616dfe38100ede64f90e59","address":"bcrt1qedd4kuy6rm0tsumpdhlrsyqwmej0jrjezq5e78","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6 isvalid=true raw={"scriptPubKey":"00141e602d9b103dbff08bb08bda38dd85aac5d5ff45","witness_program":"1e602d9b103dbff08bb08bda38dd85aac5d5ff45","address":"bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f isvalid=true raw={"scriptPubKey":"0014f56cc6b92867135d733aa5ba2714dc6a28bd969c","witness_program":"f56cc6b92867135d733aa5ba2714dc6a28bd969c","address":"bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x isvalid=true raw={"scriptPubKey":"0014776124e9e96ee36672a0e9085208c634e80b1f7b","witness_program":"776124e9e96ee36672a0e9085208c634e80b1f7b","address":"bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w isvalid=true raw={"scriptPubKey":"0014aa00439788c1dae440a170f621e1ea9f102ad7c4","witness_program":"aa00439788c1dae440a170f621e1ea9f102ad7c4","address":"bcrt1q4gqy89ugc8dwgs9pwrmzrc02nugz447ys6z33w","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q47drfpndv8c2yn73g4pywdvaxpnwwya5yhxp9p isvalid=true raw={"scriptPubKey":"0014af9a34866d61f0a24fd1454247359d3066e713b4","witness_program":"af9a34866d61f0a24fd1454247359d3066e713b4","address":"bcrt1q47drfpndv8c2yn73g4pywdvaxpnwwya5yhxp9p","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr isvalid=true raw={"scriptPubKey":"00146da8d455e20a191b91b8c70a3debbf07316a0ffd","witness_program":"6da8d455e20a191b91b8c70a3debbf07316a0ffd","address":"bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qutnhuueazu64d4utcl3mla72qlujus9lvqkkew isvalid=true raw={"scriptPubKey":"0014e2e77e733d173556d78bc7e3bff7ca07f92e40bf","witness_program":"e2e77e733d173556d78bc7e3bff7ca07f92e40bf","address":"bcrt1qutnhuueazu64d4utcl3mla72qlujus9lvqkkew","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q23hyyrs98zp5n97m82txj0rgx6z6qez85ugn2q isvalid=true raw={"scriptPubKey":"0014546e420e0538834997db3a96693c683685a06447","witness_program":"546e420e0538834997db3a96693c683685a06447","address":"bcrt1q23hyyrs98zp5n97m82txj0rgx6z6qez85ugn2q","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qu5z5kjrsjkxcxhrcql5ezrtms5tcjf2prhjuy3 isvalid=true raw={"scriptPubKey":"0014e5054b4870958d835c7807e9910d7b8517892541","witness_program":"e5054b4870958d835c7807e9910d7b8517892541","address":"bcrt1qu5z5kjrsjkxcxhrcql5ezrtms5tcjf2prhjuy3","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qdj6j5pgxkn4qyhu4de0x3wuz7wtngesy5ddjzd isvalid=true raw={"scriptPubKey":"00146cb52a0506b4ea025f956e5e68bb82f397346604","witness_program":"6cb52a0506b4ea025f956e5e68bb82f397346604","address":"bcrt1qdj6j5pgxkn4qyhu4de0x3wuz7wtngesy5ddjzd","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq isvalid=true raw={"scriptPubKey":"00149691ba203337f36cdd3fcd14360caca1dc96baf3","witness_program":"9691ba203337f36cdd3fcd14360caca1dc96baf3","address":"bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs isvalid=true raw={"scriptPubKey":"001460b6103bf7cc9048e5b5008b4ba8963f67909cc0","witness_program":"60b6103bf7cc9048e5b5008b4ba8963f67909cc0","address":"bcrt1qvzmpqwlhejgy3ed4qz95h2yk8anep8xq3264cs","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q2smz6qx6pr5tj6f80w79ru0m0vrwcec2dtmqmw isvalid=true raw={"scriptPubKey":"001454362d00da08e8b969277bbc51f1fb7b06ec670a","witness_program":"54362d00da08e8b969277bbc51f1fb7b06ec670a","address":"bcrt1q2smz6qx6pr5tj6f80w79ru0m0vrwcec2dtmqmw","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[validateaddress] addr=bcrt1q2jtyuchp4sh27zthpz3tgn5km2ymlcm6had06p isvalid=true raw={"scriptPubKey":"001454964e62e1ac2eaf097708a2b44e96da89bfe37a","witness_program":"54964e62e1ac2eaf097708a2b44e96da89bfe37a","address":"bcrt1q2jtyuchp4sh27zthpz3tgn5km2ymlcm6had06p","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:41:59.3563299] [INFO] HIDZMQHDWallet - Initializing wallet with SegWit descriptors...
+[21:41:59.4053231] [INFO] HIDZMQHDWallet - Connected to Bitcoin network: version=280100, connections=0
+[21:41:59.4053231] [INFO] HIDZMQHDWallet - Importing account descriptors into wallet 'btcnode_watchonly'...
+[21:41:59.4133083] [INFO] HIDZMQHDWallet - [Descriptor info] accountXpub = tpubDCF9R7G5aX7JLteM6f2BX4GfYp3bZ1vCiPuQDWGa2wR2MxF9Fj6znQZfge9x4s2tBKh7cCKwABvgoX4gQLN7DEZWngXFd95XgN5PBVVBUkr
+[21:41:59.4243136] [INFO] RegtestZmqListener - run() Listening for REGTEST blocks...
+[21:41:59.5570447] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqXw52VbCyU1LWMMsfcckDTR45Cxzcp1UYn3LJRXfU2sJgj7KR96PZ15SdAe9oCsEggFxcK6jNJCoPe4a1hmqF4PN4nLnb9qH/0/1)#n9yts9pk
+[21:41:59.5570447] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqbbDE7JvcPtxwpUqryicLABmc9FSx1vMvoMX35hRhxWcc46KHkpsnJt4ZfYtACdnPhsCSxKFbr5WehLWFDqu1ZrKj5voRoLR/0/2)#hcwz40lq
+[21:41:59.5570447] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqeUA6rF4g3KLdxFdVFfywSxqC8LoZdreD1A6aCzdFsf9kZ1n4MaDk5J7cWmU9Ym4u2fCRCijJSai5aVmdH8CccvD1MdKif6V/0/3)#342znle2
+[21:41:59.5580423] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqgz4mp4aEzLqSDuEaKKCkBaov13vV1nAen2KGndjgXtLa5jmc7g9Gbumc6T8pG3TuHFEgwWmibBvS76PuSDWKvmohVAQCAVy/0/4)#nrm8kzac
+[21:41:59.5580423] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqhe8iiLXuJ79TvQBNkrWTk8pEz7eAY4i4r75g7q3TV2k2c38BxBvMAttMC2d3JvH3DmD1QwPjnFs8t8RsGTuN3QcTFcGA46L/0/5)#6qulfm4u
+[21:41:59.5580423] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqkRpNvwgtDTV19qgvzjLJJLcGiXPtpfihMJzNdz5HoeUnefxmYu5p9abSmWC4FMSd9htWkf3spTcEjgbzRRiJUkgbHZAMTK8/0/6)#s6lwez9r
+[21:41:59.5580423] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqq2F6c2sC6gfE4eJeGLGtdhpWyR4mQyQTcq94K5qm4Xt51aqytsMiUwDbMYqMnRetHPwHyQ33HPF2sR8RcBF9y9Zi2WND7AZ/0/7)#zrk4axnt
+[21:41:59.5580423] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqsDShxtmihoB7ZF9kHNoVZCmZdEHJJ3XfJuVSMJhvfeAkbK7rAJmaUE8Kyt5vkotFp2b3Sb8o2KA5QF6F6HEu7NSnvfEHbW2/0/8)#0885cxjg
+[21:41:59.5590408] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqt5q3J3wPHw6YPWAV6TsdGjxUJzAtSbJqRvNZGkfTemZJLCP4jqJxcz7jK2WqAU6JZLarhTXQwCpvKC3nNpt9mGS2Y5oHm7o/0/9)#5l5ual3t
+[21:41:59.5590408] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeqxR3LCR5qfPautQSCoUySpjomSLWF34JRAbZUVRHphuN9Lj1hn6ggsydzf7n1quhH7r6AuPwQxL31T9XvPtzgUvuF4z8L2Bt/0/10)#vgxz5xhg
+[21:41:59.5590408] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykerQUnKxiRTy1KV9YGZixqVsxth5KNt7WH3n2Sa5EWHcfu63YvmX6FcGr8JjoizUtUhGFGSPEEaeaTgnB6dcrMf6MRCh49bBbi/0/21)#qywhv089
+[21:41:59.5590408] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykerULu3XGVSR6SvggH1MMY2DYFnXD67Hf6cX1kL2JJs6b7r8Xv6GAzaP6A5jRDTt9c93ZMCeVezi7B48fqNHGquHfmpB7uUN99/0/22)#x0rgwrhr
+[21:41:59.5590408] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykerXSHYvy1eqgmaTbkfv9NBubjq9fLNYvVFHzPoimT3LpwXFmddBQF4fkuTKViS59Pc6R9kpaxx1psHhWh6LUV4YwEvTD1kXbz/0/23)#wtjv2fn9
+[21:41:59.5600448] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykerZeNEFDofXs24UbB4tnyuHHkGiZzvMsDPXFcoM78cmMAGaVf3Zkg1WBcvTYFd4euYTWB3UEQrCh2foZGXhzmV6AjqYMuoQ1b/0/24)#l7rfauzs
+[21:41:59.5600448] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykercKK2joQh9hrgFKRvoozr4woXChz8fj4JHu7fSeQjmePzZAuy4bmrucbDWDRU6ZrpTZcahrkYYPG96Q4jUKmQgo1KkhFiDLF/0/25)#mcfsgue0
+[21:41:59.5600448] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykerdEsbiCqSZXBL7JkVh9TnPWWG8mieiuGj5kmbQMgidFv93GG7enCT4ccUGqxrLB99m6bJC7URJAKd2eWTQchp7dFMiBZNY2T/0/26)#jvr58ehh
+[21:41:59.5600448] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykergc2bnN3CKFJ9JoBkNMNgnqnmd7pzJ2TyLXrmWUykVqzG13pR7jCpF1WB2VWny2wEK6a9E2rMvLWYrrqE2Af55kX4KiPpf5T/0/27)#kvqnpvsd
+[21:41:59.5600448] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykeriFceRFGxzmTTLfVmFrudyM6DTywQvCkPTfPCsyEDQaY1qDHZEVfsWqgDD8C549STr4o9o68oK2imJwjSthDLX7PbTh7Zq5J/0/28)#3f8cgca9
+[21:41:59.5600448] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykermZKx52PqB9zmfqtrMxJFnvRtYtEvot2GgdSZhdsuSx7hWdcoRFKuE9rJ5qQ1sGbFB5kd9nV7GwDTx9YL7djnvoYTTyazUuP/0/29)#4nzxjram
+[21:41:59.5610419] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDG1FoHsGykerqECyMbAgCiwdoh77ovA4w6BUgx4nyPdSgpA4AFunuchn6vD9aDyts2BzQVvxEq1hVowJa6HfCRg7UKpRYxexyN4WGzUFYCt/0/30)#h422ajzf
+[21:41:59.5610419] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHepcFLQcFLcqhP5MYFCfv6Cc2n6s2GXS9LVuUXEwKvQY8DZFo4YsLKcE3gdWMaW7kQLMYPns8vnfQgNWgvRJUComtLF54GRG/1/11)#dwa5jftf
+[21:41:59.5610419] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHgS42bvC5dTHkdQgH3Uvu1QQ8LvgEqFkQEwvtNdojJjWinuUW93TWr5AcRRrhFvJifb2eKLyEBiB1oKXFdU1JErfTMbNjbRS/1/12)#9tuew8fv
+[21:41:59.5610419] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHkXafGefDCgzhjpJ4nnR1yeXuAvrXAyYJ8UsxpYbqbKNTnDw4RGR3CUsbnA8tNewxXn2pCZzqNe3tUfG2zAh7rmG93bfh4p6/1/13)#sqfsd2qr
+[21:41:59.5620416] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHmPnZH9wZDncsBtK6DkzCRavEhfCUpknSJqygJtsYFT1t2PXnXeV2CitgC1ztd94MR2pCRqt8hbG8ofVAoUW9oyWKX25uDsd/1/14)#g89pj7ch
+[21:41:59.5620416] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHoaYzT1JCxhuyfGVgnttLuthf4H1DeHuLdYZMcW7CaHeX9EctAhEE8mmcJAvtZHn8QP5ZrYU15Ykx7qY4sgddEP4MxYc4mnv/1/15)#57z73n54
+[21:41:59.5620416] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHsEtDqSDMFRTBp6kpC9gkvuRjzb6ZZHY8FNsxw5Sojx9iModKRkH5t5w9bTH4gqEPC9wPYdu2RXXKyTYiFDyMmR5KNH8MsJt/1/16)#ukyhax97
+[21:41:59.5620416] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHvt6C3TVQNiFnhqayMEcciQuSAJoMKP46nipMG3q1PK4XGjdShCVRa7Jhkkr7q3jJjoroDdnPqUXTg1HeJLyTtDcq6MrGAEe/1/17)#l2lfe56g
+[21:41:59.5620416] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYHxhFkH2QLd9gsvf7hvNkgV729JdePbCeFVcN5DNccJp7cooCeBhjWRhyVMKBzN4b3Hh4KJ7nM3LKXLF2q9nTWq2DnQzUksV1/1/18)#cutp3s27
+[21:41:59.5630403] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYJ1UDXnS9FZtQLPJmeLcEBVonA8iWW9ctUjpRRUhKcPwqGByGmtewECaKYtEL3FTv5pVbWvmeUspLJHvQfVy8iDSzNALsTZkg/1/19)#g5hsw09h
+[21:41:59.5630403] [INFO] HIDZMQHDWallet - Descriptor: wpkh([9691ba20/84h/1h/0h]tpubDH2NiGHxqVYJ3quJK5FXuPozkiopUM3JHm1CaQhzEsms99vd1BNUy41EspGURoR5d8nuVWULzMveGB8CiXuCZCVjTR7TMx9zhspQ2baeYk1/1/20)#gmp8zmaf
+[21:41:59.5630403] [INFO] HIDZMQHDWallet - Descriptor: wpkh([98667b10/84h/1h/0h]tpubDCF9R7G5aX7JLteM6f2BX4GfYp3bZ1vCiPuQDWGa2wR2MxF9Fj6znQZfge9x4s2tBKh7cCKwABvgoX4gQLN7DEZWngXFd95XgN5PBVVBUkr/0/*)#z48fgevg
+[21:41:59.5650442] [INFO] HIDZMQHDWallet - Range: 0 -> 1005
+[21:41:59.5660417] [INFO] HIDZMQHDWallet - Descriptor: wpkh([98667b10/84h/1h/0h]tpubDCF9R7G5aX7JLteM6f2BX4GfYp3bZ1vCiPuQDWGa2wR2MxF9Fj6znQZfge9x4s2tBKh7cCKwABvgoX4gQLN7DEZWngXFd95XgN5PBVVBUkr/1/*)#npzg4vus
+[21:41:59.5660417] [INFO] HIDZMQHDWallet - Range: 0 -> 1013
+[21:41:59.5660417] [INFO] HIDZMQHDWallet - Descriptor already imported, skipping.
+[21:41:59.6191675] [INFO] HIDZMQHDWallet - [Controller => initializeWallet()] info.blocks() = 209
+[21:41:59.622246] [INFO] RegtestZmqListener - performSync() Resuming from height=208
+[21:41:59.6717592] [INFO] RegtestZmqListener - performSync() Sync decision: lastHeight=208, tip=209, gap=1
+[21:41:59.6727571] [INFO] RegtestZmqListener - syncOnce() Starting UTXO sync...
+[21:41:59.7197829] [INFO] RegtestZmqListener - syncOnce() First sync - expecting empty or initial UTXO set.
+[21:41:59.8800027] [INFO] ChainDatabase -  New connection created for thread = main
+
+############################### Utxo Summary ###################################
+=== UTXO Summary ===
+Total Balance      : 5449.99992160 BTC
+Spendable Balance  : 5449.99992160 BTC
+Immature Balance   : 0.00000000 BTC
+
+Total UTXOs        : 111
+Spendable UTXOs    : 111
+
+Largest UTXO       : 50.00000000 BTC
+Smallest UTXO      : 0.21000000 BTC
+Average UTXO       : 49.09909839 BTC
+
+Dust UTXOs         : 0
+
+##################################################################################
+Commit transaction: database in auto-commit mode
+[21:41:59.9829446] [INFO] RegtestZmqListener - syncOnce() UTXO sync completed in 310 ms: 111 UTXOs, 544999992160 sat total, 0 updated
+[21:41:59.9829446] [INFO] HIDZMQHDWallet - Initial sync complete: height=209, utxos=111, total_sat=544999992160
+[21:41:59.986175] [INFO] ChainDatabase -  New connection created for thread = main
+[21:42:00.0315904] [INFO] ChainIndexer - Local tip: 208  Core tip: 209
+[21:42:00.0315904] [INFO] ChainIndexer - Syncing 1 blocks (209 ? 209)
+[21:42:00.1376871] [INFO] TxDataMapper - Witness stack size = 2
+[21:42:00.240066] [INFO] BlockDataMapper - [prevoutValue] No prevout data for 5eb9f40b6634dc0cad0a1228bac65dc944754288f0470810bf63da2aa4b7ea6c:0 (both gettxout and getrawtransaction returned null)
+[21:42:00.240066] [WARN] BlockDataMapper - [getFee] Missing prevValue for input: 5eb9f40b6634dc0cad0a1228bac65dc944754288f0470810bf63da2aa4b7ea6c (vout=0). Unable to determine fee precisely.
+[21:42:00.242122] [WARN] BlockDataMapper - [getFee] Negative fee detected: inputs=0 sats, outputs=4999997180 sats, fee=-4999997180 sats. Clamping to 0. This usually means missing/incorrect prevout values.
+[21:42:00.242122] [INFO] TxDataMapper - Witness stack size = 2
+[21:42:00.3472821] [INFO] BlockDataMapper - [prevoutValue] No prevout data for 968f8791d977c029acc6e9fbf20fc782b2b9329a6fce6a5f9be928a3f9f944a8:1 (both gettxout and getrawtransaction returned null)
+[21:42:00.3482799] [WARN] BlockDataMapper - [getFee] Missing prevValue for input: 968f8791d977c029acc6e9fbf20fc782b2b9329a6fce6a5f9be928a3f9f944a8 (vout=1). Unable to determine fee precisely.
+[21:42:00.3482799] [WARN] BlockDataMapper - [getFee] Negative fee detected: inputs=0 sats, outputs=4969994980 sats, fee=-4969994980 sats. Clamping to 0. This usually means missing/incorrect prevout values.
+[21:42:00.3781076] [INFO] ChainIndexer - chain_tip ? height=209 hash=030982b51554
+[21:42:00.3781076] [INFO] ChainIndexer -  Block 209 committed (3 txs)
+Commit transaction: database in auto-commit mode
+[21:42:00.3911059] [INFO] ChainDatabase -  New connection created for thread = main
+[21:42:00.4393753] [INFO] ChainSyncer -  Already at tip height=209
+[21:42:00.440347] [INFO] HIDZMQHDWallet - Wallet + Lightning initialized
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 1
+=== Wallet Info ===
+Wallet name        : btcnode_watchonly
+Balance (spendable): 5449.9999216 BTC
+Watch-only balance : 5449.9999216 BTC
+Transaction count  : 212
+
+=== UTXOs ===
+UTXO count        : 111
+UTXO total amount : 5449.9999216 BTC
+
+=== Watched addresses (sample) ===
+  bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+  bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6
+  bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+  bcrt1qu2twek76nywpn72xd6909qr9kw7c9gwzhpcwje
+  bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 2
+[21:42:17.9611011] [INFO] HIDZMQHDWallet - === Fee Estimates (BTC/kB and sat/vB) ===
+Target  1 blocks: 1.00000000 BTC/kvB
+Target  2 blocks: 1.00000000 BTC/kvB
+Target  3 blocks: 1.00000000 BTC/kvB
+Target  6 blocks: 1.00000000 BTC/kvB
+Target 12 blocks: 1.00000000 BTC/kvB
+
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 3
+[21:42:23.1962661] [INFO] HIDZMQHDWallet - [sendCoins()] --- Send Coins ---
+[21:42:23.2020003] [INFO] HdAddressManager - [getNextMiningAddress()] countUsedKeys=13, LOOKAHEAD=5
+[validateaddress] addr=bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7 isvalid=true raw={"scriptPubKey":"00148d31e6347c013d8b109a0f21bba0d5fd249fe20d","witness_program":"8d31e6347c013d8b109a0f21bba0d5fd249fe20d","address":"bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:42:23.2672354] [INFO] HIDZMQHDWallet - Enter this addtress: bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7 as destination
+Destination address: bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7
+Amount BTC (e.g. 0.1): 0.23
+Target blocks [6]: 6
+[21:42:48.4736383] [INFO] HIDZMQHDWallet - [sendCoins()] Creating, signing, and broadcasting transaction...
+[21:42:48.4773416] [INFO] HdAddressManager - [getNextChangeAddress()] countUnusedChangeKeys=6, CHANGE_LOOKAHEAD=3
+[validateaddress] addr=bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj isvalid=true raw={"scriptPubKey":"00145d5e33789cf53e062b804c2d5acb01a6bbfa2faf","witness_program":"5d5e33789cf53e062b804c2d5acb01a6bbfa2faf","address":"bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:42:48.5927085] [INFO] HIDZMQHDWallet - [sendCoins] estimatedFee=0.0001 BTC
+[21:42:48.5936496] [INFO] FundingGuard - Checking funds: amount=0.23 fee=0.0001 total_needed=0.2301 BTC
+[21:42:48.7108698] [INFO] FundingGuard - Current balance: spendable=5449.9999216 BTC utxos=111
+[21:42:48.7108698] [INFO] FundingGuard - ? Sufficient funds: 5449.9999216 BTC >= 0.2301 BTC
+[21:42:48.7133989] [INFO] HIDZMQHDWallet - [sendCoins] Funding confirmed: FundingResult{balance=5449.9999216 BTC utxos=111 mined=0 needed=0.2301 surplus=5449.7698216}
+[21:42:48.8217106] [INFO] CoinSelector - Mature spendable Utxos from Core: 111
+[21:42:48.8236461] [INFO] CoinSelector - Adding Utxo: txid=e97b3e9bb28964413470f7e696cdcafaad1e64914c2166e10e021fb14d146791:0 amount=50.0 BTC confs=137 coinbase=false
+[21:42:48.8247118] [INFO] CoinSelector - Selected 1 Utxo(s) totalling 50.0 BTC to cover 1.2301 BTC
+[21:42:48.8247118] [INFO] OwnSigner - ensureInputsHaveSolvingData: Checking solving data for 1 input(s)...
+[21:42:48.8323199] [INFO] OwnSigner - ensureInputsHaveSolvingData: fingerprint=98667b10 coinType=1
+[21:42:48.8789386] [INFO] OwnSigner - ensureInputsHaveSolvingData:] addr=bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq solvable=true hasHdPath=true desc=wpkh([98667b10/84h/1h/0h/0/0]028f44efe3e2cc0bf1e3a...
+[21:42:48.8799369] [INFO] OwnSigner - ensureInputsHaveSolvingData: ? bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq already has solving data.
+[21:42:48.8799369] [INFO] OwnSigner - ensureInputsHaveSolvingData: All inputs already have solving data ?
+[signPsbtWithOwnSigner()] pubkeyHex=03327bd0cdb82b53f56a85c7f742e33c7bb9f70ddc4eac1b414cdb7e1756c3279f
+[signPsbtWithOwnSigner()] input=0 path=m/84h/1h/0h/0/2 masterFp=98667b10
+[OwnSigner => signInput()] inputValueSat: 30000000
+[OwnSigner => signInput()] scriptPubKey: [0, 20, -30, -106, -20, -37, -38, -103, 28, 25, -7, 70, 110, -118, -14, -128, 101, -77, -67, -126, -95, -62]
+[21:42:49.2880249] [INFO] HIDZMQHDWallet - [sendCoins] Mined 1 block to confirm tx.
+[21:42:49.2880249] [INFO] HIDZMQHDWallet - Controller : Both Syncers are free. I will assign a task to a Syncer.
+[21:42:49.2880249] [INFO] SharedMonitor - Controller (HIDZMQHDWallet): Assigning task to worker with Id = 1 
+[21:42:49.2900238] [INFO] HdAddressManager - Lookahead check: unused receive=12 threshold=5
+[21:42:49.2920234] [INFO] HdAddressManager - Lookahead OK: receive=12
+[21:42:49.2920234] [INFO] HIDZMQHDWallet - [sendCoins()] Broadcasted txid: 04fe4d390981d3cf131d884bcd9aab814bbf83440bd5fb251a21cb0c9676168a
+[21:42:49.2920234] [INFO] HIDZMQHDWallet - [sendCoins()] Verify in Core with:
+[21:42:49.2930288] [INFO] HIDZMQHDWallet - [sendCoins()] bitcoin-cli -regtest getrawtransaction 04fe4d390981d3cf131d884bcd9aab814bbf83440bd5fb251a21cb0c9676168a 1
+Fetching data from Bitcoin Core...
+[21:42:49.3768316] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{210:3b0aa58f0763 txs=2 size=2 weight=0}
+Processing 113 UTXOs...
+Commit transaction: database in auto-commit mode
+run() Processed block 210 with 2 transactions.
+[21:42:49.4743159] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:42:49.4743159] [INFO] RegtestZmqListener - performSync() Resuming from height=210
+[21:42:49.5228822] [INFO] RegtestZmqListener - performSync() Sync decision: lastHeight=210, tip=210, gap=0
+[21:42:49.5238394] [INFO] RegtestZmqListener - syncOnce() Starting UTXO sync...
+[21:42:49.5668369] [INFO] RegtestZmqListener - syncOnce() Blocks advanced by 1 (from 209 to 210)
+[21:42:49.7150674] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+
+############################### Utxo Summary ###################################
+=== UTXO Summary ===
+Total Balance      : 5499.99989340 BTC
+Spendable Balance  : 5499.99989340 BTC
+Immature Balance   : 0.00000000 BTC
+
+Total UTXOs        : 113
+Spendable UTXOs    : 113
+
+Largest UTXO       : 50.00000000 BTC
+Smallest UTXO      : 0.06997180 BTC
+Average UTXO       : 48.67256543 BTC
+
+Dust UTXOs         : 0
+
+##################################################################################
+Commit transaction: database in auto-commit mode
+[21:42:49.7932855] [INFO] RegtestZmqListener - syncOnce() UTXO sync completed in 270 ms: 113 UTXOs, 549999989340 sat total, 0 updated
+[21:42:49.7932855] [INFO] RegtestZmqListener - run() Initial sync complete: height=210, utxos=113, total_sat=549999989340
+
+=== MINING / RECEIVING ADDRESSES (External) ===
+bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7
+bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+
+=== CHANGE ADDRESSES (Internal) ===
+bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj
+bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+[21:42:54.968309] [INFO] HIDZMQHDWallet - [sendCoins()] usedReceiveAddress: bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7
+[21:42:54.9692938] [INFO] HIDZMQHDWallet - [sendCoins()] usedReceiveAddress: bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+[21:42:54.9692938] [INFO] HIDZMQHDWallet - [sendCoins()] usedReceiveAddress: bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+[21:42:54.9703022] [INFO] HIDZMQHDWallet - [sendCoins()] usedChangeAddress: bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj
+[21:42:54.9703022] [INFO] HIDZMQHDWallet - [sendCoins()] usedChangeAddress: bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 4
+[21:43:14.0647753] [INFO] HIDZMQHDWallet - [sendHwiCoins()] --- Send Coins ---
+[21:43:14.0707819] [INFO] HdAddressManager - [getNextMiningAddress()] countUsedKeys=12, LOOKAHEAD=5
+[validateaddress] addr=bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92 isvalid=true raw={"scriptPubKey":"00147a0cc6a90a7650ecdcec1f9607de9c0aa9796b35","witness_program":"7a0cc6a90a7650ecdcec1f9607de9c0aa9796b35","address":"bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:43:14.1632037] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Enter this addtress: bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92 as destination
+Destination address: bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92
+Amount BTC (e.g. 0.1): 0.25
+Target blocks [6]: 7
+[21:43:47.7942452] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Creating, signing, and broadcasting transaction...
+[21:43:47.8052265] [INFO] HdAddressManager - [getNextChangeAddress()] countUnusedChangeKeys=5, CHANGE_LOOKAHEAD=3
+[validateaddress] addr=bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x isvalid=true raw={"scriptPubKey":"0014776124e9e96ee36672a0e9085208c634e80b1f7b","witness_program":"776124e9e96ee36672a0e9085208c634e80b1f7b","address":"bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:43:47.879558] [INFO] HIDZMQHDWallet - [sendHwiCoins()] estimatedFee=0.0001 BTC
+[21:43:47.879558] [INFO] FundingGuard - Checking funds: amount=0.25 fee=0.0001 total_needed=0.2501 BTC
+[21:43:47.9804593] [INFO] FundingGuard - Current balance: spendable=5499.9998934 BTC utxos=113
+[21:43:47.9804593] [INFO] FundingGuard - ? Sufficient funds: 5499.9998934 BTC >= 0.2501 BTC
+[21:43:47.9804593] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Funding confirmed: FundingResult{balance=5499.9998934 BTC utxos=113 mined=0 needed=0.2501 surplus=5499.7497934}
+[21:43:48.0909543] [INFO] CoinSelector - Mature spendable Utxos from Core: 113
+[21:43:48.0920435] [INFO] CoinSelector - Adding Utxo: txid=e97b3e9bb28964413470f7e696cdcafaad1e64914c2166e10e021fb14d146791:0 amount=50.0 BTC confs=138 coinbase=false
+[21:43:48.0920435] [INFO] CoinSelector - Selected 1 Utxo(s) totalling 50.0 BTC to cover 1.2501 BTC
+[21:43:48.0929507] [INFO] OwnSigner - [sendHwiCoins()] destAddress=bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92
+[21:43:48.0929507] [INFO] OwnSigner - [sendHwiCoins()] changeAddress=bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x
+[21:43:48.0929507] [INFO] OwnSigner - [sendHwiCoins()] amountBtc=0.25
+[21:43:48.0929507] [INFO] OwnSigner - ensureInputsHaveSolvingData: Checking solving data for 1 input(s)...
+[21:43:48.0989396] [INFO] OwnSigner - ensureInputsHaveSolvingData: fingerprint=98667b10 coinType=1
+[21:43:48.1474515] [INFO] OwnSigner - ensureInputsHaveSolvingData:] addr=bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq solvable=true hasHdPath=true desc=wpkh([98667b10/84h/1h/0h/0/0]028f44efe3e2cc0bf1e3a...
+[21:43:48.1474515] [INFO] OwnSigner - ensureInputsHaveSolvingData: ? bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq already has solving data.
+[21:43:48.1474515] [INFO] OwnSigner - ensureInputsHaveSolvingData: All inputs already have solving data ?
+[21:43:48.19714] [INFO] OwnSigner - [sendHwiCoins()] changepos=1 changeAddress=bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x
+[21:43:48.19714] [INFO] OwnSigner - [sendHwiCoins()] PSBT created. fee=0.0000282 changepos=1
+HWI enumerate result: []
+[21:43:53.4558597] [INFO] OwnSigner - No hardware wallet detected
+[21:43:53.4558597] [INFO] OwnSigner - Falls back to software signing
+[signPsbtWithOwnSigner()] pubkeyHex=028f44efe3e2cc0bf1e3aff7307d47ca11497fda1880a287ed22f128a7609d4c0c
+[signPsbtWithOwnSigner()] input=0 path=m/84h/1h/0h/0/0 masterFp=98667b10
+[OwnSigner => signInput()] inputValueSat: 5000000000
+[OwnSigner => signInput()] scriptPubKey: [0, 20, -106, -111, -70, 32, 51, 55, -13, 108, -35, 63, -51, 20, 54, 12, -84, -95, -36, -106, -70, -13]
+[21:43:53.8254118] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Mined 1 block to confirm tx.
+[21:43:53.8254118] [INFO] HIDZMQHDWallet - Controller : Both Syncers are free. I will assign a task to a Syncer.
+[21:43:53.8254118] [INFO] SharedMonitor - Controller (HIDZMQHDWallet): Assigning task to worker with Id = 1 
+[21:43:53.8284416] [INFO] HdAddressManager - Lookahead check: unused receive=11 threshold=5
+[21:43:53.830445] [INFO] HdAddressManager - Lookahead OK: receive=11
+[21:43:53.8314429] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Broadcasted txid: a64f03c63c723a1b32b6cdb326a0edb3bbf2b64c874b9e7bd7a048a711592d0c
+[21:43:53.8314429] [INFO] HIDZMQHDWallet - [sendHwiCoins()] Verify in Core with:
+[21:43:53.8314429] [INFO] HIDZMQHDWallet - [sendHwiCoins()]   bitcoin-cli -regtest getrawtransaction a64f03c63c723a1b32b6cdb326a0edb3bbf2b64c874b9e7bd7a048a711592d0c 1
+Fetching data from Bitcoin Core...
+[21:43:53.9163756] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:43:53.9163756] [INFO] RegtestZmqListener - performSync() Resuming from height=210
+[21:43:53.92538] [INFO] RegtestZmqListener - performSync() Sync decision: lastHeight=210, tip=211, gap=1
+[21:43:53.9263752] [INFO] RegtestZmqListener - syncOnce() Starting UTXO sync...
+Processing 115 UTXOs...
+[21:43:53.97054] [INFO] RegtestZmqListener - syncOnce() Blocks advanced by 1 (from 210 to 211)
+[21:43:54.1188126] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+
+############################### Utxo Summary ###################################
+=== UTXO Summary ===
+Total Balance      : 5549.99986520 BTC
+Spendable Balance  : 5549.99986520 BTC
+Immature Balance   : 0.00000000 BTC
+
+Total UTXOs        : 115
+Spendable UTXOs    : 115
+
+Largest UTXO       : 50.00000000 BTC
+Smallest UTXO      : 0.06997180 BTC
+Average UTXO       : 48.26086839 BTC
+
+Dust UTXOs         : 0
+
+##################################################################################
+Commit transaction: database in auto-commit mode
+[21:43:54.2106035] [INFO] RegtestZmqListener - syncOnce() UTXO sync completed in 284 ms: 115 UTXOs, 554999986520 sat total, 0 updated
+[21:43:54.2106035] [INFO] RegtestZmqListener - run() Initial sync complete: height=211, utxos=115, total_sat=554999986520
+
+=== MINING / RECEIVING ADDRESSES (External) ===
+bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7
+bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92
+bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+
+=== CHANGE ADDRESSES (Internal) ===
+bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj
+bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x
+bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+[21:43:59.4341496] [INFO] HIDZMQHDWallet - [sendHwiCoins()] usedReceiveAddress: bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7
+[21:43:59.4341496] [INFO] HIDZMQHDWallet - [sendHwiCoins()] usedReceiveAddress: bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+[21:43:59.4341496] [INFO] HIDZMQHDWallet - [sendHwiCoins()] usedReceiveAddress: bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92
+[21:43:59.4341496] [INFO] HIDZMQHDWallet - [sendHwiCoins()] usedReceiveAddress: bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+[21:43:59.435148] [INFO] HIDZMQHDWallet - [sendHwiCoins()] usedChangeAddress: bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj
+[21:43:59.435148] [INFO] HIDZMQHDWallet - [sendHwiCoins()] usedChangeAddress: bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x
+[21:43:59.435148] [INFO] HIDZMQHDWallet - [sendHwiCoins()] usedChangeAddress: bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 5
+[21:44:33.20888] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] --- Send Coins ---
+[21:44:33.2148537] [INFO] HdAddressManager - [getNextMiningAddress()] countUsedKeys=11, LOOKAHEAD=5
+[validateaddress] addr=bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr isvalid=true raw={"scriptPubKey":"00146da8d455e20a191b91b8c70a3debbf07316a0ffd","witness_program":"6da8d455e20a191b91b8c70a3debbf07316a0ffd","address":"bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:44:33.2747469] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] Enter this addtress: bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr as destination
+Destination address: bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr
+Amount BTC (e.g. 0.1): 0.11
+Target blocks [6]: 6
+[21:45:03.7178021] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] Creating, signing, and broadcasting transaction...
+[21:45:03.7224082] [INFO] HdAddressManager - [getNextChangeAddress()] countUnusedChangeKeys=4, CHANGE_LOOKAHEAD=3
+[validateaddress] addr=bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f isvalid=true raw={"scriptPubKey":"0014f56cc6b92867135d733aa5ba2714dc6a28bd969c","witness_program":"f56cc6b92867135d733aa5ba2714dc6a28bd969c","address":"bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f","witness_version":0,"isscript":false,"isvalid":true,"iswitness":true}
+[21:45:03.8000134] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] estimatedFee=0.0001 BTC
+[21:45:03.8000134] [INFO] FundingGuard - Checking funds: amount=0.11 fee=0.0001 total_needed=0.1101 BTC
+[21:45:03.9074714] [INFO] FundingGuard - Current balance: spendable=5549.9998652 BTC utxos=115
+[21:45:03.908424] [INFO] FundingGuard - ? Sufficient funds: 5549.9998652 BTC >= 0.1101 BTC
+[21:45:03.908424] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] Funding confirmed: FundingResult{balance=5549.9998652 BTC utxos=115 mined=0 needed=0.1101 surplus=5549.8897652}
+[21:45:04.0158529] [INFO] CoinSelector - Mature spendable Utxos from Core: 115
+[21:45:04.0168578] [INFO] CoinSelector - Adding Utxo: txid=0d888ace888b9448557274c71665e4fc05092777f6f0f722536104abd04880e4:0 amount=50.0 BTC confs=203 coinbase=false
+[21:45:04.0178486] [INFO] CoinSelector - Selected 1 Utxo(s) totalling 50.0 BTC to cover 1.1101 BTC
+[21:45:04.0178486] [INFO] OwnSigner - [sendTrezorCoins()] destAddress=bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr
+[21:45:04.0178486] [INFO] OwnSigner - [sendTrezorCoins()] changeAddress=bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f
+[21:45:04.0178486] [INFO] OwnSigner - [sendTrezorCoins()] amountBtc=0.11
+[21:45:04.0188628] [INFO] OwnSigner - ensureInputsHaveSolvingData: Checking solving data for 1 input(s)...
+[21:45:04.0248455] [INFO] OwnSigner - ensureInputsHaveSolvingData: fingerprint=98667b10 coinType=1
+[21:45:04.0724146] [INFO] OwnSigner - ensureInputsHaveSolvingData:] addr=bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq solvable=true hasHdPath=true desc=wpkh([98667b10/84h/1h/0h/0/0]028f44efe3e2cc0bf1e3a...
+[21:45:04.0724146] [INFO] OwnSigner - ensureInputsHaveSolvingData: ? bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq already has solving data.
+[21:45:04.0724146] [INFO] OwnSigner - ensureInputsHaveSolvingData: All inputs already have solving data ?
+[21:45:04.1289956] [INFO] OwnSigner - [sendTrezorCoins()] changepos=0 changeAddress=bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f
+[21:45:04.1289956] [INFO] OwnSigner - [sendTrezorCoins()] PSBT created. fee=0.0000282 changepos=0
+[21:45:04.1300267] [INFO] OwnSigner - No hardware wallet detected
+[21:45:04.1300267] [INFO] OwnSigner - Falls back to software signing
+[signPsbtWithOwnSigner()] pubkeyHex=028f44efe3e2cc0bf1e3aff7307d47ca11497fda1880a287ed22f128a7609d4c0c
+[signPsbtWithOwnSigner()] input=0 path=m/84h/1h/0h/0/0 masterFp=98667b10
+[OwnSigner => signInput()] inputValueSat: 5000000000
+[OwnSigner => signInput()] scriptPubKey: [0, 20, -106, -111, -70, 32, 51, 55, -13, 108, -35, 63, -51, 20, 54, 12, -84, -95, -36, -106, -70, -13]
+[21:45:04.4692452] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] Mined 1 block to confirm tx.
+[21:45:04.4692452] [INFO] HIDZMQHDWallet - Controller : Both Syncers are free. I will assign a task to a Syncer.
+[21:45:04.4692452] [INFO] SharedMonitor - Controller (HIDZMQHDWallet): Assigning task to worker with Id = 1 
+[21:45:04.4712743] [INFO] HdAddressManager - Lookahead check: unused receive=10 threshold=5
+[21:45:04.4742449] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:45:04.4742449] [INFO] RegtestZmqListener - performSync() Resuming from height=210
+[21:45:04.4742449] [INFO] HdAddressManager - Lookahead OK: receive=10
+[21:45:04.4752419] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] Broadcasted txid: 43823f22ff725a89d597b7b2184db04109b298d58025b7ccad63c5a50cd1935d
+[21:45:04.4752419] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] Verify in Core with:
+[21:45:04.4752419] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] bitcoin-cli -regtest getrawtransaction 43823f22ff725a89d597b7b2184db04109b298d58025b7ccad63c5a50cd1935d 1
+Fetching data from Bitcoin Core...
+[21:45:04.4812477] [INFO] RegtestZmqListener - performSync() Sync decision: lastHeight=210, tip=212, gap=2
+[21:45:04.4812477] [INFO] RegtestZmqListener - syncOnce() Starting UTXO sync...
+[21:45:04.5261917] [INFO] RegtestZmqListener - syncOnce() Blocks advanced by 1 (from 211 to 212)
+Processing 117 UTXOs...
+[21:45:04.6697707] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+
+############################### Utxo Summary ###################################
+=== UTXO Summary ===
+Total Balance      : 5599.99983700 BTC
+Spendable Balance  : 5599.99983700 BTC
+Immature Balance   : 0.00000000 BTC
+
+Total UTXOs        : 117
+Spendable UTXOs    : 117
+
+Largest UTXO       : 50.00000000 BTC
+Smallest UTXO      : 0.06997180 BTC
+Average UTXO       : 47.86324647 BTC
+
+Dust UTXOs         : 0
+
+##################################################################################
+Commit transaction: database in auto-commit mode
+[21:45:04.7431701] [INFO] RegtestZmqListener - syncOnce() UTXO sync completed in 262 ms: 117 UTXOs, 559999983700 sat total, 0 updated
+[21:45:04.7431701] [INFO] RegtestZmqListener - run() Initial sync complete: height=212, utxos=117, total_sat=559999983700
+
+=== MINING / RECEIVING ADDRESSES (External) ===
+bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7
+bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr
+bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92
+bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+
+=== CHANGE ADDRESSES (Internal) ===
+bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj
+bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f
+bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x
+bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+[21:45:10.1301199] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] usedReceiveAddress: bcrt1q35c7vdruqy7ckyy6pusmhgx4l5jflcsdk8yas7
+[21:45:10.1311028] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] usedReceiveAddress: bcrt1qj6gm5gpnxlekehfle52rvr9v58wfdwhn3yddnq
+[21:45:10.1311028] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] usedReceiveAddress: bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr
+[21:45:10.1311028] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] usedReceiveAddress: bcrt1q0gxvd2g2wegweh8vr7tq0h5up25hj6e4sjfa92
+[21:45:10.1311028] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] usedReceiveAddress: bcrt1qtays55y0u278vv0fr29zk98kgzm0h0nv039tph
+[21:45:10.1320929] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] usedChangeAddress: bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj
+[21:45:10.1320929] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] usedChangeAddress: bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f
+[21:45:10.1320929] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] usedChangeAddress: bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x
+[21:45:10.1320929] [INFO] HIDZMQHDWallet - [sendTrezorCoins()] usedChangeAddress: bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 6
+How many blocks to mine? [1]: 7
+[21:45:26.3771746] [INFO] HIDZMQHDWallet - Mining 7 block(s) on regtest...
+[21:45:26.3894982] [INFO] HdAddressManager - [getNextMiningAddress()] countUsedKeys=10, LOOKAHEAD=5
+[21:45:26.7020072] [INFO] HIDZMQHDWallet - Mined blocks:
+[21:45:26.7020072] [INFO] HIDZMQHDWallet -   706e895066b981cd9bea27b63eb3ee00a0b29d8817ead658b817b3f0b337c4a4
+[21:45:26.7030096] [INFO] HIDZMQHDWallet -   5536678f22d30cc9e5bb23e091c8a31177c572d394b3a157e8dfd8381cadf802
+[21:45:26.7030096] [INFO] HIDZMQHDWallet -   7721406911724ea00913e387a67e3713ac54b8d3f2043e57a4f44af78edb4653
+[21:45:26.7030096] [INFO] HIDZMQHDWallet -   7d06cca970fc13866279fdb473ea81df77c1ffd7ef6a09a286115b756cc6cefd
+[21:45:26.7030096] [INFO] HIDZMQHDWallet -   52d60d2e89649bcc235df515848c1c614908faa3b17cf79233a70277a7bf2cf4
+[21:45:26.7030096] [INFO] HIDZMQHDWallet -   1a3cecd44d637317cbd78014c776e2df544d14bde49cc041d5e4aa2068e998f5
+[21:45:26.7030096] [INFO] HIDZMQHDWallet -   0389111f19b5a53604edc3121a5e17c9a408c9d640daebae7aee2b301a672009
+[21:45:26.7459842] [INFO] HIDZMQHDWallet - Tip height is now (via Core): 219
+[21:45:26.7469534] [INFO] HIDZMQHDWallet - Current block height: 219
+[21:45:26.7469534] [INFO] HIDZMQHDWallet - Controller : Both Syncers are free. I will assign a task to a Syncer.
+[21:45:26.7469534] [INFO] SharedMonitor - Controller (HIDZMQHDWallet): Assigning task to worker with Id = 1 
+[21:45:26.7499475] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{212:4f82af692a87 txs=2 size=2 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 212 with 2 transactions.
+[21:45:26.8241247] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{214:5536678f22d3 txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 214 with 1 transactions.
+[21:45:26.9426168] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+run() Received: BlockData{216:7d06cca970fc txs=1 size=1 weight=0}
+Commit transaction: database in auto-commit mode
+run() Processed block 216 with 1 transactions.
+[21:45:27.0656561] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+[21:45:27.0656561] [INFO] RegtestZmqListener - performSync() Resuming from height=216
+[21:45:27.1105982] [INFO] RegtestZmqListener - performSync() Sync decision: lastHeight=216, tip=219, gap=3
+[21:45:27.1105982] [INFO] RegtestZmqListener - syncOnce() Starting UTXO sync...
+[21:45:27.1543584] [INFO] RegtestZmqListener - syncOnce() Blocks advanced by 7 (from 212 to 219)
+[21:45:27.2694086] [INFO] ChainDatabase -  New connection created for thread = RegtestZmqListener
+
+############################### Utxo Summary ###################################
+=== UTXO Summary ===
+Total Balance      : 5949.99983700 BTC
+Spendable Balance  : 5949.99983700 BTC
+Immature Balance   : 0.00000000 BTC
+
+Total UTXOs        : 124
+Spendable UTXOs    : 124
+
+Largest UTXO       : 50.00000000 BTC
+Smallest UTXO      : 0.06997180 BTC
+Average UTXO       : 47.98386965 BTC
+
+Dust UTXOs         : 0
+
+##################################################################################
+Commit transaction: database in auto-commit mode
+[21:45:27.3464904] [INFO] RegtestZmqListener - syncOnce() UTXO sync completed in 236 ms: 124 UTXOs, 594999983700 sat total, 0 updated
+[21:45:27.3464904] [INFO] RegtestZmqListener - run() Initial sync complete: height=219, utxos=124, total_sat=594999983700
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 7
+[21:45:33.4303871] [INFO] HIDZMQHDWallet - Controller : Both Syncers are free. I will assign a task to a Syncer.
+[21:45:33.4303871] [INFO] SharedMonitor - Controller (HIDZMQHDWallet): Assigning task to worker with Id = 2 
+[21:45:33.4313993] [INFO] ChainIndexer -  Executing task...
+[21:45:33.4423994] [INFO] ChainDatabase -  New connection created for thread = chainIndexer
+[21:45:33.5293063] [INFO] ChainIndexRepository -  getStoredTip ? 216:7d06cca970
+[21:45:33.5293063] [INFO] ReorgDetector - ourTip=216:7d06cca970 coreTip=0389111f19b5a53604edc3121a5e17c9a408c9d640daebae7aee2b301a672009
+[21:45:33.5293063] [INFO] ReorgDetector - Tip mismatch! our=216:7d06cca970 core=0389111f19b5a53604edc3121a5e17c9a408c9d640daebae7aee2b301a672009
+[21:45:33.619717] [INFO] ReorgDetector - Scanning height=216 core=7d06cca970fc ours=7d06cca970fc
+[21:45:33.619717] [WARN] ReorgDetector - Fork point found at height=216
+[21:45:33.6207189] [INFO] ReorgDetector - Fork at height=216   rolling back 0 block(s)
+[21:45:33.6207189] [INFO] ChainIndexRepository - getTxidsAboveHeight(216) ? 0 txids
+[21:45:33.6207189] [INFO] ReorgDetector - Orphaned txids: 0
+[21:45:33.6216706] [INFO] ChainIndexRepository - No orphaned txids   nothing to unspend
+[21:45:33.6216706] [INFO] ChainIndexRepository - [ReorgDetector] deleteUtxosCreatedAboveHeight(216): deleted 0 row(s)
+[21:45:33.6216706] [INFO] ChainIndexRepository - deleteTransactionsAboveHeight(216): deleted 0 row(s)
+[21:45:33.6226608] [INFO] ChainIndexRepository -  deleteBlocksAboveHeight(216): deleted 0 block(s) (cascade applied)
+[21:45:33.6307213] [INFO] ChainIndexRepository - updateChainTip ? height=216 hash=7d06cca970fc
+[21:45:33.6317222] [INFO] ReorgDetector - chain_tip ? height=216 hash=7d06cca970fc
+[21:45:33.6317222] [INFO] ReorgDetector - Rollback complete: removed 0 orphaned txids
+Commit transaction: database in auto-commit mode
+[21:45:33.6541333] [INFO] ChainDatabase -  New connection created for thread = chainIndexer
+[21:45:33.6992301] [INFO] ChainIndexer - Applying 3 new block(s) (217 ? 219)
+[21:45:33.8075421] [INFO] ChainIndexer - chain_tip ? height=217 hash=52d60d2e8964
+[21:45:33.8085453] [INFO] ChainIndexer -  Block 217 committed (1 txs)
+[21:45:33.8998935] [INFO] ChainIndexer - chain_tip ? height=218 hash=1a3cecd44d63
+[21:45:33.8998935] [INFO] ChainIndexer -  Block 218 committed (1 txs)
+[21:45:34.0044689] [INFO] ChainIndexer - chain_tip ? height=219 hash=0389111f19b5
+[21:45:34.0044689] [INFO] ChainIndexer -  Block 219 committed (1 txs)
+Commit transaction: database in auto-commit mode
+[21:45:34.0251801] [INFO] ChainIndexer -  Task finished.
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 8
+[21:45:38.3655976] [INFO] HIDZMQHDWallet - Controller : Both Syncers are free. I will assign a task to a Syncer.
+[21:45:38.3655976] [INFO] SharedMonitor - Controller (HIDZMQHDWallet): Assigning task to worker with Id = 3 
+[21:45:38.366632] [INFO] ChainIndexer -  Executing task...
+[21:45:38.375616] [INFO] ChainDatabase -  New connection created for thread = chainIndexer
+[21:45:38.4237215] [INFO] ChainIndexRepository -  getStoredTip ? 219:0389111f19
+[21:45:38.4237215] [INFO] ReorgDetector - ourTip=219:0389111f19 coreTip=0389111f19b5a53604edc3121a5e17c9a408c9d640daebae7aee2b301a672009
+[21:45:38.4237215] [INFO] ReorgDetector - Tips agree   no reorg
+[21:45:38.4297654] [INFO] ChainDatabase -  New connection created for thread = chainIndexer
+Commit transaction: database in auto-commit mode
+[21:45:38.4802012] [INFO] ChainIndexer -  Task finished.
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 9
+[21:45:47.234719] [INFO] HIDZMQHDWallet - --- Consolidate Change UTXOs ---
+[21:45:47.234719] [INFO] OwnSigner -  ?? Starting Change Consolidation ??????
+[21:45:47.241653] [INFO] OwnSigner -  Checking 7 used change address(es)...
+[21:45:47.2923354] [INFO] OwnSigner -  Found 5 change UTXO(s) totalling 199.1998370 BTC
+[21:45:47.2923354] [INFO] OwnSigner -  ?? Change UTXO Report ?????????????
+[21:45:47.2932983] [INFO] OwnSigner -   addr=bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f txid=43823f22...:0 amount=49.8899718 BTC confs=8
+[21:45:47.2932983] [INFO] OwnSigner -   addr=bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj txid=04fe4d39...:1 amount=0.0699718 BTC confs=10
+[21:45:47.2932983] [INFO] OwnSigner -   addr=bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x txid=a64f03c6...:1 amount=49.7499718 BTC confs=9
+[21:45:47.2932983] [INFO] OwnSigner -   addr=bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6 txid=c7f8a97d...:0 amount=49.6999498 BTC confs=11
+[21:45:47.2932983] [INFO] OwnSigner -   addr=bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa txid=8f8499c4...:0 amount=49.7899718 BTC confs=11
+[21:45:47.2932983] [INFO] OwnSigner -   ?????????????????????????????????
+[21:45:47.2932983] [INFO] OwnSigner -   Total: 199.1998370 BTC across 5 UTXO(s)
+[21:45:47.2932983] [INFO] OwnSigner -  ?????????????????????????????????????
+[21:45:47.3403261] [WARN] [consolidate] {} already solvable ? - bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f
+[21:45:47.3875589] [WARN] [consolidate] {} already solvable ? - bcrt1qt40rx7yu75lqv2uqfsk44jcp56al5ta0t6fegj
+[21:45:47.4370296] [WARN] [consolidate] {} already solvable ? - bcrt1qwasjf60fdm3kvu4qayy9yzxxxn5qk8mmcgwv0x
+[21:45:47.4859622] [WARN] [consolidate] {} already solvable ? - bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6
+[21:45:47.5341873] [WARN] [consolidate] {} already solvable ? - bcrt1q2z9fpph368e9mklw0p568rzrhv8vf9q9v2j2fa
+[21:45:47.5341873] [INFO] OwnSigner -  Consolidation target address: bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6
+[21:45:47.5341873] [INFO] OwnSigner -  Estimated vbytes=381 minFee=0.00007620 BTC (2x buffer) totalInput=199.1998370 BTC
+[21:45:47.5351925] [INFO] OwnSigner -  Creating consolidation PSBT...
+[21:45:47.598097] [INFO] OwnSigner -  PSBT created. actualFee=0.000076400000000000000354404006142061689388356171548366546630859375 BTC actualOutput=199.19976059 BTC
+[21:45:47.6443718] [INFO] OwnSigner -  PSBT outputs:
+[21:45:47.6443718] [INFO] OwnSigner -   vout=0 addr=bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6 amount=199.1997606 BTC
+[21:45:47.6443718] [INFO] OwnSigner -  Signing 5 input(s)...
+[21:45:47.6453316] [INFO] OwnSigner -  Signing with fingerprint=98667b10
+[21:45:47.6453316] [INFO] OwnSigner -  Using manual HD signing (watch-only wallet has no private keys).
+[21:45:47.6926314] [INFO] OwnSigner -  Input 0 path=m/84h/1h/0h/1/16 masterFp=98667b10
+[21:45:47.6996304] [INFO] OwnSigner -  Input 0 signed. sig=3045022100...
+[21:45:47.6996304] [INFO] OwnSigner -  Input 1 path=m/84h/1h/0h/1/14 masterFp=98667b10
+[21:45:47.7066335] [INFO] OwnSigner -  Input 1 signed. sig=3045022100...
+[21:45:47.7066335] [INFO] OwnSigner -  Input 2 path=m/84h/1h/0h/1/15 masterFp=98667b10
+[21:45:47.7146246] [INFO] OwnSigner -  Input 2 signed. sig=3044022019...
+[21:45:47.7146246] [INFO] OwnSigner -  Input 3 path=m/84h/1h/0h/1/10 masterFp=98667b10
+[21:45:47.7206679] [INFO] OwnSigner -  Input 3 signed. sig=3045022100...
+[21:45:47.7206679] [INFO] OwnSigner -  Input 4 path=m/84h/1h/0h/1/13 masterFp=98667b10
+[21:45:47.7266585] [INFO] OwnSigner -  Input 4 signed. sig=304402203d...
+[21:45:47.7276264] [INFO] OwnSigner -  Manual signing complete.
+[21:45:47.8875416] [INFO] OwnSigner -  ? Consolidation broadcasted! txid=ea3e9e959c0d8fd3ee05ebaf9d9bf12fa7aeac206d6b99b53aaeb977b997399d
+[21:45:47.8885304] [INFO] OwnSigner -  5 change UTXOs ? 1 spendable UTXO
+[21:45:47.8895702] [INFO] HdAddressManager - Lookahead check: unused receive=9 threshold=5
+[21:45:47.8915695] [INFO] HdAddressManager - Lookahead OK: receive=9
+[21:45:47.8915695] [INFO] HIDZMQHDWallet - ? Consolidation complete!
+[21:45:47.8915695] [INFO] HIDZMQHDWallet - txid: ea3e9e959c0d8fd3ee05ebaf9d9bf12fa7aeac206d6b99b53aaeb977b997399d
+[21:45:47.8915695] [INFO] HIDZMQHDWallet - Your change Utxos have been merged into one spendable Utxo.
+[21:45:47.8915695] [INFO] HIDZMQHDWallet - Verify with:
+[21:45:47.8915695] [INFO] HIDZMQHDWallet -   bitcoin-cli -regtest getrawtransaction ea3e9e959c0d8fd3ee05ebaf9d9bf12fa7aeac206d6b99b53aaeb977b997399d 1
+
+======================================
+1)  Show wallet info
+2)  Show fee rate estimate
+3)  Send coins
+4)  Hwi-based transaction
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Consolidate change UTXOs
+0)  Exit application
+Select option: 0
+[21:46:01.5410266] [INFO] HIDZMQHDWallet - Goodbye.
+[21:46:01.5440585] [INFO] ApisServer - HTTP API server stopped.
+[21:46:01.5450845] [INFO] HIDZMQHDWallet -  Shutdown hook   stopping ZMQ...
+------------------------------------------------------------------------
+BUILD SUCCESS
+------------------------------------------------------------------------
+Total time:  04:33 min
+Finished at: 2026-06-17T21:46:01+01:00
+------------------------------------------------------------------------

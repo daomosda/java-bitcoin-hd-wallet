@@ -1,0 +1,43 @@
+conaldes@daomosda:~$ bitcoin-cli -regtest -rpcuser=olamosda -rpcpassword=cona.btc-Dao_5MoS7 getrawtransaction c7f8a97db70aced2da70e1b26849bbc58be8584e4cefa12a61eb90cf6394b0dc 1
+{
+  "txid": "c7f8a97db70aced2da70e1b26849bbc58be8584e4cefa12a61eb90cf6394b0dc",
+  "hash": "e86231512c6400936a18c9b8aedb5c0854a3181c46e78952b7a0430bff5d7655",
+  "version": 2,
+  "size": 191,
+  "vsize": 110,
+  "weight": 437,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "968f8791d977c029acc6e9fbf20fc782b2b9329a6fce6a5f9be928a3f9f944a8",
+      "vout": 1,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "304402203dd0ad8cf0170ff8038c6dd6ace52f2ab6cae412d3cbd3550cc3e674a311a7b702206af6e7bb74b3d23c813540ba2a79417e1a92f0300b69bbeec49c89ba9f94dbe301",
+        "037da0f811c2a47a305225a9bf4878481c8564ca82bc368369c69c6956820ddf86"
+      ],
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 49.69994980,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "0 1e602d9b103dbff08bb08bda38dd85aac5d5ff45",
+        "desc": "addr(bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6)#e3mhxwdy",
+        "hex": "00141e602d9b103dbff08bb08bda38dd85aac5d5ff45",
+        "address": "bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6",
+        "type": "witness_v0_keyhash"
+      }
+    }
+  ],
+  "hex": "02000000000101a844f9f9a328e99b5f6ace6f9a32b9b282c70ff2fbe9c6ac29c077d991878f960100000000fdffffff01e41a3c28010000001600141e602d9b103dbff08bb08bda38dd85aac5d5ff450247304402203dd0ad8cf0170ff8038c6dd6ace52f2ab6cae412d3cbd3550cc3e674a311a7b702206af6e7bb74b3d23c813540ba2a79417e1a92f0300b69bbeec49c89ba9f94dbe30121037da0f811c2a47a305225a9bf4878481c8564ca82bc368369c69c6956820ddf8600000000",
+  "blockhash": "030982b5155475eb0adbba7b8d70d6058d227fb513630f4880ba43a067faa3e0",
+  "confirmations": 11,
+  "time": 1781728753,
+  "blocktime": 1781728753
+}

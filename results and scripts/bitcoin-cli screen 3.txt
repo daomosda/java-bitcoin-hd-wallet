@@ -1,0 +1,91 @@
+conaldes@daomosda:~$ bitcoin-cli -regtest -rpcuser=olamosda -rpcpassword=cona.btc-Dao_5MoS7 getrawtransaction ea3e9e959c0d8fd3ee05ebaf9d9bf12fa7aeac206d6b99b53aaeb977b997399d 1
+{
+  "txid": "ea3e9e959c0d8fd3ee05ebaf9d9bf12fa7aeac206d6b99b53aaeb977b997399d",
+  "hash": "97ffb370e98329eb48e9ee2f75893263b1a7fcc3e6a2abae29a2fc98229e7cdd",
+  "version": 2,
+  "size": 786,
+  "vsize": 381,
+  "weight": 1524,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "43823f22ff725a89d597b7b2184db04109b298d58025b7ccad63c5a50cd1935d",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "3045022100e54e98d0233cca474f160beed2eda00646a04c4d3228251ca9372024fa0e8f6f022019512023e3dd4e3b2b7bbaf9d918c1c7fa208126b919c6414ca1b17b8d79c78f01",
+        "03991970c6cc40b86263825f94291cd074e32ee8e20cb3455bb8d1ede990cd30d9"
+      ],
+      "sequence": 4294967293
+    },
+    {
+      "txid": "04fe4d390981d3cf131d884bcd9aab814bbf83440bd5fb251a21cb0c9676168a",
+      "vout": 1,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "3045022100d007c20f454436d6bd75a0128b02de7108b3fb20e2181a93128dd8f4ac61893102201bbb8302bcad41e681cab5c5dbcfddc241963632aa44c4d8444af7ad28bce28701",
+        "02c7e24d246302264f95703d9efb84eb44b833adadf1feb3ceba7fd0f800408f2f"
+      ],
+      "sequence": 4294967293
+    },
+    {
+      "txid": "a64f03c63c723a1b32b6cdb326a0edb3bbf2b64c874b9e7bd7a048a711592d0c",
+      "vout": 1,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "3044022019a14622a55063e9ba2871545266bc3d360c5b92d820678611e1500559d55c520220206e32f7af055f048f528b2acc745df61003f16428daf459eb1fe3d47b5cfc7101",
+        "02962d8d68d9b8f499cd57098078b71b15d40f525be79474129cca153be9106df3"
+      ],
+      "sequence": 4294967293
+    },
+    {
+      "txid": "c7f8a97db70aced2da70e1b26849bbc58be8584e4cefa12a61eb90cf6394b0dc",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "3045022100bd1eafb8c68314b4eb938fa31b820ec0e3a2ef0de318956bfb628ee50be126c5022019770d0b1b9ba1081305bc9e52bc2e1dbab73f03c4afa748cc812d9f7ab0e5f601",
+        "02c73dd1716e9ad2da4437ccbe5d2323a17f7035eeea5d5f5c45e5407bcab52fa1"
+      ],
+      "sequence": 4294967293
+    },
+    {
+      "txid": "8f8499c452ae2f3b36837392d0fb7234ffdfccd9448468f5eb53ce57b286a0b8",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "304402203dea3486d47e92e6f0de0dc952afa15405b900585fa329223300a6c9fd7d2c8602207a634caea962e6f284eb5d023aa511597f0dae9978592ec9277899537a1da99601",
+        "03570d5dd1f92739fbf91f3d9cd151e57f9f99b83181be9bb8a45a9b2cb1704ce9"
+      ],
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 199.19976060,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "0 1e602d9b103dbff08bb08bda38dd85aac5d5ff45",
+        "desc": "addr(bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6)#e3mhxwdy",
+        "hex": "00141e602d9b103dbff08bb08bda38dd85aac5d5ff45",
+        "address": "bcrt1qreszmxcs8kllpzas30dr3hv94tzatl69h5urz6",
+        "type": "witness_v0_keyhash"
+      }
+    }
+  ],
+  "hex": "020000000001055d93d10ca5c563adccb72580d598b20941b04d18b2b797d5895a72ff223f82430000000000fdffffff8a1676960ccb211a25fbd50b4483bf4b81ab9acd4b881d13cfd38109394dfe040100000000fdffffff0c2d5911a748a0d77b9e4b874cb6f2bbb3eda026b3cdb6321b3a723cc6034fa60100000000fdffffffdcb09463cf90eb612aa1ef4c4e58e88bc5bb4968b2e170dad2ce0ab77da9f8c70000000000fdffffffb8a086b257ce53ebf5688444d9ccdfff3472fbd0927383363b2fae52c499848f0000000000fdffffff017cb652a3040000001600141e602d9b103dbff08bb08bda38dd85aac5d5ff4502483045022100e54e98d0233cca474f160beed2eda00646a04c4d3228251ca9372024fa0e8f6f022019512023e3dd4e3b2b7bbaf9d918c1c7fa208126b919c6414ca1b17b8d79c78f012103991970c6cc40b86263825f94291cd074e32ee8e20cb3455bb8d1ede990cd30d902483045022100d007c20f454436d6bd75a0128b02de7108b3fb20e2181a93128dd8f4ac61893102201bbb8302bcad41e681cab5c5dbcfddc241963632aa44c4d8444af7ad28bce287012102c7e24d246302264f95703d9efb84eb44b833adadf1feb3ceba7fd0f800408f2f02473044022019a14622a55063e9ba2871545266bc3d360c5b92d820678611e1500559d55c520220206e32f7af055f048f528b2acc745df61003f16428daf459eb1fe3d47b5cfc71012102962d8d68d9b8f499cd57098078b71b15d40f525be79474129cca153be9106df302483045022100bd1eafb8c68314b4eb938fa31b820ec0e3a2ef0de318956bfb628ee50be126c5022019770d0b1b9ba1081305bc9e52bc2e1dbab73f03c4afa748cc812d9f7ab0e5f6012102c73dd1716e9ad2da4437ccbe5d2323a17f7035eeea5d5f5c45e5407bcab52fa10247304402203dea3486d47e92e6f0de0dc952afa15405b900585fa329223300a6c9fd7d2c8602207a634caea962e6f284eb5d023aa511597f0dae9978592ec9277899537a1da996012103570d5dd1f92739fbf91f3d9cd151e57f9f99b83181be9bb8a45a9b2cb1704ce900000000"
+}

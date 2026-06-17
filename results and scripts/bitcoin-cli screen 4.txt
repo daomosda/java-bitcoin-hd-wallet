@@ -1,0 +1,54 @@
+conaldes@daomosda:~$ bitcoin-cli -regtest -rpcuser=olamosda -rpcpassword=cona.btc-Dao_5MoS7 getrawtransaction 43823f22ff725a89d597b7b2184db04109b298d58025b7ccad63c5a50cd1935d 1
+{
+  "txid": "43823f22ff725a89d597b7b2184db04109b298d58025b7ccad63c5a50cd1935d",
+  "hash": "fe87a20d6d47a4196c724e1357dbea4e35a78458fbcb665dcb18efc92ae4f940",
+  "version": 2,
+  "size": 222,
+  "vsize": 141,
+  "weight": 561,
+  "locktime": 0,
+  "vin": [
+    {
+      "txid": "0d888ace888b9448557274c71665e4fc05092777f6f0f722536104abd04880e4",
+      "vout": 0,
+      "scriptSig": {
+        "asm": "",
+        "hex": ""
+      },
+      "txinwitness": [
+        "304402203f84e752df9f8c822e79790ebc8c8de744a29fe5b7c103869e2c36bd846d47f802205a7ab7c82997289f21354d5a96f9b0395fcce1d5e369d8eaad180a4d9f9497fd01",
+        "028f44efe3e2cc0bf1e3aff7307d47ca11497fda1880a287ed22f128a7609d4c0c"
+      ],
+      "sequence": 4294967293
+    }
+  ],
+  "vout": [
+    {
+      "value": 49.88997180,
+      "n": 0,
+      "scriptPubKey": {
+        "asm": "0 f56cc6b92867135d733aa5ba2714dc6a28bd969c",
+        "desc": "addr(bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f)#cvuckjnd",
+        "hex": "0014f56cc6b92867135d733aa5ba2714dc6a28bd969c",
+        "address": "bcrt1q74kvdwfgvuf46ue65kazw9xudg5tm95u0cka6f",
+        "type": "witness_v0_keyhash"
+      }
+    },
+    {
+      "value": 0.11000000,
+      "n": 1,
+      "scriptPubKey": {
+        "asm": "0 6da8d455e20a191b91b8c70a3debbf07316a0ffd",
+        "desc": "addr(bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr)#usg04v4q",
+        "hex": "00146da8d455e20a191b91b8c70a3debbf07316a0ffd",
+        "address": "bcrt1qdk5dg40zpgv3hydccu9rm6alquck5rlamvtsxr",
+        "type": "witness_v0_keyhash"
+      }
+    }
+  ],
+  "hex": "02000000000101e48048d0ab04615322f7f0f677270905fce46516c774725548948b88ce8a880d0000000000fdffffff023c0e5e2901000000160014f56cc6b92867135d733aa5ba2714dc6a28bd969cc0d8a700000000001600146da8d455e20a191b91b8c70a3debbf07316a0ffd0247304402203f84e752df9f8c822e79790ebc8c8de744a29fe5b7c103869e2c36bd846d47f802205a7ab7c82997289f21354d5a96f9b0395fcce1d5e369d8eaad180a4d9f9497fd0121028f44efe3e2cc0bf1e3aff7307d47ca11497fda1880a287ed22f128a7609d4c0c00000000",
+  "blockhash": "4f82af692a87613e0cda7a12f9ae92d42ccbe24645ff4a4fad2fef5f782e3e47",
+  "confirmations": 8,
+  "time": 1781729104,
+  "blocktime": 1781729104
+}
