@@ -98,12 +98,14 @@ The app launches as one of three node types: standalone, merchant, or customer, 
 1)  Show wallet info
 2)  Show fee rate estimate
 3)  Send coins
-4)  Mine blocks (regtest)
-5)  Merchant: receive payment
-6)  Merchant: receive payment (API/custom capacity)
-7)  Sync UTXOs now
-8)  Sync chain now
-9)  Consolidate change UTXOs
+4)  Hwi-based transaction 
+5)  Trezor-based transaction
+6)  Mine blocks (regtest)
+7)  Sync chain indexer now
+8)  Run chain syncer now
+9)  Merchant: receive payment
+10) Merchant: receive payment (API/custom capacity)
+11) Consolidate change UTXOs 
 0)  Exit application
 ```
 
