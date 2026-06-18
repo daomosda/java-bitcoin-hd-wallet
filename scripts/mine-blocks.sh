@@ -5,7 +5,7 @@
 
 BLOCKS=${1:5}
 ADDRESS=${2:-"bcrt1qq5z0f2sl8s5zvt8cswfzp8fzhdedz379qfhu56"}
-CLI="bitcoin-cli -regtest"
+CLI="bitcoin-cli -regtest -rpcuser=rpc_user -rpcpassword=rpc_password"
 
 if [ -z "$ADDRESS" ]; then
     echo "Usage: ./mine-blocks.sh <num_blocks> <address>"
